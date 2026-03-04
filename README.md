@@ -23,7 +23,7 @@
 | [ai-invest-agent](https://github.com/AIPMAndy/ai-invest-agent) | 🔥 AI Investment Agent — From gut feeling to systematic investing | ![Stars](https://img.shields.io/github/stars/AIPMAndy/ai-invest-agent?style=flat-square) |
 | [awesome-openclaw-skills-CN](https://github.com/AIPMAndy/awesome-openclaw-skills-CN) | 🇨🇳 2800+ OpenClaw Skills curated for Chinese developers | ![Stars](https://img.shields.io/github/stars/AIPMAndy/awesome-openclaw-skills-CN?style=flat-square) |
 | [dna-memory](https://github.com/AIPMAndy/dna-memory) | 🧬 DNA Memory System — Evolving memory for AI agents | ![Stars](https://img.shields.io/github/stars/AIPMAndy/dna-memory?style=flat-square) |
-| [skill-atlas](https://github.com/AIPMAndy/skill-atlas) | 🗺️ AI Agent Skill Search Engine — Cross-repo discovery & recommendations | ![Stars](https://img.shields.io/github/stars/AIPMAndy/skill-atlas?style=flat-square) |
+| [soskill](https://github.com/AIPMAndy/soskill) | 🔍 开源 Skill 搜索与聚合 | Skill Search & Aggregation | ![Stars](https://img.shields.io/github/stars/AIPMAndy/soskill?style=flat-square) |
 | [doubao-for-seniors](https://github.com/AIPMAndy/doubao-for-seniors) | 🧓 Doubao for Seniors — AI onboarding guide for 50+ users | ![Stars](https://img.shields.io/github/stars/AIPMAndy/doubao-for-seniors?style=flat-square) |
 
 ### 🤝 Let's Connect
@@ -47,7 +47,7 @@
 | [ai-invest-agent](https://github.com/AIPMAndy/ai-invest-agent) | 🔥 AI 投资 Agent — 从"拍脑袋"到"有体系" | ![Stars](https://img.shields.io/github/stars/AIPMAndy/ai-invest-agent?style=flat-square) |
 | [awesome-openclaw-skills-CN](https://github.com/AIPMAndy/awesome-openclaw-skills-CN) | 🇨🇳 2800+ OpenClaw Skills 中文整理 | ![Stars](https://img.shields.io/github/stars/AIPMAndy/awesome-openclaw-skills-CN?style=flat-square) |
 | [dna-memory](https://github.com/AIPMAndy/dna-memory) | 🧬 DNA 记忆系统 — 让 AI Agent 像人脑一样进化 | ![Stars](https://img.shields.io/github/stars/AIPMAndy/dna-memory?style=flat-square) |
-| [skill-atlas](https://github.com/AIPMAndy/skill-atlas) | 🗺️ AI Agent 技能搜索引擎 — 跨仓库检索、智能推荐 | ![Stars](https://img.shields.io/github/stars/AIPMAndy/skill-atlas?style=flat-square) |
+| [soskill](https://github.com/AIPMAndy/soskill) | 🔍 开源 Skill 搜索与聚合 | ![Stars](https://img.shields.io/github/stars/AIPMAndy/soskill?style=flat-square) |
 | [doubao-for-seniors](https://github.com/AIPMAndy/doubao-for-seniors) | 🧓 豆包长辈版 — 3分钟让爸妈开口问AI | ![Stars](https://img.shields.io/github/stars/AIPMAndy/doubao-for-seniors?style=flat-square) |
 
 ### 🤝 联系我
