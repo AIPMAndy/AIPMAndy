@@ -26,12 +26,6 @@
 | [skill-atlas](https://github.com/AIPMAndy/skill-atlas) | 🗺️ AI Agent Skill Search Engine — Cross-repo discovery & recommendations | ![Stars](https://img.shields.io/github/stars/AIPMAndy/skill-atlas?style=flat-square) |
 | [doubao-for-seniors](https://github.com/AIPMAndy/doubao-for-seniors) | 🧓 Doubao for Seniors — AI onboarding guide for 50+ users | ![Stars](https://img.shields.io/github/stars/AIPMAndy/doubao-for-seniors?style=flat-square) |
 
-### 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=AIPMAndy&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" />
-</p>
-
 ### 🤝 Let's Connect
 
 - 💬 **WeChat:** AIPMAndy
