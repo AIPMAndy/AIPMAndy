@@ -24,30 +24,11 @@ My mission: **Empower 8 billion people to achieve freedom through AI, and make h
 
 ## 🏠 Freedom House Theory
 
-**Andy's Freedom House** is a systematic framework for achieving personal freedom through AI:
+**Three Pillars:** Product builds capabilities → Investment validates judgment → IP amplifies influence.
 
-```
-         🏠 Freedom House
-              │
-    ┌─────────┼─────────┐
-    │         │         │
- 💡 IP    📦 Product  💰 Investment
-    │         │         │
-  Brand   Capability  Judgment
-    │         │         │
-    └─────────┼─────────┘
-         Amplify Loop
-```
+**Growth Flywheel:** Build → Validate → Share → Leverage → Repeat. Revenue and feedback flow back to Product.
 
-### The Three Pillars
-
-**🎯 Build → Validate → Share → Leverage → Repeat**
-
-1. **Product** → Build capabilities, create tools
-2. **Investment** → Validate judgment, allocate resources
-3. **IP** → Amplify influence, reach more people
-
-Revenue, data, and feedback flow back into Product, forming a sustainable growth flywheel.
+**Goal:** Systematic framework for achieving personal freedom through AI.
 
 ---
 
@@ -115,30 +96,11 @@ AI-powered investment framework for portfolio management, risk control, and mark
 
 ## 🏠 自由之屋理论
 
-**Andy 自由之屋**是通过 AI 实现个人自由的系统化框架：
+**三大支柱：** 产品构建能力 → 投资验证判断 → IP 放大影响。
 
-```
-         🏠 自由之屋
-              │
-    ┌─────────┼─────────┐
-    │         │         │
- 💡 IP    📦 产品   💰 投资
-    │         │         │
-  品牌     能力      判断
-    │         │         │
-    └─────────┼─────────┘
-         放大循环
-```
+**增长飞轮：** 构建 → 验证 → 分享 → 放大 → 重复。收入与反馈回流到产品。
 
-### 三大支柱
-
-**🎯 构建 → 验证 → 分享 → 放大 → 重复**
-
-1. **产品** → 构建能力，创造工具
-2. **投资** → 验证判断，配置资源
-3. **IP** → 放大影响，触达更多人
-
-收入、数据、反馈回流到产品，形成可持续增长飞轮。
+**目标：** 通过 AI 实现个人自由的系统化框架。
 
 ---
 
