@@ -93,20 +93,11 @@ AI-powered investment framework integrating portfolio management, risk control, 
 
 ---
 
-## 📊 Impact & Stats
+---
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=AIPMAndy&color=6C63FF&style=flat-square&label=Profile+Views" alt="Profile Views" />
 </p>
-
-### Top Projects by Validation (GitHub Stars)
-
-| Stars | Project | Category |
-|-------|---------|----------|
-| 100-149 | awesome-openclaw-skills-CN | Skill Gallery |
-| 50-99 | dna-memory, AndySoul, LivePPT, goskill | Product/IP |
-| 20-49 | ai-invest-agent, MDskill-Web, PPTskill | Investment/IP |
-| 10-19 | CEOskill, KnowMe, youzi-trading-skill | Product/Investment |
 
 ---
 
@@ -245,20 +236,9 @@ AI-powered investment framework integrating portfolio management, risk control, 
 
 ---
 
-## 📊 影响力与数据
-
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=AIPMAndy&color=6C63FF&style=flat-square&label=Profile+Views" alt="Profile Views" />
 </p>
-
-### 按验证度排名的顶级项目（GitHub Stars）
-
-| Stars | 项目 | 类别 |
-|-------|------|------|
-| 100-149 | awesome-openclaw-skills-CN | 技能画廊 |
-| 50-99 | dna-memory, AndySoul, LivePPT, goskill | 产品/IP |
-| 20-49 | ai-invest-agent, MDskill-Web, PPTskill | 投资/IP |
-| 10-19 | CEOskill, KnowMe, youzi-trading-skill | 产品/投资 |
 
 ---
 
