@@ -2,13 +2,7 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=6C63FF&center=true&vCenter=true&width=600&lines=Hey%2C+I'm+Andy+%F0%9F%91%8B;AI+Product+Expert;Building+Freedom+House+with+AI" alt="Typing SVG" />
 </h1>
 
-<p align="center">
-  <a href="#english">English</a> | <a href="#中文">中文</a>
-</p>
-
 ---
-
-<a name="english"></a>
 
 ## 🚀 About Me
 
@@ -66,9 +60,11 @@ AI-powered investment framework for portfolio management, risk control, and mark
 </p>
 
 ---
----
 
-<a name="中文"></a>
+<details>
+<summary><b>🇨🇳 中文版 (Click to expand)</b></summary>
+
+<br>
 
 ## 🚀 关于我
 
@@ -124,3 +120,5 @@ AI-powered investment framework for portfolio management, risk control, and mark
   ⭐ 觉得有用请点个 Star！<br>
   <strong>构建自由之屋，一次提交一次进步。</strong>
 </p>
+
+</details>
