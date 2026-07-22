@@ -53,43 +53,14 @@ Revenue, data, and feedback flow back into Product, forming a sustainable growth
 
 ## 🛠️ My Three Core Product Lines
 
-### 1️⃣ Andy IP Skill — Personal Brand Growth System
-**[andy-ip-skill](https://github.com/AIPMAndy/andy-ip-skill)**
+### 1️⃣ [Andy IP Skill](https://github.com/AIPMAndy/andy-ip-skill) — Personal Brand Growth
+Complete IP growth system from positioning to commercial conversion. End-to-end brand amplification, not just writing tools.
 
-Complete IP growth operating system from positioning, content production, distribution, review, to commercial conversion. Not just writing tools, but end-to-end brand amplification.
+### 2️⃣ [Andy Product Skill](https://github.com/AIPMAndy/andy-product-skill) — Product Decision Framework
+Product decision system integrating Jun Yu, Steve Jobs, Jeff Bezos, and Elon Musk methodologies. Auto-routes to the right framework for each scenario.
 
-**Ecosystem includes:**
-- **LivePPT** ⭐ 50-99 — HTML presentation & viral sharing
-- **MDskill-Web** ⭐ 20-49 — Content formatting & typography
-- **PPTskill** ⭐ 20-49 — Native editable PowerPoint generation
-- **KnowMe** ⭐ 10-19 — User insight & persona analysis
-- **Andy-Content-Checker** — Compliance for WeChat/Douyin/Xiaohongshu
-
----
-
-### 2️⃣ Andy Product Skill — Product Decision Framework
-**[andy-product-skill](https://github.com/AIPMAndy/andy-product-skill)**
-
-Product decision operating system integrating methodologies from Jun Yu, Steve Jobs, Jeff Bezos, Elon Musk, plus CEO strategy frameworks. Auto-routes to the right framework for each scenario.
-
-**Core verified assets:**
-- **CEOskill** ⭐ 10-19 — CEO decision-making system
-- **AndySoul** ⭐ 50-99 — AI personality framework
-- **dna-memory** ⭐ 50-99 — Long-term memory for AI agents
-- **goskill** ⭐ 50-99 — Goal-oriented skill orchestration
-
----
-
-### 3️⃣ Andy Investment Skill — Investment Decision System
-**[andy-invest-skill](https://github.com/AIPMAndy/andy-invest-skill)** 🆕
-
-AI-powered investment framework integrating portfolio management, risk control, and market intelligence. Not a stock recommendation bot, but a systematic approach to research, discipline, and review.
-
-**Core projects:**
-- **ai-invest-agent** ⭐ 20-49 — Portfolio management & analysis hub
-- **youzi-trading-skill** ⭐ 10-19 — A-share short-term trading discipline (v2.0)
-- **changying-index-fund-skill** — Long-term index investing
-- **FIREClaw** — Financial independence planning
+### 3️⃣ [Andy Investment Skill](https://github.com/AIPMAndy/andy-invest-skill) — Investment Decision System 🆕
+AI-powered investment framework for portfolio management, risk control, and market intelligence. Systematic research and discipline, not stock recommendations.
 
 ---
 
@@ -196,43 +167,14 @@ AI-powered investment framework integrating portfolio management, risk control, 
 
 ## 🛠️ 我的三条核心产品线
 
-### 1️⃣ Andy IP Skill — 个人品牌增长系统
-**[andy-ip-skill](https://github.com/AIPMAndy/andy-ip-skill)**
+### 1️⃣ [Andy IP Skill](https://github.com/AIPMAndy/andy-ip-skill) — 个人品牌增长
+从定位到商业转化的完整 IP 增长系统。端到端的品牌放大器，不只是写作工具。
 
-从定位、内容生产、分发、审核、复盘到商业转化的完整 IP 增长操作系统。不只是写作工具，而是端到端的品牌放大器。
+### 2️⃣ [Andy Product Skill](https://github.com/AIPMAndy/andy-product-skill) — 产品决策框架
+整合俞军、乔布斯、贝佐斯、马斯克产品方法论的决策系统。根据场景自动路由到正确的框架。
 
-**生态包含：**
-- **LivePPT** ⭐ 50-99 — HTML 演示与病毒式传播
-- **MDskill-Web** ⭐ 20-49 — 内容排版与美化
-- **PPTskill** ⭐ 20-49 — 原生可编辑 PPT 生成
-- **KnowMe** ⭐ 10-19 — 用户洞察与人设分析
-- **Andy-Content-Checker** — 微信/抖音/小红书内容合规
-
----
-
-### 2️⃣ Andy Product Skill — 产品决策框架
-**[andy-product-skill](https://github.com/AIPMAndy/andy-product-skill)**
-
-整合俞军、乔布斯、贝佐斯、马斯克产品方法论 + CEO 战略框架的产品决策操作系统。根据场景自动路由到正确的决策框架。
-
-**核心已验证资产：**
-- **CEOskill** ⭐ 10-19 — CEO 决策系统
-- **AndySoul** ⭐ 50-99 — AI 人格框架
-- **dna-memory** ⭐ 50-99 — AI Agent 长期记忆
-- **goskill** ⭐ 50-99 — 目标导向的技能编排
-
----
-
-### 3️⃣ Andy Investment Skill — 投资决策系统
-**[andy-invest-skill](https://github.com/AIPMAndy/andy-invest-skill)** 🆕
-
-整合投资记录、组合管理、复盘分析、风险评估与市场情报的 AI 投资框架。不是荐股机器人，而是帮你建立研究、纪律、复盘能力的系统。
-
-**核心项目：**
-- **ai-invest-agent** ⭐ 20-49 — 组合管理与复盘中枢
-- **youzi-trading-skill** ⭐ 10-19 — A 股短线交易纪律系统（v2.0）
-- **changying-index-fund-skill** — 长期指数投资
-- **FIREClaw** — 财务自由规划
+### 3️⃣ [Andy Investment Skill](https://github.com/AIPMAndy/andy-invest-skill) — 投资决策系统 🆕
+整合组合管理、风险控制与市场情报的 AI 投资框架。系统化研究与纪律，不是荐股机器人。
 
 ---
 
