@@ -24,11 +24,11 @@ My mission: **Empower 8 billion people to achieve freedom through AI, and make h
 
 ## 🏠 Freedom House Theory
 
-**Three Pillars:** Product builds capabilities → Investment validates judgment → IP amplifies influence.
+**Challenge & Solution:** Scaling Law accelerates AI → resource polarizes. Solution: Not one Iron Man, but 8 billion Iron Men through human-AI symbiosis.
 
-**Growth Flywheel:** Build → Validate → Share → Leverage → Repeat. Revenue and feedback flow back to Product.
+**Three Pillars:** Product builds capabilities → Investment validates judgment → IP amplifies influence. Build → Validate → Share → Leverage → Repeat.
 
-**Goal:** Systematic framework for achieving personal freedom through AI.
+**Vision:** Personal freedom through AI tools → 8 billion co-creating with AI → Multiplanetary civilization and sustainable energy.
 
 ---
 
@@ -45,21 +45,9 @@ AI-powered investment framework for portfolio management, risk control, and mark
 
 ---
 
----
-
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=AIPMAndy&color=6C63FF&style=flat-square&label=Profile+Views" alt="Profile Views" />
 </p>
-
----
-
-## 🎯 Core Philosophy
-
-**Challenge:** Scaling Law accelerates AI → resource distribution polarizes → structural tensions surface faster.
-
-**Solution:** Not one Iron Man, but 8 billion Iron Men. Human-AI symbiosis creates new equilibrium.
-
-**Vision:** Build AI tools for personal freedom → Enable 8 billion to co-create with AI → Multiplanetary civilization and sustainable energy for humanity.
 
 ---
 
@@ -96,11 +84,11 @@ AI-powered investment framework for portfolio management, risk control, and mark
 
 ## 🏠 自由之屋理论
 
-**三大支柱：** 产品构建能力 → 投资验证判断 → IP 放大影响。
+**挑战与解法：** Scaling Law 加速 AI → 资源极端化。解法：不是一个钢铁侠，而是 80 亿个钢铁侠的人机共生。
 
-**增长飞轮：** 构建 → 验证 → 分享 → 放大 → 重复。收入与反馈回流到产品。
+**三大支柱：** 产品构建能力 → 投资验证判断 → IP 放大影响。构建 → 验证 → 分享 → 放大 → 重复。
 
-**目标：** 通过 AI 实现个人自由的系统化框架。
+**愿景：** 通过 AI 工具实现个人自由 → 80 亿人与 AI 共创 → 多星球文明与可持续能源。
 
 ---
 
@@ -120,16 +108,6 @@ AI-powered investment framework for portfolio management, risk control, and mark
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=AIPMAndy&color=6C63FF&style=flat-square&label=Profile+Views" alt="Profile Views" />
 </p>
-
----
-
-## 🎯 核心理念
-
-**挑战：** Scaling Law 加速 AI 增长 → 资源分配极端化 → 结构性矛盾更快浮现。
-
-**解法：** 不是一个钢铁侠，而是 80 亿个钢铁侠。人机共生创造新平衡。
-
-**愿景：** 打造 AI 工具实现个人自由 → 让 80 亿人与 AI 共创 → 多星球文明与可持续能源。
 
 ---
 
