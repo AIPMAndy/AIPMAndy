@@ -72,36 +72,13 @@ AI-powered investment framework for portfolio management, risk control, and mark
 
 ---
 
-## 🎯 Philosophy
+## 🎯 Core Philosophy
 
-### Why AI + Human Symbiosis Matters
+**Challenge:** Scaling Law accelerates AI → resource distribution polarizes → structural tensions surface faster.
 
-**The Challenge:**
-- Scaling Law accelerates AI capabilities exponentially
-- Social efficiency increases → resource distribution polarizes
-- Globalization + AI → structural tensions surface faster
+**Solution:** Not one Iron Man, but 8 billion Iron Men. Human-AI symbiosis creates new equilibrium.
 
-**The Solution:**
-- Not one superhuman with AI, but everyone empowered by AI
-- Human-AI symbiosis creates a new equilibrium
-- **If everyone is Iron Man, the world achieves peace**
-
-### Core Principles
-
-- **First Principles Thinking** — Start from fundamental truths, not analogies
-- **Trade-off Mindset** — Every solution has costs, no perfect answers
-- **Iteration > Planning** — Evolve through experimentation, not one-shot perfection
-- **Delete → Simplify → Accelerate → Automate** (Musk's 5-step engineering method)
-
----
-
-## 🌍 Vision
-
-**Short-term:** Build AI tools that help people gain freedom in brand, product, and investment
-
-**Mid-term:** Enable 8 billion people to co-create with AI, balancing AGI risks with distributed capabilities
-
-**Long-term:** Multiplanetary civilization backup, full-chain sustainable energy, human wisdom shining across the universe
+**Vision:** Build AI tools for personal freedom → Enable 8 billion to co-create with AI → Multiplanetary civilization and sustainable energy for humanity.
 
 ---
 
@@ -186,34 +163,11 @@ AI-powered investment framework for portfolio management, risk control, and mark
 
 ## 🎯 核心理念
 
-### 为什么 AI + 人类共生很重要
+**挑战：** Scaling Law 加速 AI 增长 → 资源分配极端化 → 结构性矛盾更快浮现。
 
-**挑战：**
-- Scaling Law 让 AI 能力指数级增长
-- 社会效率提高 → 资源分配极端化
-- 全球化 + AI → 结构性矛盾更快浮现
+**解法：** 不是一个钢铁侠，而是 80 亿个钢铁侠。人机共生创造新平衡。
 
-**解法：**
-- 不是一个超人拥有 AI，而是所有人都被 AI 赋能
-- 人机共生创造新平衡
-- **如果大家都是钢铁侠，世界反而和平**
-
-### 核心原则
-
-- **第一性原理** — 从基本事实推导，不依赖类比
-- **权衡思维** — 所有方案有成本，没有完美解决方案
-- **迭代 > 规划** — 通过试验演化，不追求一次性完美
-- **删除 → 简化 → 加速 → 自动化**（马斯克五步工程法）
-
----
-
-## 🌍 愿景
-
-**短期：** 打造 AI 工具，帮助人们在品牌、产品、投资上获得自由
-
-**中期：** 让 80 亿人与 AI 共创，用分布式能力平衡 AGI 风险
-
-**长期：** 多星球文明备份、全链路可持续能源、人类智慧闪耀宇宙
+**愿景：** 打造 AI 工具实现个人自由 → 让 80 亿人与 AI 共创 → 多星球文明与可持续能源。
 
 ---
 
