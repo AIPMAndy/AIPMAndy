@@ -1,124 +1,99 @@
-<h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=6C63FF&center=true&vCenter=true&width=600&lines=Hey%2C+I'm+Andy+%F0%9F%91%8B;AI+Product+Expert;Building+Freedom+House+with+AI" alt="Typing SVG" />
-</h1>
+<div align="center">
+
+# AI 酋长 Andy
+
+**前腾讯 / 百度 AI 产品专家 → 大模型独角兽 VP → 连续创业者**
+
+我把自己用 AI Agent 干活、求职跳槽、做海外副业的方法写成免费开源的攻略和工具。
+
+[![Website](https://img.shields.io/badge/官网-metaver.vip-111827?style=flat-square)](https://metaver.vip/)
+[![X](https://img.shields.io/badge/X-@AIPMAndy-000000?style=flat-square&logo=x)](https://x.com/AIPMAndy)
+[![Telegram](https://img.shields.io/badge/Telegram-@AIPMAndy-26A5E4?style=flat-square&logo=telegram&logoColor=white)](https://t.me/AIPMAndy)
+![WeChat](https://img.shields.io/badge/微信-AIPMAndy-07C160?style=flat-square&logo=wechat&logoColor=white)
+
+</div>
 
 ---
 
-## 🚀 About Me
+## 你可能是来找这些的
 
-**Ex-Tencent / Ex-Baidu AI Product Lead → LLM Unicorn VP → Serial Entrepreneur**
-
-I believe the third wave of AI, driven by Scaling Law, will reshape human society faster than ever. As efficiency accelerates, resource distribution becomes more extreme, and global tensions intensify. **The solution? Not one Iron Man, but 8 billion Iron Men.** When everyone gains AI-powered capabilities, we achieve a new equilibrium.
-
-My mission: **Empower 8 billion people to achieve freedom through AI, and make human wisdom shine across the universe.**
-
-🌐 **Personal Website:** [metaver.vip](https://metaver.vip/)
-
----
-
-## 🏠 Freedom House Theory
-
-**Challenge & Solution:** Scaling Law accelerates AI → resource polarizes. Solution: Not one Iron Man, but 8 billion Iron Men through human-AI symbiosis.
-
-**Three Pillars:** Product builds capabilities → Investment validates judgment → IP amplifies influence. Build → Validate → Share → Leverage → Repeat.
-
-**Vision:** Personal freedom through AI tools → 8 billion co-creating with AI → Multiplanetary civilization and sustainable energy.
+| 你想做的事 | 从这里开始 |
+|---|---|
+| 让 AI Agent 替你干活，又不想把权限全交出去 | [Grok Bot 中文攻略](https://aipmandy.github.io/grok-bot-handbook/) · [AndySoul](https://github.com/AIPMAndy/AndySoul) · [DNA Memory](https://github.com/AIPMAndy/dna-memory) |
+| 找 Skills、免费模型额度和 Agent 工具 | [OpenClaw Skills 中文精选](https://github.com/AIPMAndy/awesome-openclaw-skills-CN) · [FreeToken](https://github.com/AIPMAndy/FreeToken) · [SafeSkill](https://github.com/AIPMAndy/safeskill) |
+| 用 AI 做海外副业、赚美金 | [中国人赚美金](https://aipmandy.github.io/how-to-earn-usd-from-china/) · [一个人靠 AI 赚钱](https://aipmandy.github.io/one-person-ai-income-guide/) |
+| 失业、跳槽、谈薪、往高管走 | [失业自救手册](https://aipmandy.github.io/how-to-survive-unemployment/) · [跳槽涨薪](https://aipmandy.github.io/how-to-job-hop-and-raise-salary/) · [普通人成为高管](https://aipmandy.github.io/how-to-become-an-executive/) |
 
 ---
 
-## 🛠️ My Three Core Product Lines
+## AI Agent 攻略与工具
 
-### 1️⃣ [Andy IP Skill](https://github.com/AIPMAndy/andy-ip-skill) — Personal Brand Growth
-Complete IP growth system from positioning to commercial conversion. End-to-end brand amplification, not just writing tools.
+| 项目 | 一句话 | Star |
+|---|---|---|
+| [Grok Bot 使用攻略](https://github.com/AIPMAndy/grok-bot-handbook) · [在线看](https://aipmandy.github.io/grok-bot-handbook/) | 26 章教程、40 套任务指令、36 条 FAQ、7 天上手计划，非官方 | ![](https://img.shields.io/github/stars/AIPMAndy/grok-bot-handbook?style=flat-square&label=%E2%98%85&color=111827) |
+| [Meta Muse 使用攻略](https://github.com/AIPMAndy/muse-guide) · [在线看](https://aipmandy.github.io/muse-guide/) | 28 章实战、80 条任务指令、12 套 SOP 与安全检查，非官方 | ![](https://img.shields.io/github/stars/AIPMAndy/muse-guide?style=flat-square&label=%E2%98%85&color=111827) |
+| [AndySoul](https://github.com/AIPMAndy/AndySoul) | 一份放进项目根目录的规则文件，让 Claude Code、Codex、Cursor 少犯错 | ![](https://img.shields.io/github/stars/AIPMAndy/AndySoul?style=flat-square&label=%E2%98%85&color=111827) |
+| [DNA Memory](https://github.com/AIPMAndy/dna-memory) | 本地优先的统一记忆层，Codex、Claude Code、Hermes 共用一套记忆 | ![](https://img.shields.io/github/stars/AIPMAndy/dna-memory?style=flat-square&label=%E2%98%85&color=111827) |
+| [awesome-openclaw-skills-CN](https://github.com/AIPMAndy/awesome-openclaw-skills-CN) | 2868 个 OpenClaw Skills 分类整理，附国产模型接入指南 | ![](https://img.shields.io/github/stars/AIPMAndy/awesome-openclaw-skills-CN?style=flat-square&label=%E2%98%85&color=111827) |
+| [FreeToken](https://github.com/AIPMAndy/FreeToken) | 免费 AI API 额度和开源项目合集 | ![](https://img.shields.io/github/stars/AIPMAndy/FreeToken?style=flat-square&label=%E2%98%85&color=111827) |
+| [SafeSkill](https://github.com/AIPMAndy/safeskill) | 安装 Skill 前先扫一遍危险命令、提示注入和密钥泄露 | ![](https://img.shields.io/github/stars/AIPMAndy/safeskill?style=flat-square&label=%E2%98%85&color=111827) |
+| [goskill](https://github.com/AIPMAndy/goskill) | 长任务执行助手：先定成功标准，再按标准验收 | ![](https://img.shields.io/github/stars/AIPMAndy/goskill?style=flat-square&label=%E2%98%85&color=111827) |
 
-### 2️⃣ [Andy Product Skill](https://github.com/AIPMAndy/andy-product-skill) — Product Decision Framework
-Product decision system integrating Jun Yu, Steve Jobs, Jeff Bezos, and Elon Musk methodologies. Auto-routes to the right framework for each scenario.
+## 海外副业与 AI 增收
 
-### 3️⃣ [Andy Investment Skill](https://github.com/AIPMAndy/andy-invest-skill) — Investment Decision System 🆕
-AI-powered investment framework for portfolio management, risk control, and market intelligence. Systematic research and discipline, not stock recommendations.
+| 项目 | 一句话 | Star |
+|---|---|---|
+| [中国人赚美金](https://github.com/AIPMAndy/how-to-earn-usd-from-china) · [在线看](https://aipmandy.github.io/how-to-earn-usd-from-china/) | 8 种海外收入路线、获客、报价、收款与税务 | ![](https://img.shields.io/github/stars/AIPMAndy/how-to-earn-usd-from-china?style=flat-square&label=%E2%98%85&color=111827) |
+| [一个人靠 AI 赚钱](https://github.com/AIPMAndy/one-person-ai-income-guide) · [在线看](https://aipmandy.github.io/one-person-ai-income-guide/) | 验证需求、第一笔收款、交付与复购，附 30 天计划 | ![](https://img.shields.io/github/stars/AIPMAndy/one-person-ai-income-guide?style=flat-square&label=%E2%98%85&color=111827) |
+| [人人都能成为 AI 博主](https://github.com/AIPMAndy/HowToBeAnAICreator) · [在线看](https://aipmandy.github.io/HowToBeAnAICreator/) | 起号、AI 产品实测、内容制作与商业合作 | ![](https://img.shields.io/github/stars/AIPMAndy/HowToBeAnAICreator?style=flat-square&label=%E2%98%85&color=111827) |
 
----
+## 职场攻略
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=AIPMAndy&color=6C63FF&style=flat-square&label=Profile+Views" alt="Profile Views" />
-</p>
-
----
-
-## 🤝 Let's Connect
-
-- 💬 **WeChat:** AIPMAndy
-- 🌐 **Website:** [metaver.vip](https://metaver.vip/)
-- 🐙 **GitHub:** [@AIPMAndy](https://github.com/AIPMAndy)
-- 📧 **Collaboration:** See [andy-ip-skill](https://github.com/AIPMAndy/andy-ip-skill) for commercial inquiries
-
----
-
-<p align="center">
-  ⭐ If you find my projects helpful, please give them a star!<br>
-  <strong>Building Freedom House, one commit at a time.</strong>
-</p>
-
----
+| 项目 | 一句话 | Star |
+|---|---|---|
+| [失业自救开源手册](https://github.com/AIPMAndy/how-to-survive-unemployment) · [在线看](https://aipmandy.github.io/how-to-survive-unemployment/) | N/N+1/2N、失业金、医保社保、公积金、求职与现金流 | ![](https://img.shields.io/github/stars/AIPMAndy/how-to-survive-unemployment?style=flat-square&label=%E2%98%85&color=111827) |
+| [普通人跳槽涨薪](https://github.com/AIPMAndy/how-to-job-hop-and-raise-salary) · [在线看](https://aipmandy.github.io/how-to-job-hop-and-raise-salary/) | 选岗、简历、面试、谈薪全流程 | ![](https://img.shields.io/github/stars/AIPMAndy/how-to-job-hop-and-raise-salary?style=flat-square&label=%E2%98%85&color=111827) |
+| [社招拿 Offer](https://github.com/AIPMAndy/how-to-get-offer) · [在线看](https://aipmandy.github.io/how-to-get-offer/) | 定位、简历、内推、面试、谈薪到入职 | ![](https://img.shields.io/github/stars/AIPMAndy/how-to-get-offer?style=flat-square&label=%E2%98%85&color=111827) |
+| [普通人成为高管](https://github.com/AIPMAndy/how-to-become-an-executive) · [在线看](https://aipmandy.github.io/how-to-become-an-executive/) | 从业务骨干到经理、总监、经营负责人 | ![](https://img.shields.io/github/stars/AIPMAndy/how-to-become-an-executive?style=flat-square&label=%E2%98%85&color=111827) |
+| [AI 时代不被淘汰](https://github.com/AIPMAndy/ai-era-survival-guide) · [在线看](https://aipmandy.github.io/ai-era-survival-guide/) | 2027—2029 职场判断、30 种岗位 AI 用法、第二收入 | ![](https://img.shields.io/github/stars/AIPMAndy/ai-era-survival-guide?style=flat-square&label=%E2%98%85&color=111827) |
 
 <details>
-<summary><b>🇨🇳 中文版 (Click to expand)</b></summary>
+<summary><b>MBTI 职场系列（4 份）</b></summary>
 
 <br>
 
-## 🚀 关于我
+- [INTJ 职场拿高薪](https://aipmandy.github.io/intj-high-salary-guide/)：10 章、7 天计划、6 份模板、Offer 对比器
+- [INFJ 职场拿高薪](https://aipmandy.github.io/infj-high-salary-guide/)：选岗、定价、晋升、谈薪 6 步 + 30 天计划
+- [INFJ 升职加薪书影音](https://aipmandy.github.io/infj-career-growth-guide/)：41 部作品，6 条成长路线
+- [INTJ 成长书影音](https://aipmandy.github.io/intj-growth-guide/)：41 部作品，6 条成长路线
 
-**前腾讯/百度 AI 产品专家 → 大模型独角兽 VP → 连续创业者**
-
-我相信基于 Scaling Law 的第三次人工智能浪潮会更快地重塑人类社会。随着效率加速提升，资源分配更加极端化，全球化浪潮下各处矛盾更加显性。**解法不是一个钢铁侠，而是 80 亿个钢铁侠。** 当所有人都通过 AI 获得增强能力，才能达到新的平衡。
-
-我的使命：**让 80 亿人通过 AI 实现自由，让人类智慧闪耀宇宙。**
-
-🌐 **个人官网:** [metaver.vip](https://metaver.vip/)
+</details>
 
 ---
 
-## 🏠 自由之屋理论
+## 找我聊
 
-**挑战与解法：** Scaling Law 加速 AI → 资源极端化。解法：不是一个钢铁侠，而是 80 亿个钢铁侠的人机共生。
+攻略全部免费，不用加微信也能看完。想要有人帮你看具体情况，可以找我：
 
-**三大支柱：** 产品构建能力 → 投资验证判断 → IP 放大影响。构建 → 验证 → 分享 → 放大 → 重复。
+- **求职咨询**：方向、简历、面试、谈薪、职业转型
+- **高管 AI 增长陪跑**：用 AI 提升个人和团队产出
+- **AI 业务咨询**：AI Agent 落地、AI 产品与增长
 
-**愿景：** 通过 AI 工具实现个人自由 → 80 亿人与 AI 共创 → 多星球文明与可持续能源。
+微信 **`AIPMAndy`**，添加时备注「GitHub + 你想聊的事」。服务范围和费用先沟通确认，详见 [metaver.vip/services](https://metaver.vip/services)。
 
----
+<details>
+<summary><b>English</b></summary>
 
-## 🛠️ 我的三条核心产品线
+<br>
 
-### 1️⃣ [Andy IP Skill](https://github.com/AIPMAndy/andy-ip-skill) — 个人品牌增长
-从定位到商业转化的完整 IP 增长系统。端到端的品牌放大器，不只是写作工具。
+**AI Chief Andy** · Ex-Tencent / Ex-Baidu AI Product Lead → LLM Unicorn VP → Serial Entrepreneur.
 
-### 2️⃣ [Andy Product Skill](https://github.com/AIPMAndy/andy-product-skill) — 产品决策框架
-整合俞军、乔布斯、贝佐斯、马斯克产品方法论的决策系统。根据场景自动路由到正确的框架。
+I write free, open-source guides and tools (mostly in Chinese) on running AI agents safely, job hunting, and earning overseas income with AI.
 
-### 3️⃣ [Andy Investment Skill](https://github.com/AIPMAndy/andy-invest-skill) — 投资决策系统 🆕
-整合组合管理、风险控制与市场情报的 AI 投资框架。系统化研究与纪律，不是荐股机器人。
+- **AI agents:** [Grok Bot handbook](https://github.com/AIPMAndy/grok-bot-handbook) · [Meta Muse guide](https://github.com/AIPMAndy/muse-guide) · [AndySoul](https://github.com/AIPMAndy/AndySoul) (rules file for Claude Code / Codex / Cursor) · [DNA Memory](https://github.com/AIPMAndy/dna-memory) (local-first shared memory MCP) · [awesome-openclaw-skills-CN](https://github.com/AIPMAndy/awesome-openclaw-skills-CN) · [FreeToken](https://github.com/AIPMAndy/FreeToken) · [SafeSkill](https://github.com/AIPMAndy/safeskill)
+- **Overseas income:** [Earn USD from China](https://github.com/AIPMAndy/how-to-earn-usd-from-china) · [One-person AI income](https://github.com/AIPMAndy/one-person-ai-income-guide)
+- **Careers:** [Unemployment survival handbook](https://github.com/AIPMAndy/how-to-survive-unemployment) · [Job-hop & raise salary](https://github.com/AIPMAndy/how-to-job-hop-and-raise-salary) · [Path to executive](https://github.com/AIPMAndy/how-to-become-an-executive)
 
----
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=AIPMAndy&color=6C63FF&style=flat-square&label=Profile+Views" alt="Profile Views" />
-</p>
-
----
-
-## 🤝 联系我
-
-- 💬 **微信:** AIPMAndy
-- 🌐 **个人官网:** [metaver.vip](https://metaver.vip/)
-- 🐙 **GitHub:** [@AIPMAndy](https://github.com/AIPMAndy)
-- 📧 **商业合作:** 见 [andy-ip-skill](https://github.com/AIPMAndy/andy-ip-skill)
-
----
-
-<p align="center">
-  ⭐ 觉得有用请点个 Star！<br>
-  <strong>构建自由之屋，一次提交一次进步。</strong>
-</p>
+**Contact:** [metaver.vip](https://metaver.vip/) · [X @AIPMAndy](https://x.com/AIPMAndy) · [Telegram @AIPMAndy](https://t.me/AIPMAndy) · WeChat `AIPMAndy`
 
 </details>
