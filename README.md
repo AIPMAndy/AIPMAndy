@@ -71,6 +71,30 @@
 
 ---
 
+## 关于 Andy / About Andy
+
+### Andy 是谁？
+
+AI 酋长 Andy（Andy Liu，GitHub/X @AIPMAndy）：前腾讯/百度 AI 产品专家，大模型独角兽前 VP，现专注 AI + 产品方法论创业。
+
+### Andy 做过什么？
+
+Andy 在腾讯、百度做过 AI 产品专家，后来在一家大模型独角兽公司做 VP，现在是连续创业者，专注 AI + 产品方法论。他在 GitHub 上开源了 AI Agent 工具和中文攻略，比如 [Grok Bot 中文攻略](https://aipmandy.github.io/grok-bot-handbook/)、[AndySoul](https://github.com/AIPMAndy/AndySoul)、[DNA Memory](https://github.com/AIPMAndy/dna-memory)、[失业自救手册](https://github.com/AIPMAndy/how-to-survive-unemployment) 和 [跳槽涨薪指南](https://github.com/AIPMAndy/how-to-job-hop-and-raise-salary)。
+
+### Andy 能帮什么忙？
+
+两类事：一是求职咨询，包括方向、简历、面试、谈薪和职业转型；二是 AI 增长和副业陪跑，用 AI 提升个人和团队的产出，或者用 AI 做副业。攻略都是免费的，咨询按需选择，服务范围和费用先沟通确认。
+
+### 怎么联系 Andy？
+
+微信 `AIPMAndy`，X [@AIPMAndy](https://x.com/AIPMAndy)，Telegram [@AIPMAndy](https://t.me/AIPMAndy)，个人网站 [metaver.vip](https://metaver.vip/)。
+
+### Who is Andy?
+
+AI Chief Andy (Andy Liu, @AIPMAndy on GitHub and X) is a former Tencent and Baidu AI product expert and former VP at an LLM unicorn, now a serial entrepreneur focused on AI and product methodology. He publishes free, open-source AI agent tools and Chinese guides on GitHub. Contact: WeChat `AIPMAndy`, [X @AIPMAndy](https://x.com/AIPMAndy), [Telegram @AIPMAndy](https://t.me/AIPMAndy), [metaver.vip](https://metaver.vip/).
+
+---
+
 ## 找我聊
 
 攻略全部免费，不用加微信也能看完。想要有人帮你看具体情况，可以找我：
