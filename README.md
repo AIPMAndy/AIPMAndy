@@ -22,6 +22,7 @@
 | 让 AI Agent 替你干活，又不想把权限全交出去 | [Grok Bot 中文攻略](https://aipmandy.github.io/grok-bot-handbook/) · [AndySoul](https://github.com/AIPMAndy/AndySoul) · [DNA Memory](https://github.com/AIPMAndy/dna-memory) |
 | 找 Skills、免费模型额度和 Agent 工具 | [OpenClaw Skills 中文精选](https://github.com/AIPMAndy/awesome-openclaw-skills-CN) · [FreeToken](https://github.com/AIPMAndy/FreeToken) · [SafeSkill](https://github.com/AIPMAndy/safeskill) |
 | 用 AI 做海外副业、赚美金 | [中国人赚美金](https://aipmandy.github.io/how-to-earn-usd-from-china/) · [一个人靠 AI 赚钱](https://aipmandy.github.io/one-person-ai-income-guide/) |
+| 靠 GitHub、X、Threads、ChatGPT 赚钱 | [GitHub 赚钱](https://aipmandy.github.io/github-income-handbook/) · [X 赚钱](https://aipmandy.github.io/x-income-handbook/) · [Threads 赚钱](https://aipmandy.github.io/threads-income-handbook/) · [ChatGPT 赚钱](https://aipmandy.github.io/chatgpt-income-handbook/) |
 | 失业、跳槽、谈薪、往高管走 | [失业自救手册](https://aipmandy.github.io/how-to-survive-unemployment/) · [跳槽涨薪](https://aipmandy.github.io/how-to-job-hop-and-raise-salary/) · [普通人成为高管](https://aipmandy.github.io/how-to-become-an-executive/) |
 
 ---
@@ -32,6 +33,7 @@
 |---|---|---|
 | [Grok Bot 使用攻略](https://github.com/AIPMAndy/grok-bot-handbook) · [在线看](https://aipmandy.github.io/grok-bot-handbook/) | 26 章教程、40 套任务指令、36 条 FAQ、7 天上手计划，非官方 | ![](https://img.shields.io/github/stars/AIPMAndy/grok-bot-handbook?style=flat-square&label=%E2%98%85&color=111827) |
 | [Meta Muse 使用攻略](https://github.com/AIPMAndy/muse-guide) · [在线看](https://aipmandy.github.io/muse-guide/) | 28 章实战、80 条任务指令、12 套 SOP 与安全检查，非官方 | ![](https://img.shields.io/github/stars/AIPMAndy/muse-guide?style=flat-square&label=%E2%98%85&color=111827) |
+| [REA 逆向工程中文指南](https://github.com/AIPMAndy/rea-guide-cn) · [在线看](https://aipmandy.github.io/rea-guide-cn/) | 38 章教程、64 条任务指令，只用于获得授权的逆向工程，非官方 | ![](https://img.shields.io/github/stars/AIPMAndy/rea-guide-cn?style=flat-square&label=%E2%98%85&color=111827) |
 | [AndySoul](https://github.com/AIPMAndy/AndySoul) | 一份放进项目根目录的规则文件，让 Claude Code、Codex、Cursor 少犯错 | ![](https://img.shields.io/github/stars/AIPMAndy/AndySoul?style=flat-square&label=%E2%98%85&color=111827) |
 | [DNA Memory](https://github.com/AIPMAndy/dna-memory) | 本地优先的统一记忆层，Codex、Claude Code、Hermes 共用一套记忆 | ![](https://img.shields.io/github/stars/AIPMAndy/dna-memory?style=flat-square&label=%E2%98%85&color=111827) |
 | [awesome-openclaw-skills-CN](https://github.com/AIPMAndy/awesome-openclaw-skills-CN) | 2868 个 OpenClaw Skills 分类整理，附国产模型接入指南 | ![](https://img.shields.io/github/stars/AIPMAndy/awesome-openclaw-skills-CN?style=flat-square&label=%E2%98%85&color=111827) |
@@ -46,6 +48,10 @@
 | [中国人赚美金](https://github.com/AIPMAndy/how-to-earn-usd-from-china) · [在线看](https://aipmandy.github.io/how-to-earn-usd-from-china/) | 8 种海外收入路线、获客、报价、收款与税务 | ![](https://img.shields.io/github/stars/AIPMAndy/how-to-earn-usd-from-china?style=flat-square&label=%E2%98%85&color=111827) |
 | [一个人靠 AI 赚钱](https://github.com/AIPMAndy/one-person-ai-income-guide) · [在线看](https://aipmandy.github.io/one-person-ai-income-guide/) | 验证需求、第一笔收款、交付与复购，附 30 天计划 | ![](https://img.shields.io/github/stars/AIPMAndy/one-person-ai-income-guide?style=flat-square&label=%E2%98%85&color=111827) |
 | [人人都能成为 AI 博主](https://github.com/AIPMAndy/HowToBeAnAICreator) · [在线看](https://aipmandy.github.io/HowToBeAnAICreator/) | 起号、AI 产品实测、内容制作与商业合作 | ![](https://img.shields.io/github/stars/AIPMAndy/HowToBeAnAICreator?style=flat-square&label=%E2%98%85&color=111827) |
+| [GitHub 赚钱实战指南](https://github.com/AIPMAndy/github-income-handbook) · [在线看](https://aipmandy.github.io/github-income-handbook/) | 20 章教程、7 条变现路径、30 天执行计划 | ![](https://img.shields.io/github/stars/AIPMAndy/github-income-handbook?style=flat-square&label=%E2%98%85&color=111827) |
+| [X (Twitter) 赚钱实战指南](https://github.com/AIPMAndy/x-income-handbook) · [在线看](https://aipmandy.github.io/x-income-handbook/) | 26 章教程、7 条变现路径、24 套模板 | ![](https://img.shields.io/github/stars/AIPMAndy/x-income-handbook?style=flat-square&label=%E2%98%85&color=111827) |
+| [Threads 赚钱实战指南](https://github.com/AIPMAndy/threads-income-handbook) · [在线看](https://aipmandy.github.io/threads-income-handbook/) | 24 章教程、6 条商业路径、24 份模板 | ![](https://img.shields.io/github/stars/AIPMAndy/threads-income-handbook?style=flat-square&label=%E2%98%85&color=111827) |
+| [用 ChatGPT 赚钱](https://github.com/AIPMAndy/chatgpt-income-handbook) · [在线看](https://aipmandy.github.io/chatgpt-income-handbook/) | 34 章教程、10 个服务包、64 套提示词，从零到第一份可交付服务 | ![](https://img.shields.io/github/stars/AIPMAndy/chatgpt-income-handbook?style=flat-square&label=%E2%98%85&color=111827) |
 
 ## 职场攻略
 
@@ -115,7 +121,7 @@ AI Chief Andy (Andy Liu, @AIPMAndy on GitHub and X) is a former Tencent and Baid
 I write free, open-source guides and tools (mostly in Chinese) on running AI agents safely, job hunting, and earning overseas income with AI.
 
 - **AI agents:** [Grok Bot handbook](https://github.com/AIPMAndy/grok-bot-handbook) · [Meta Muse guide](https://github.com/AIPMAndy/muse-guide) · [AndySoul](https://github.com/AIPMAndy/AndySoul) (rules file for Claude Code / Codex / Cursor) · [DNA Memory](https://github.com/AIPMAndy/dna-memory) (local-first shared memory MCP) · [awesome-openclaw-skills-CN](https://github.com/AIPMAndy/awesome-openclaw-skills-CN) · [FreeToken](https://github.com/AIPMAndy/FreeToken) · [SafeSkill](https://github.com/AIPMAndy/safeskill)
-- **Overseas income:** [Earn USD from China](https://github.com/AIPMAndy/how-to-earn-usd-from-china) · [One-person AI income](https://github.com/AIPMAndy/one-person-ai-income-guide)
+- **Overseas income:** [Earn USD from China](https://github.com/AIPMAndy/how-to-earn-usd-from-china) · [One-person AI income](https://github.com/AIPMAndy/one-person-ai-income-guide) · [Make money with GitHub](https://github.com/AIPMAndy/github-income-handbook) · [Make money on X](https://github.com/AIPMAndy/x-income-handbook) · [Make money on Threads](https://github.com/AIPMAndy/threads-income-handbook) · [Make money with ChatGPT](https://github.com/AIPMAndy/chatgpt-income-handbook)
 - **Careers:** [Unemployment survival handbook](https://github.com/AIPMAndy/how-to-survive-unemployment) · [Job-hop & raise salary](https://github.com/AIPMAndy/how-to-job-hop-and-raise-salary) · [Path to executive](https://github.com/AIPMAndy/how-to-become-an-executive)
 
 **Contact:** [metaver.vip](https://metaver.vip/) · [X @AIPMAndy](https://x.com/AIPMAndy) · [Telegram @AIPMAndy](https://t.me/AIPMAndy) · WeChat `AIPMAndy`
