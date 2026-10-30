@@ -4,7 +4,7 @@
 
 **前腾讯/百度 AI 产品负责人 → 大模型公司 VP → AI 创业者**
 
-我把求职和 AI Agent 的实战经验写成免费开源的手册和工具。
+面向企业做 AI 获客，面向个人做高管 AI 陪跑；实战经验也开源成免费的手册和工具。
 
 [![Website](https://img.shields.io/badge/官网-metaver.vip-111827?style=flat-square)](https://metaver.vip/)
 [![X](https://img.shields.io/badge/X-@AIPMAndy-000000?style=flat-square&logo=x)](https://x.com/AIPMAndy)
@@ -16,7 +16,7 @@
 
 ## 关于 Andy
 
-AI 酋长 Andy（Andy Liu，GitHub / X：@AIPMAndy），前腾讯/百度 AI 产品负责人，曾任大模型公司 VP，现在是 AI 创业者，运营星觉科技。在 GitHub 上开源免费的中文职场手册（失业自救、跳槽涨薪、社招拿 Offer、成为高管）和 AI Agent 工具（FreeToken、AndySoul、DNA Memory、PPTskill 等），同时提供求职咨询和 AI 副业陪跑。个人网站：[metaver.vip](https://metaver.vip/)。
+AI 酋长 Andy（Andy Liu，GitHub / X：@AIPMAndy），前腾讯/百度 AI 产品负责人，曾任大模型公司 VP，现在是 AI 创业者，运营星觉科技：面向企业提供 AI + IP 获客服务，面向个人提供高管 AI 陪跑，以及求职陪跑、职场人副业陪跑和个人 AI + IP 陪跑。同时在 GitHub 上开源免费的中文职场手册（失业自救、跳槽涨薪、社招拿 Offer、成为高管）和 AI Agent 工具（FreeToken、AndySoul、DNA Memory、PPTskill 等）。个人网站：[metaver.vip](https://metaver.vip/)。
 
 ## 三个旗舰
 
@@ -26,15 +26,21 @@ AI 酋长 Andy（Andy Liu，GitHub / X：@AIPMAndy），前腾讯/百度 AI 产�
 | [FreeToken](https://github.com/AIPMAndy/FreeToken) · [在线看](https://aipmandy.github.io/FreeToken/) | 免费 AI API 额度大全：Gemini、OpenRouter、Groq、DeepSeek、硅基流动等，定期复核 | ![](https://img.shields.io/github/stars/AIPMAndy/FreeToken?style=flat-square&label=%E2%98%85&color=111827) |
 | [AndySoul](https://github.com/AIPMAndy/AndySoul) + [DNA Memory](https://github.com/AIPMAndy/dna-memory) | 让 Claude Code / Codex 少返工的规则文件，加上跨工具共用的长期记忆 MCP | ![](https://img.shields.io/github/stars/AIPMAndy/AndySoul?style=flat-square&label=%E2%98%85&color=111827) ![](https://img.shields.io/github/stars/AIPMAndy/dna-memory?style=flat-square&label=%E2%98%85&color=111827) |
 
-## 找我帮忙
+## 合作与服务
 
-手册全部免费，不加微信也能看完。想要有人看你的具体情况：
+**企业**
 
-- **求职咨询**：400 元/次 · **求职陪跑**：4,500 元（方向、简历、面试、谈薪、转型）
-- **AI 副业陪跑**：4,500 元
-- **IPClaw**：AI 驱动的个人 IP 内容引擎
+- **企业 AI + IP 获客**：搭建创始人和员工 IP 矩阵，用 AI 提高内容生产效率，跟踪线索与转化
+- **IPClaw**：AI 驱动的 IP 内容引擎
 
-微信 **`AIPMAndy`**，添加时备注「GitHub + 你想聊的事」。详见 [metaver.vip/services](https://metaver.vip/services)。
+**个人**
+
+- **高管 AI 陪跑**：晋升、管理与 AI 转型，落到真实工作里
+- **求职陪跑与咨询**：方向、简历、面试、谈薪、转型
+- **职场人副业陪跑**：用行业经验 + AI 打造自己的咨询副业
+- **个人 AI + IP 陪跑**：账号定位、AI 内容工作流与商业化路径
+
+手册全部免费，不加微信也能看完。企业合作或个人陪跑，微信 **`AIPMAndy`**，添加时备注「GitHub + 企业合作 / 个人陪跑 + 你想聊的事」。详见 [metaver.vip/services](https://metaver.vip/services)。
 
 <details>
 <summary><b>全部项目</b></summary>
