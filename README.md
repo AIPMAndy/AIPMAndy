@@ -65,6 +65,7 @@ AI 酋长 Andy（Andy Liu，GitHub / X：@AIPMAndy），前腾讯/百度 AI 产�
 
 - [一个人靠 AI 赚钱](https://aipmandy.github.io/one-person-ai-income-guide/) · [中国人赚美金](https://aipmandy.github.io/how-to-earn-usd-from-china/) · [人人都能成为 AI 博主](https://aipmandy.github.io/HowToBeAnAICreator/)
 - [GitHub 赚钱](https://aipmandy.github.io/github-income-handbook/) · [X 赚钱](https://aipmandy.github.io/x-income-handbook/) · [Threads 赚钱](https://aipmandy.github.io/threads-income-handbook/) · [ChatGPT 赚钱](https://aipmandy.github.io/chatgpt-income-handbook/)
+- [中文 X 千万级商业化研究库](https://github.com/AIPMAndy/chinese-x-creators) · [在线看](https://aipmandy.github.io/chinese-x-creators/)：29 位中文 X 创作者的收入证据与商业模式拆解
 
 **免费在线工具**（无需注册 · 浏览器本地处理）
 
@@ -74,6 +75,7 @@ AI 酋长 Andy（Andy Liu，GitHub / X：@AIPMAndy），前腾讯/百度 AI 产�
 
 **内容创作**
 
+- [Andy Writing Skill](https://github.com/AIPMAndy/Andy-Writing-Skill)：一个入口智能调度 AI 写作技能（Threads / X / 公众号 / 小红书 / 口播）
 - [andy-ip-skill](https://github.com/AIPMAndy/andy-ip-skill)：IP 内容创作工具箱 · [Andy 题词](https://github.com/AIPMAndy/andytici)：macOS 中文提词器 · [FreeDesign](https://github.com/AIPMAndy/FreeDesign)：设计资源大全
 
 </details>
