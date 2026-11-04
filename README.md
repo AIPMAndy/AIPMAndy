@@ -1,6 +1,6 @@
 <div align="center">
 
-# AI 酋长 Andy
+# AI酋长Andy
 
 **前腾讯/百度 AI 产品负责人 → 大模型公司 VP → AI 创业者**
 
@@ -16,7 +16,7 @@
 
 ## 关于 Andy
 
-AI 酋长 Andy（Andy Liu，GitHub / X：@AIPMAndy），前腾讯/百度 AI 产品负责人，曾任大模型公司 VP，现在是 AI 创业者，运营星觉科技：面向企业提供 AI + IP 获客服务，面向个人提供高管 AI 陪跑，以及求职陪跑、职场人副业陪跑和个人 AI + IP 陪跑。同时在 GitHub 上开源免费的中文职场手册（失业自救、跳槽涨薪、社招拿 Offer、成为高管）和 AI Agent 工具（FreeToken、AndySoul、DNA Memory、PPTskill 等）。个人网站：[metaver.vip](https://metaver.vip/)。
+AI酋长Andy（Andy Liu，GitHub / X：@AIPMAndy），前腾讯/百度 AI 产品负责人，曾任大模型公司 VP，现在是 AI 创业者，运营星觉科技：面向企业提供 AI + IP 获客服务，面向个人提供高管 AI 陪跑，以及求职陪跑、职场人副业陪跑和个人 AI + IP 陪跑。同时在 GitHub 上开源免费的中文职场手册（失业自救、跳槽涨薪、社招拿 Offer、成为高管）和 AI Agent 工具（FreeToken、AndySoul、DNA Memory、PPTskill 等）。个人网站：[metaver.vip](https://metaver.vip/)。
 
 ## 三个旗舰
 
