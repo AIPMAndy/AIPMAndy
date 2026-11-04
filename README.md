@@ -84,4 +84,6 @@ AI 酋长 Andy（Andy Liu，GitHub / X：@AIPMAndy），前腾讯/百度 AI 产�
 
 微信 `AIPMAndy` · [X @AIPMAndy](https://x.com/AIPMAndy) · [metaver.vip](https://metaver.vip/)
 
+**官方账号（全网同名 AI酋长Andy / AIPMAndy）**：[个人官网 metaver.vip](https://metaver.vip/) · [公司官网 星觉科技](https://www.a6no1.cn/) · [X](https://x.com/AIPMAndy) · [Threads](https://www.threads.com/@andyaipm) · [YouTube](https://www.youtube.com/channel/UCo3Uq_DFHKFQxX2vLqEZ8mw) · [B站](https://space.bilibili.com/100287319) · [小红书](https://www.xiaohongshu.com/user/profile/578dd31382ec3924141f799e) · [Telegram](https://t.me/AIPMAndy) · [全部开源站点](https://aipmandy.github.io/)
+
 <sub>English: AI Chief Andy, ex-Tencent / Baidu AI product lead and former VP at an LLM company. I publish free, open-source Chinese guides and AI agent tools.</sub>
