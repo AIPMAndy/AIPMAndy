@@ -2,13 +2,21 @@
 
 # AI酋长Andy
 
-**前腾讯/百度 AI 产品负责人 → 大模型公司 VP → 流量 AI 联合创始人、星觉 AI 创始人**
+**流量 AI 联合创始人、星觉 AI 创始人** · 星觉科技 · 北京
 
-面向企业做 AI 获客，面向个人做高管 AI 陪跑；实战经验也开源成免费的手册和工具。
+AI酋长Andy（Andy Liu，英文名 AI Chief Andy）。GitHub / X：[@AIPMAndy](https://x.com/AIPMAndy)。面向企业做 AI 获客，面向个人做高管 AI 陪跑；实战经验也开源成免费的手册和工具。
 
 [![Website](https://img.shields.io/badge/官网-metaver.vip-111827?style=flat-square)](https://metaver.vip/)
 [![X](https://img.shields.io/badge/X-@AIPMAndy-000000?style=flat-square&logo=x)](https://x.com/AIPMAndy)
 ![WeChat](https://img.shields.io/badge/微信-AIPMAndy-07C160?style=flat-square&logo=wechat&logoColor=white)
+
+官网：[metaver.vip](https://metaver.vip/)　·　微信：`AIPMAndy`　·　X：[@AIPMAndy](https://x.com/AIPMAndy)
+
+手册全部免费，不加微信也能看完。企业合作或个人陪跑，添加微信时请备注「GitHub + 企业合作 / 个人陪跑 + 你想聊的事」。服务介绍：[metaver.vip/services](https://metaver.vip/services)。
+
+<!-- 微信二维码占位：Andy 提供二维码图片后，把文件放到本仓库 wechat-qr.png，再取消下一行注释。不要使用失效或占位图。
+![微信二维码 AIPMAndy](wechat-qr.png)
+-->
 
 </div>
 
@@ -16,15 +24,18 @@
 
 ## 关于 Andy
 
-AI酋长Andy（Andy Liu，GitHub / X：@AIPMAndy），前腾讯/百度 AI 产品负责人，曾任大模型公司 VP，流量 AI 联合创始人、星觉 AI 创始人，运营星觉科技：面向企业提供 AI + IP 获客服务，面向个人提供高管 AI 陪跑，以及求职陪跑、职场人副业陪跑和个人 AI + IP 陪跑。同时在 GitHub 上开源免费的中文职场手册（失业自救、跳槽涨薪、社招拿 Offer、成为高管）和 AI Agent 工具（FreeToken、AndySoul、DNA Memory、PPTskill 等）。个人网站：[metaver.vip](https://metaver.vip/)。
+AI酋长Andy（Andy Liu，GitHub / X：@AIPMAndy），流量 AI 联合创始人、星觉 AI 创始人，运营星觉科技（北京）：面向企业提供 AI + IP 获客服务，面向个人提供高管 AI 陪跑，以及求职陪跑、职场人副业陪跑和个人 AI + IP 陪跑。同时在 GitHub 上开源免费的中文职场手册（失业自救、跳槽涨薪、社招拿 Offer、成为高管）和 AI Agent 工具（FreeToken、MDskill-Web、AndySoul、DNA Memory、PPTskill 等）。个人网站：[metaver.vip](https://metaver.vip/)。
 
-## 三个旗舰
+## 主要项目
 
 | 项目 | 一句话 | Star |
 |---|---|---|
-| [失业自救手册](https://github.com/AIPMAndy/how-to-survive-unemployment) · [在线看](https://aipmandy.github.io/how-to-survive-unemployment/) | 被裁之后 7 天先做什么：N+1/2N、失业金、医保社保、公积金、求职与现金流，附政策原文 | ![](https://img.shields.io/github/stars/AIPMAndy/how-to-survive-unemployment?style=flat-square&label=%E2%98%85&color=111827) |
+| [失业自救手册](https://github.com/AIPMAndy/how-to-survive-unemployment) · [在线看](https://aipmandy.github.io/how-to-survive-unemployment/) | 被裁之后先做什么：N+1/2N、失业金、医保社保、公积金、求职与现金流，附政策原文 | ![](https://img.shields.io/github/stars/AIPMAndy/how-to-survive-unemployment?style=flat-square&label=%E2%98%85&color=111827) |
+| [社招拿 Offer](https://github.com/AIPMAndy/how-to-get-offer) · [在线看](https://aipmandy.github.io/how-to-get-offer/) | 定位、简历、内推、面试、谈薪到入职：社招求职可以照着做的步骤 | ![](https://img.shields.io/github/stars/AIPMAndy/how-to-get-offer?style=flat-square&label=%E2%98%85&color=111827) |
 | [FreeToken](https://github.com/AIPMAndy/FreeToken) · [在线看](https://aipmandy.github.io/FreeToken/) | 免费 AI API 额度大全：Gemini、OpenRouter、Groq、DeepSeek、硅基流动等，定期复核 | ![](https://img.shields.io/github/stars/AIPMAndy/FreeToken?style=flat-square&label=%E2%98%85&color=111827) |
-| [AndySoul](https://github.com/AIPMAndy/AndySoul) + [DNA Memory](https://github.com/AIPMAndy/dna-memory) | 让 Claude Code / Codex 少返工的规则文件，加上跨工具共用的长期记忆 MCP | ![](https://img.shields.io/github/stars/AIPMAndy/AndySoul?style=flat-square&label=%E2%98%85&color=111827) ![](https://img.shields.io/github/stars/AIPMAndy/dna-memory?style=flat-square&label=%E2%98%85&color=111827) |
+| [跳槽涨薪指南](https://github.com/AIPMAndy/how-to-job-hop-and-raise-salary) · [在线看](https://aipmandy.github.io/how-to-job-hop-and-raise-salary/) | 判断该不该跳、选岗、简历、面试、谈薪、比较 Offer、安全离职 | ![](https://img.shields.io/github/stars/AIPMAndy/how-to-job-hop-and-raise-salary?style=flat-square&label=%E2%98%85&color=111827) |
+| [普通人成为高管](https://github.com/AIPMAndy/how-to-become-an-executive) · [在线看](https://aipmandy.github.io/how-to-become-an-executive/) | 从业务骨干到经理、总监、经营负责人：把责任和能力做成可验证证据 | ![](https://img.shields.io/github/stars/AIPMAndy/how-to-become-an-executive?style=flat-square&label=%E2%98%85&color=111827) |
+| [MDskill-Web](https://github.com/AIPMAndy/MDskill-Web) · [在线用](https://aipmandy.github.io/MDskill-Web/) | Markdown 排版工具：33 种主题，一键复制到微信公众号、知乎、掘金 | ![](https://img.shields.io/github/stars/AIPMAndy/MDskill-Web?style=flat-square&label=%E2%98%85&color=111827) |
 
 ## 合作与服务
 
@@ -54,10 +65,11 @@ AI酋长Andy（Andy Liu，GitHub / X：@AIPMAndy），前腾讯/百度 AI 产品
 
 **AI Agent 工具**
 
+- [AndySoul](https://github.com/AIPMAndy/AndySoul) + [DNA Memory](https://github.com/AIPMAndy/dna-memory)：让 Claude Code / Codex 少返工的规则文件，加上跨工具共用的长期记忆 MCP
 - [PPTskill](https://github.com/AIPMAndy/PPTskill)：AI 生成原生可编辑 PPTX
 - [goskill](https://github.com/AIPMAndy/goskill)：长任务先定成功标准再验收
 - [SafeSkill](https://github.com/AIPMAndy/safeskill)：安装 Skill 前做安全扫描
-- [awesome-openclaw-skills-CN](https://github.com/AIPMAndy/awesome-openclaw-skills-CN)：2,868 个 OpenClaw Skills 中文精选
+- [awesome-openclaw-skills-CN](https://github.com/AIPMAndy/awesome-openclaw-skills-CN)：OpenClaw Skills 中文精选
 - [LivePPT](https://github.com/AIPMAndy/LivePPT) · [MDskill-Web](https://github.com/AIPMAndy/MDskill-Web) · [KnowMe](https://github.com/AIPMAndy/KnowMe) · [CEOskill](https://github.com/AIPMAndy/CEOskill)
 - 中文攻略（非官方）：[Grok Bot](https://aipmandy.github.io/grok-bot-handbook/) · [Meta Muse](https://aipmandy.github.io/muse-guide/) · [REA 逆向工程](https://aipmandy.github.io/rea-guide-cn/)
 
@@ -86,4 +98,4 @@ AI酋长Andy（Andy Liu，GitHub / X：@AIPMAndy），前腾讯/百度 AI 产品
 
 **官方账号（全网同名 AI酋长Andy / AIPMAndy）**：[个人官网 metaver.vip](https://metaver.vip/) · [公司官网 星觉科技](https://www.a6no1.cn/) · [X](https://x.com/AIPMAndy) · [Threads](https://www.threads.com/@andyaipm) · [YouTube](https://www.youtube.com/channel/UCo3Uq_DFHKFQxX2vLqEZ8mw) · [B站](https://space.bilibili.com/100287319) · [小红书](https://www.xiaohongshu.com/user/profile/578dd31382ec3924141f799e) · [Telegram](https://t.me/AIPMAndy) · [全部开源站点](https://aipmandy.github.io/)
 
-<sub>English: AI Chief Andy, ex-Tencent / Baidu AI product lead and former VP at an LLM company. I publish free, open-source Chinese guides and AI agent tools.</sub>
+<sub>English: AI Chief Andy (Andy Liu) is co-founder of 流量 AI and founder of 星觉 AI at 星觉科技 in Beijing. He publishes free, open-source Chinese career handbooks and AI agent tools. Site: [metaver.vip](https://metaver.vip/). WeChat: AIPMAndy. X: [@AIPMAndy](https://x.com/AIPMAndy).</sub>
