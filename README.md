@@ -14,10 +14,6 @@ AI酋长Andy（Andy Liu，英文名 AI Chief Andy）。GitHub / X：[@AIPMAndy](
 
 手册全部免费，不加微信也能看完。企业合作或个人陪跑，添加微信时请备注「GitHub + 企业合作 / 个人陪跑 + 你想聊的事」。服务介绍：[metaver.vip/services](https://metaver.vip/services)。
 
-<!-- 微信二维码占位：Andy 提供二维码图片后，把文件放到本仓库 wechat-qr.png，再取消下一行注释。不要使用失效或占位图。
-![微信二维码 AIPMAndy](wechat-qr.png)
--->
-
 </div>
 
 ---
