@@ -51,7 +51,7 @@
 
 ## 五、优先级与仓库/PDF 目录（首轮）
 
-已检索到 128 个仓库；其中选出 33 个教程/知识站点完成**仓库目录级检查**：有 PDF 文件 22 个，未发现 11 个。这不是 PDF 视觉或 Pages 上线验收。
+已检索到 128 个仓库；其中选出 33 个教程/知识站点完成**仓库目录级检查**：首轮有 PDF 文件 22 个，未发现 11 个；本轮已补 1 份，当前 23 个项目在仓库内有 PDF，10 个未发现。这不是 PDF 视觉或 Pages 上线验收。
 
 | 阶段 | 仓库 | PDF 目录状态 | 网站状态 | 本轮核心改造 |
 |---|---|---|---|---|
@@ -62,7 +62,7 @@
 | P0 | [chinese-international-student-business-jobs](https://github.com/AIPMAndy/chinese-international-student-business-jobs) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 职能选择器；补 canonical 与结构化数据 |
 | P0 | [local-business-ai-growth-handbook](https://github.com/AIPMAndy/local-business-ai-growth-handbook) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 商家诊断/预算测算；检查 PDF 与线上构建 |
 | P0 | [restaurant-ai-customer-acquisition-handbook](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 餐饮获客 SOP/ROI 工具 |
-| P0 | [ai-china-content-commerce-handbook](https://github.com/AIPMAndy/ai-china-content-commerce-handbook) | 未在仓库发现 PDF | **新版已提交；CI 测试及 Pages 部署成功，独立视觉/PDF 待验** | 首页精简、专业视觉、联系信息、SEO/GEO、回归测试完成；下步补 PDF |
+| P0 | [ai-china-content-commerce-handbook](https://github.com/AIPMAndy/ai-china-content-commerce-handbook) | **PDF 已生成入库（628 KB）** | **新版与 PDF 均已通过 CI/Pages 部署；独立视觉验收待完成** | 完成首屏精简、品牌/联系信息、SEO/GEO、回归测试、30 章+37 公开案例 PDF |
 | P1 | [ai-cross-border-ecommerce-playbook](https://github.com/AIPMAndy/ai-cross-border-ecommerce-playbook) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 地区选型+跨境单元经济 |
 | P1 | [ai-knowledge-paid-acquisition-handbook](https://github.com/AIPMAndy/ai-knowledge-paid-acquisition-handbook) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 知识付费漏斗与报价工具 |
 | P1 | [100m-in-5-years-handbook](https://github.com/AIPMAndy/100m-in-5-years-handbook) | 未在仓库发现 PDF | 目录已审；线上与视觉待验 | 收入模型的假设边界；补 PDF |
@@ -95,7 +95,7 @@
 |---|---|---|---|
 | 2026-11-14 | 账号与 33 站首轮审计 | 获取 GitHub 仓库目录和 PDF 存在性；确认统一公开渠道；制定分级、测试与发布标准 | 逐站实际改版、PDF 视觉检查、线上 Pages 验收 |\n| 2026-11-14 | [ai-china-content-commerce-handbook](https://github.com/AIPMAndy/ai-china-content-commerce-handbook) | 更新 7 处源码/文档并修复测试依赖；提交 [2939c3c](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/commit/2939c3c250feded4530332a93a2a10bf21eca2a8)。[Actions #43463415568](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/actions/runs/43463415568) 测试和部署均 success。 | 独立网站渲染 QA、PDF 生成/下载及 PDF 校对未完成；**不能标为 DONE** |\n| 2026-11-14 | 持续升级任务 | 建立每 6 小时一轮的定期执行任务，从 P0 待办续做并写回本文件 | 各轮以真实提交/测试/Pages 验收为准 |
 
-后续每次实际提交后，应补： `项目 | 状态 | 改动摘要 | Commit/PR | 测试 | Pages URL | PDF URL | 阻塞 | 下一步`。
+| 2026-11-14 | 内容电商 PDF 自动出版 | [PDF 构建提交 e3b0e03](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/commit/e3b0e03686fa7189ac1a08cb5dc0a005baf4e48b)，[Actions #43465443876](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/actions/runs/43465443876) 验证/部署成功；PDF 同步提交 main，网站与仓库各有 628,202 字节文件。 | PDF 独立逐页渲染/手机端验收待完成，当前不能标记 DONE。 |\n\n后续每次实际提交后，应补： `项目 | 状态 | 改动摘要 | Commit/PR | 测试 | Pages URL | PDF URL | 阻塞 | 下一步`。
 
 ## 七、迭代管理原则
 
