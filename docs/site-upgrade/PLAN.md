@@ -1,6 +1,6 @@
 # 星觉科技 · GitHub 知识网站升级作战计划
 
-> 版本 v1.2 · 2026-11-14（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
+> 版本 v1.3 · 2026-11-14（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
 
 ## 一、唯一目标
 
@@ -51,11 +51,11 @@
 
 ## 五、优先级与仓库/PDF 目录（首轮）
 
-已检索到 128 个仓库；其中选出 33 个教程/知识站点完成**仓库目录级检查**：首轮有 PDF 文件 22 个，未发现 11 个；本轮已补 1 份，当前 23 个项目在仓库内有 PDF，10 个未发现。这不是 PDF 视觉或 Pages 上线验收。
+已检索到 128 个仓库；其中选出 33 个教程/知识站点完成**仓库目录级检查**：首轮有 PDF 文件 22 个，未发现 11 个；本轮已补 1 份，当前 24 个项目在仓库内有 PDF，9 个未发现。这不是 PDF 视觉或 Pages 上线验收。
 
 | 阶段 | 仓库 | PDF 目录状态 | 网站状态 | 本轮核心改造 |
 |---|---|---|---|---|
-| P0 | [how-to-get-offer](https://github.com/AIPMAndy/how-to-get-offer) | 未在仓库发现 PDF | 目录已审；线上与视觉待验 | 课程+求职工具；补 PDF 并缩短首页 |
+| P0 | [how-to-get-offer](https://github.com/AIPMAndy/how-to-get-offer) | **PDF 1,298,524 字节已入库并部署** | **专业改版+CI+Pages 成功；独立视觉验收待完成** | 六阶段/100任务保留，首页精简、品牌双官网/微信复制、JSON-LD、44文档+100任务 PDF 已生成 |
 | P0 | [chinese-international-student-career-guide](https://github.com/AIPMAndy/chinese-international-student-career-guide) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 全球地区导航/签证资格；检查国家差异与下载 |
 | P0 | [chinese-international-student-ai-jobs](https://github.com/AIPMAndy/chinese-international-student-ai-jobs) | 仓库内有 PDF | 目录已审；线上与视觉待验 | AI 岗位证据生成与简历匹配 |
 | P0 | [chinese-international-student-product-jobs](https://github.com/AIPMAndy/chinese-international-student-product-jobs) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 产品能力作品集/证据卡；压缩冗长首页 |
@@ -96,6 +96,7 @@
 | 2026-11-14 | 账号与 33 站首轮审计 | 获取 GitHub 仓库目录和 PDF 存在性；确认统一公开渠道；制定分级、测试与发布标准 | 逐站实际改版、PDF 视觉检查、线上 Pages 验收 |\n| 2026-11-14 | [ai-china-content-commerce-handbook](https://github.com/AIPMAndy/ai-china-content-commerce-handbook) | 更新 7 处源码/文档并修复测试依赖；提交 [2939c3c](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/commit/2939c3c250feded4530332a93a2a10bf21eca2a8)。[Actions #43463415568](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/actions/runs/43463415568) 测试和部署均 success。 | 独立网站渲染 QA、PDF 生成/下载及 PDF 校对未完成；**不能标为 DONE** |\n| 2026-11-14 | 持续升级任务 | 建立每 6 小时一轮的定期执行任务，从 P0 待办续做并写回本文件 | 各轮以真实提交/测试/Pages 验收为准 |
 
 | 2026-11-14 | 内容电商 PDF 自动出版 | [PDF 构建提交 e3b0e03](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/commit/e3b0e03686fa7189ac1a08cb5dc0a005baf4e48b)，[Actions #43465443876](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/actions/runs/43465443876) 验证/部署成功；PDF 同步提交 main，网站与仓库各有 628,202 字节文件。 | PDF 独立逐页渲染/手机端验收待完成，当前不能标记 DONE。 |\n\n| 2026-11-14 | [github-income-handbook](https://github.com/AIPMAndy/github-income-handbook) | [提交 565d97a](https://github.com/AIPMAndy/github-income-handbook/commit/565d97a8642d7f7972064ef0bd5eba11635a59c7)：首页压缩、统一微信/双官网、Organization JSON-LD 与响应式，更新回归检查；[内容校验](https://github.com/AIPMAndy/github-income-handbook/actions/runs/43466251920)、[Pages 部署](https://github.com/AIPMAndy/github-income-handbook/actions/runs/43466251916) 均 success。 | 缺 PDF；独立线上视觉/交互 QA 待完成。 |\n
+| 2026-11-14 | [how-to-get-offer](https://github.com/AIPMAndy/how-to-get-offer) | [改版提交 d43fac0](https://github.com/AIPMAndy/how-to-get-offer/commit/d43fac03034992bfd8b481ed00c73c5f22882794) / [PDF 流水线 40297f1](https://github.com/AIPMAndy/how-to-get-offer/commit/40297f181e2bc93c9d6e1e7620c2b5c590d0e322) / [PDF 自动提交 905a4ae](https://github.com/AIPMAndy/how-to-get-offer/commit/905a4ae3cd6e51f47490a5082407bf0ab11169d0)；[内容 CI 成功](https://github.com/AIPMAndy/how-to-get-offer/actions/runs/43471717216)，[PDF 构建与 Pages 部署成功](https://github.com/AIPMAndy/how-to-get-offer/actions/runs/43471717215)；公开 PDF 1,298,524 字节、44 篇正文、100 项任务。 | 尚需独立浏览器/阅读器视觉、移动端和 PDF 逐页 QA，不可标为全部 DONE。 |\n
 后续每次实际提交后，应补： `项目 | 状态 | 改动摘要 | Commit/PR | 测试 | Pages URL | PDF URL | 阻塞 | 下一步`。
 
 ## 七、迭代管理原则
