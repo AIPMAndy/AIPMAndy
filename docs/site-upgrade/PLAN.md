@@ -1,6 +1,6 @@
 # 星觉科技 · GitHub 知识网站升级作战计划
 
-> 版本 v1.4 · 2026-11-14（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
+> 版本 v1.5 · 2026-11-14（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
 
 ## 一、唯一目标
 
@@ -56,7 +56,7 @@
 | 阶段 | 仓库 | PDF 目录状态 | 网站状态 | 本轮核心改造 |
 |---|---|---|---|---|
 | P0 | [how-to-get-offer](https://github.com/AIPMAndy/how-to-get-offer) | **PDF 1,298,524 字节已入库并部署** | **专业改版+CI+Pages 成功；独立视觉验收待完成** | 六阶段/100任务保留，首页精简、品牌双官网/微信复制、JSON-LD、44文档+100任务 PDF 已生成 |
-| P0 | [chinese-international-student-career-guide](https://github.com/AIPMAndy/chinese-international-student-career-guide) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 全球地区导航/签证资格；检查国家差异与下载 |
+| P0 | [chinese-international-student-career-guide](https://github.com/AIPMAndy/chinese-international-student-career-guide) | **PDF 已在线发布；当前 SHA 81 页结构 QA 和全页总览通过，逐页高倍率/实机验收待补** | **源码驱动 SEO 与 Pages 成功；50 页 metadata/SEO 和 8 个线上资源验证通过；完整视觉/移动实测待补** | 已添加 canonical/OG/JSON-LD、绝对 sitemap/robots、双官网和服务入口；保留地区筛选与模板，后续补手机浏览器 QA 及地区规则复核 |
 | P0 | [chinese-international-student-ai-jobs](https://github.com/AIPMAndy/chinese-international-student-ai-jobs) | 仓库内有 PDF | 目录已审；线上与视觉待验 | AI 岗位证据生成与简历匹配 |
 | P0 | [chinese-international-student-product-jobs](https://github.com/AIPMAndy/chinese-international-student-product-jobs) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 产品能力作品集/证据卡；压缩冗长首页 |
 | P0 | [chinese-international-student-business-jobs](https://github.com/AIPMAndy/chinese-international-student-business-jobs) | 仓库内已有 PDF | **首页改版与 Pages 部署成功；独立视觉、PDF 校验待完成** | 更新正式视觉、企业/作者 JSON-LD、canonical/OG、robots/llms.txt 和 52 URL sitemap，原有职能筛选与案例训练保留 |
@@ -99,6 +99,8 @@
 | 2026-11-14 | [how-to-get-offer](https://github.com/AIPMAndy/how-to-get-offer) | [改版提交 d43fac0](https://github.com/AIPMAndy/how-to-get-offer/commit/d43fac03034992bfd8b481ed00c73c5f22882794) / [PDF 流水线 40297f1](https://github.com/AIPMAndy/how-to-get-offer/commit/40297f181e2bc93c9d6e1e7620c2b5c590d0e322) / [PDF 自动提交 905a4ae](https://github.com/AIPMAndy/how-to-get-offer/commit/905a4ae3cd6e51f47490a5082407bf0ab11169d0)；[内容 CI 成功](https://github.com/AIPMAndy/how-to-get-offer/actions/runs/43471717216)，[PDF 构建与 Pages 部署成功](https://github.com/AIPMAndy/how-to-get-offer/actions/runs/43471717215)；公开 PDF 1,298,524 字节、44 篇正文、100 项任务。 | 尚需独立浏览器/阅读器视觉、移动端和 PDF 逐页 QA，不可标为全部 DONE。 |\n
 | 2026-11-14 | [chinese-international-student-business-jobs](https://github.com/AIPMAndy/chinese-international-student-business-jobs) | [提交 77c45ce](https://github.com/AIPMAndy/chinese-international-student-business-jobs/commit/77c45ce20c540b8aa67a162f009b20145415df72)：7 文件含源码/生成首页双版本、统一 CSS、canonical/OG/JSON-LD、robots、llms.txt、52 URL sitemap；[Pages #43472389231](https://github.com/AIPMAndy/chinese-international-student-business-jobs/actions/runs/43472389231) 成功。 | 独立浏览器视觉 QA、手机端体验、PDF 逐页验收仍需完成。 |\n
 后续每次实际提交后，应补： `项目 | 状态 | 改动摘要 | Commit/PR | 测试 | Pages URL | PDF URL | 阻塞 | 下一步`。
+
+| 2026-11-14 | [chinese-international-student-career-guide](https://github.com/AIPMAndy/chinese-international-student-career-guide) | 起始 main `36bbda1`，源码生成器提交 [a2fd76d](https://github.com/AIPMAndy/chinese-international-student-career-guide/commit/a2fd76dff9548643c11ac0ca8eaaa485d69058d1)，SEO 回归检查 [d3f7d42](https://github.com/AIPMAndy/chinese-international-student-career-guide/commit/d3f7d4286f17df971558a3ff649e30f55bcf9e62)，来源触发 Pages 工作流 [f629b32](https://github.com/AIPMAndy/chinese-international-student-career-guide/commit/f629b32eda80c73ab3e439ec8751afc67d6fbd26)；[Pages #43519219464](https://github.com/AIPMAndy/chinese-international-student-career-guide/actions/runs/43519219464) **success**：50 个 HTML 页、50 sitemap URL、SEO 与站内链接检查零错误；[正式站点](https://aipmandy.github.io/chinese-international-student-career-guide/)及首页、章节、CSS、JS、[PDF](https://aipmandy.github.io/chinese-international-student-career-guide/downloads/chinese-international-student-career-guide.pdf)、XLSX、2 个 ZIP 共 8 个资源 HTTP 200、SHA-256 与该工作流的构建产物一致。PDF 检查器更新 [1d21c31](https://github.com/AIPMAndy/chinese-international-student-career-guide/commit/1d21c3178d335527a822dea9f42140d2dbcfbf51)；[PDF CI #43519672476](https://github.com/AIPMAndy/chinese-international-student-career-guide/actions/runs/43519672476) **success**，当前线上 PDF SHA `053a5340…`、81 页、50 书签、122 内链、191 外链、字体与联系人/双官网校验零错误。已下载 41 组双页渲染并总览全部页面，放大审阅封面、地区页、简历模板、末页；[QA 记录](https://github.com/AIPMAndy/chinese-international-student-career-guide/blob/main/docs/pdf-current-qa-2026-11-14.md) 与 [CI 产物](https://github.com/AIPMAndy/chinese-international-student-career-guide/actions/runs/43519672476/artifacts/14082377823) 可追溯。 | **尚未 DONE**：当前 PDF 高倍率逐页视觉审阅、iOS/安卓与桌面实际交互/浏览器排版、各地区工作资格最新规则的独立复核待完成；旧 PDF 视觉记录绑定另一 SHA `f1f3a332…`，不可替代新文件。下一轮优先 P0 AI/product 留学生站点与本页残项。 |
 
 ## 七、迭代管理原则
 
