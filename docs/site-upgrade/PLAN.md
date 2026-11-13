@@ -1,6 +1,6 @@
 # 星觉科技 · GitHub 知识网站升级作战计划
 
-> 版本 v1.3 · 2026-11-14（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
+> 版本 v1.4 · 2026-11-14（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
 
 ## 一、唯一目标
 
@@ -59,7 +59,7 @@
 | P0 | [chinese-international-student-career-guide](https://github.com/AIPMAndy/chinese-international-student-career-guide) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 全球地区导航/签证资格；检查国家差异与下载 |
 | P0 | [chinese-international-student-ai-jobs](https://github.com/AIPMAndy/chinese-international-student-ai-jobs) | 仓库内有 PDF | 目录已审；线上与视觉待验 | AI 岗位证据生成与简历匹配 |
 | P0 | [chinese-international-student-product-jobs](https://github.com/AIPMAndy/chinese-international-student-product-jobs) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 产品能力作品集/证据卡；压缩冗长首页 |
-| P0 | [chinese-international-student-business-jobs](https://github.com/AIPMAndy/chinese-international-student-business-jobs) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 职能选择器；补 canonical 与结构化数据 |
+| P0 | [chinese-international-student-business-jobs](https://github.com/AIPMAndy/chinese-international-student-business-jobs) | 仓库内已有 PDF | **首页改版与 Pages 部署成功；独立视觉、PDF 校验待完成** | 更新正式视觉、企业/作者 JSON-LD、canonical/OG、robots/llms.txt 和 52 URL sitemap，原有职能筛选与案例训练保留 |
 | P0 | [local-business-ai-growth-handbook](https://github.com/AIPMAndy/local-business-ai-growth-handbook) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 商家诊断/预算测算；检查 PDF 与线上构建 |
 | P0 | [restaurant-ai-customer-acquisition-handbook](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 餐饮获客 SOP/ROI 工具 |
 | P0 | [ai-china-content-commerce-handbook](https://github.com/AIPMAndy/ai-china-content-commerce-handbook) | **PDF 已生成入库（628 KB）** | **新版与 PDF 均已通过 CI/Pages 部署；独立视觉验收待完成** | 完成首屏精简、品牌/联系信息、SEO/GEO、回归测试、30 章+37 公开案例 PDF |
@@ -97,6 +97,7 @@
 
 | 2026-11-14 | 内容电商 PDF 自动出版 | [PDF 构建提交 e3b0e03](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/commit/e3b0e03686fa7189ac1a08cb5dc0a005baf4e48b)，[Actions #43465443876](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/actions/runs/43465443876) 验证/部署成功；PDF 同步提交 main，网站与仓库各有 628,202 字节文件。 | PDF 独立逐页渲染/手机端验收待完成，当前不能标记 DONE。 |\n\n| 2026-11-14 | [github-income-handbook](https://github.com/AIPMAndy/github-income-handbook) | [提交 565d97a](https://github.com/AIPMAndy/github-income-handbook/commit/565d97a8642d7f7972064ef0bd5eba11635a59c7)：首页压缩、统一微信/双官网、Organization JSON-LD 与响应式，更新回归检查；[内容校验](https://github.com/AIPMAndy/github-income-handbook/actions/runs/43466251920)、[Pages 部署](https://github.com/AIPMAndy/github-income-handbook/actions/runs/43466251916) 均 success。 | 缺 PDF；独立线上视觉/交互 QA 待完成。 |\n
 | 2026-11-14 | [how-to-get-offer](https://github.com/AIPMAndy/how-to-get-offer) | [改版提交 d43fac0](https://github.com/AIPMAndy/how-to-get-offer/commit/d43fac03034992bfd8b481ed00c73c5f22882794) / [PDF 流水线 40297f1](https://github.com/AIPMAndy/how-to-get-offer/commit/40297f181e2bc93c9d6e1e7620c2b5c590d0e322) / [PDF 自动提交 905a4ae](https://github.com/AIPMAndy/how-to-get-offer/commit/905a4ae3cd6e51f47490a5082407bf0ab11169d0)；[内容 CI 成功](https://github.com/AIPMAndy/how-to-get-offer/actions/runs/43471717216)，[PDF 构建与 Pages 部署成功](https://github.com/AIPMAndy/how-to-get-offer/actions/runs/43471717215)；公开 PDF 1,298,524 字节、44 篇正文、100 项任务。 | 尚需独立浏览器/阅读器视觉、移动端和 PDF 逐页 QA，不可标为全部 DONE。 |\n
+| 2026-11-14 | [chinese-international-student-business-jobs](https://github.com/AIPMAndy/chinese-international-student-business-jobs) | [提交 77c45ce](https://github.com/AIPMAndy/chinese-international-student-business-jobs/commit/77c45ce20c540b8aa67a162f009b20145415df72)：7 文件含源码/生成首页双版本、统一 CSS、canonical/OG/JSON-LD、robots、llms.txt、52 URL sitemap；[Pages #43472389231](https://github.com/AIPMAndy/chinese-international-student-business-jobs/actions/runs/43472389231) 成功。 | 独立浏览器视觉 QA、手机端体验、PDF 逐页验收仍需完成。 |\n
 后续每次实际提交后，应补： `项目 | 状态 | 改动摘要 | Commit/PR | 测试 | Pages URL | PDF URL | 阻塞 | 下一步`。
 
 ## 七、迭代管理原则
