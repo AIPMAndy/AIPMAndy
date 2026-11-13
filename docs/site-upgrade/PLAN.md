@@ -1,6 +1,6 @@
 # 星觉科技 · GitHub 知识网站升级作战计划
 
-> 版本 v1.0 · 2026-11-14（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
+> 版本 v1.2 · 2026-11-14（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
 
 ## 一、唯一目标
 
@@ -71,7 +71,7 @@
 | P1 | [xiaohongshu-income-handbook](https://github.com/AIPMAndy/xiaohongshu-income-handbook) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 平台约束/模板/PDF 同步 |
 | P1 | [anthropic-claude-code-agent-handbook](https://github.com/AIPMAndy/anthropic-claude-code-agent-handbook) | 仓库内有 PDF | 目录已审；线上与视觉待验 | Agent 实操与版本日期 |
 | P1 | [HowToMakeMoneyOnYouTube](https://github.com/AIPMAndy/HowToMakeMoneyOnYouTube) | 未在仓库发现 PDF | 目录已审；线上与视觉待验 | 视频工作台/收益条件；补 PDF |
-| P1 | [github-income-handbook](https://github.com/AIPMAndy/github-income-handbook) | 未在仓库发现 PDF | 目录已审；线上与视觉待验 | 精简首屏/公司官网/案例证据；补 PDF |
+| P1 | [github-income-handbook](https://github.com/AIPMAndy/github-income-handbook) | 未在仓库发现 PDF | **改版已提交；内容校验和 Pages 部署成功，独立视觉待验** | 删除冗长说理区、首页导航/双官网/微信、组织实体结构化数据完成；待补 PDF |
 | P1 | [threads-income-handbook](https://github.com/AIPMAndy/threads-income-handbook) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 内容实验/数据看板 |
 | P1 | [x-income-handbook](https://github.com/AIPMAndy/x-income-handbook) | 仓库内有 PDF | 目录已审；线上与视觉待验 | X 转化漏斗/模板 |
 | P1 | [chatgpt-income-handbook](https://github.com/AIPMAndy/chatgpt-income-handbook) | 未在仓库发现 PDF | 目录已审；线上与视觉待验 | 交易路线与服务卡；补 PDF |
@@ -95,7 +95,8 @@
 |---|---|---|---|
 | 2026-11-14 | 账号与 33 站首轮审计 | 获取 GitHub 仓库目录和 PDF 存在性；确认统一公开渠道；制定分级、测试与发布标准 | 逐站实际改版、PDF 视觉检查、线上 Pages 验收 |\n| 2026-11-14 | [ai-china-content-commerce-handbook](https://github.com/AIPMAndy/ai-china-content-commerce-handbook) | 更新 7 处源码/文档并修复测试依赖；提交 [2939c3c](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/commit/2939c3c250feded4530332a93a2a10bf21eca2a8)。[Actions #43463415568](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/actions/runs/43463415568) 测试和部署均 success。 | 独立网站渲染 QA、PDF 生成/下载及 PDF 校对未完成；**不能标为 DONE** |\n| 2026-11-14 | 持续升级任务 | 建立每 6 小时一轮的定期执行任务，从 P0 待办续做并写回本文件 | 各轮以真实提交/测试/Pages 验收为准 |
 
-| 2026-11-14 | 内容电商 PDF 自动出版 | [PDF 构建提交 e3b0e03](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/commit/e3b0e03686fa7189ac1a08cb5dc0a005baf4e48b)，[Actions #43465443876](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/actions/runs/43465443876) 验证/部署成功；PDF 同步提交 main，网站与仓库各有 628,202 字节文件。 | PDF 独立逐页渲染/手机端验收待完成，当前不能标记 DONE。 |\n\n后续每次实际提交后，应补： `项目 | 状态 | 改动摘要 | Commit/PR | 测试 | Pages URL | PDF URL | 阻塞 | 下一步`。
+| 2026-11-14 | 内容电商 PDF 自动出版 | [PDF 构建提交 e3b0e03](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/commit/e3b0e03686fa7189ac1a08cb5dc0a005baf4e48b)，[Actions #43465443876](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/actions/runs/43465443876) 验证/部署成功；PDF 同步提交 main，网站与仓库各有 628,202 字节文件。 | PDF 独立逐页渲染/手机端验收待完成，当前不能标记 DONE。 |\n\n| 2026-11-14 | [github-income-handbook](https://github.com/AIPMAndy/github-income-handbook) | [提交 565d97a](https://github.com/AIPMAndy/github-income-handbook/commit/565d97a8642d7f7972064ef0bd5eba11635a59c7)：首页压缩、统一微信/双官网、Organization JSON-LD 与响应式，更新回归检查；[内容校验](https://github.com/AIPMAndy/github-income-handbook/actions/runs/43466251920)、[Pages 部署](https://github.com/AIPMAndy/github-income-handbook/actions/runs/43466251916) 均 success。 | 缺 PDF；独立线上视觉/交互 QA 待完成。 |\n
+后续每次实际提交后，应补： `项目 | 状态 | 改动摘要 | Commit/PR | 测试 | Pages URL | PDF URL | 阻塞 | 下一步`。
 
 ## 七、迭代管理原则
 
