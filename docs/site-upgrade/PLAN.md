@@ -1,6 +1,6 @@
 # 星觉科技 · GitHub 知识网站升级作战计划
 
-> 版本 v1.6 · 2026-11-14（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
+> 版本 v1.7 · 2026-11-14（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
 
 ## 一、唯一目标
 
@@ -51,22 +51,22 @@
 
 ## 五、优先级与仓库/PDF 目录（首轮）
 
-已检索到 128 个仓库；其中选出 33 个教程/知识站点完成**仓库目录级检查**：首轮有 PDF 文件 22 个，未发现 11 个；本轮已补 1 份，当前 24 个项目在仓库内有 PDF，9 个未发现。这不是 PDF 视觉或 Pages 上线验收。
+已检索到 128 个仓库；其中选出 33 个教程/知识站点完成**仓库目录级检查**：首轮有 PDF 文件 22 个，未发现 11 个；本轮已补 1 份，截至本轮，25 个项目在仓库内有 PDF，8 个尚未发现（仅存在性，不代表质量完成）。这不是 PDF 视觉或 Pages 上线验收。
 
 | 阶段 | 仓库 | PDF 目录状态 | 网站状态 | 本轮核心改造 |
 |---|---|---|---|---|
-| P0 | [how-to-get-offer](https://github.com/AIPMAndy/how-to-get-offer) | **PDF 1,298,524 字节已入库并部署** | **专业改版+CI+Pages 成功；独立视觉验收待完成** | 六阶段/100任务保留，首页精简、品牌双官网/微信复制、JSON-LD、44文档+100任务 PDF 已生成 |
+| P0 | [how-to-get-offer](https://github.com/AIPMAndy/how-to-get-offer) | **82 页 PDF 仓库/Pages 已发布；全页自动渲染、书签、文字、链接和边界 QA 零错误/警告；人工视觉待验** | **网站源码/CI/Pages 成功；手机实机和全部人工视觉仍待验** | 新增逐页 QA 脚本+持续 CI，产出 JSON/82 页 contact sheet；[#43556546313](https://github.com/AIPMAndy/how-to-get-offer/actions/runs/43556546313) |
 | P0 | [chinese-international-student-career-guide](https://github.com/AIPMAndy/chinese-international-student-career-guide) | **PDF 已在线发布；当前 SHA 81 页结构 QA 和全页总览通过，逐页高倍率/实机验收待补** | **源码驱动 SEO 与 Pages 成功；50 页 metadata/SEO 和 8 个线上资源验证通过；完整视觉/移动实测待补** | 已添加 canonical/OG/JSON-LD、绝对 sitemap/robots、双官网和服务入口；保留地区筛选与模板，后续补手机浏览器 QA 及地区规则复核 |
 | P0 | [chinese-international-student-ai-jobs](https://github.com/AIPMAndy/chinese-international-student-ai-jobs) | **109 页 PDF 已公开；线上 SHA 与历史逐页 QA 的 SHA 一致** | **源码驱动网站改版、SEO/GEO 完整性检查、Pages 与技术案例 CI 成功；移动端复验待补** | 52 页 canonical/OG/JSON-LD + sitemap/robots；来源打包链已恢复；继续核验移动浏览器、岗位链接更新与出版包视觉质量 |
 | P0 | [chinese-international-student-product-jobs](https://github.com/AIPMAndy/chinese-international-student-product-jobs) | **128 页 PDF 已入库，逐页视觉与哈希记录可查** | **源码重建 + 全页 SEO/GEO + GitHub Pages + 下载校验均成功** | 补 WebPage JSON-LD、OG、三个关联专题/服务入口；修复源码 ZIP 遗漏 site/home.html，并在 CI 重打包；iOS/Android 真机及新岗位有效性仍待周期复核 |
 | P0 | [chinese-international-student-business-jobs](https://github.com/AIPMAndy/chinese-international-student-business-jobs) | **180 页 PDF 完整视觉 QA 已记录，仓库与线上有成品** | **全部章节 canonical/OG/JSON-LD、源码重建、站内链接、PDF 下载与 Pages 验证成功** | 修复首页旧发布提示并添加跨专题入口；CI 改为从最新内容生成网站与 ZIP；iOS/Android 真机和动态招聘规则仍需复核 |
 | P0 | [local-business-ai-growth-handbook](https://github.com/AIPMAndy/local-business-ai-growth-handbook) | **71 页 PDF 已校验并随 Pages 发布，SHA 一致** | **本轮源码升级与线上 PDF/首页校验成功；手机/全页视觉待验** | 已补首页 PDF 下载、robots/llms 导航、PDF 校验与三页预览；后续真机测试 |
 | P0 | [restaurant-ai-customer-acquisition-handbook](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook) | **47 页 PDF 已镜像到网站目录、线上 SHA 一致** | **首页/PDF/SEO/CI 与线上校验成功；手机/全页视觉待验** | 已补 PDF 下载、canonical/OG/JSON-LD 与结构、链接和视觉样张 QA |
-| P0 | [ai-china-content-commerce-handbook](https://github.com/AIPMAndy/ai-china-content-commerce-handbook) | **PDF 已生成入库（628 KB）** | **新版与 PDF 均已通过 CI/Pages 部署；独立视觉验收待完成** | 完成首屏精简、品牌/联系信息、SEO/GEO、回归测试、30 章+37 公开案例 PDF |
+| P0 | [ai-china-content-commerce-handbook](https://github.com/AIPMAndy/ai-china-content-commerce-handbook) | **40 页 PDF 已仓库/Pages 同步，628203 字节；全页自动 QA 零错误/警告；人工视觉待验** | **CI/Pages 成功；手机真机仍待验** | 本轮补 PDF 全页渲染 QA 与可下载产物，产物 [#43556619737](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/actions/runs/43556619737) |
 | P1 | [ai-cross-border-ecommerce-playbook](https://github.com/AIPMAndy/ai-cross-border-ecommerce-playbook) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 地区选型+跨境单元经济 |
 | P1 | [ai-knowledge-paid-acquisition-handbook](https://github.com/AIPMAndy/ai-knowledge-paid-acquisition-handbook) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 知识付费漏斗与报价工具 |
 | P1 | [100m-in-5-years-handbook](https://github.com/AIPMAndy/100m-in-5-years-handbook) | 未在仓库发现 PDF | 目录已审；线上与视觉待验 | 收入模型的假设边界；补 PDF |
-| P1 | [geo-handbook](https://github.com/AIPMAndy/geo-handbook) | 未在仓库发现 PDF | 目录已审；线上与视觉待验 | 可引用知识库/可信证据；补 PDF |
+| P1 | [geo-handbook](https://github.com/AIPMAndy/geo-handbook) | **新增86页PDF，906732字节，从56份源文件生成；全页自动QA零错误/警告** | **网站源码SEO/GEO/PDF上线；六个实际线上URL HTTP 200 且 SHA-256 匹配** | 补 PDF、全站 JSON-LD/公司/服务入口、根 canonical 与 sitemap、CI 自动测试；高倍率人工视觉和真机仍需补 |
 | P1 | [seo-handbook](https://github.com/AIPMAndy/seo-handbook) | 未在仓库发现 PDF | 目录已审；线上与视觉待验 | 关键词工作台/检查清单；补 PDF |
 | P1 | [xiaohongshu-income-handbook](https://github.com/AIPMAndy/xiaohongshu-income-handbook) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 平台约束/模板/PDF 同步 |
 | P1 | [anthropic-claude-code-agent-handbook](https://github.com/AIPMAndy/anthropic-claude-code-agent-handbook) | 仓库内有 PDF | 目录已审；线上与视觉待验 | Agent 实操与版本日期 |
@@ -119,6 +119,16 @@
 - **商科岗位**：[仓库](https://github.com/AIPMAndy/chinese-international-student-business-jobs) · [网站](https://aipmandy.github.io/chinese-international-student-business-jobs/) · [180 页 PDF](https://aipmandy.github.io/chinese-international-student-business-jobs/downloads/business-careers-guide.pdf)。去掉“尚待建仓”的旧提示；升级全 53 页来源生成 SEO、跨专题/咨询链接、源码重建与归档；最终提交 [64830e2b](https://github.com/AIPMAndy/chinese-international-student-business-jobs/commit/64830e2bee5b9ce59656d3859656f85448603345) 对应 [Pages #43541343110](https://github.com/AIPMAndy/chinese-international-student-business-jobs/actions/runs/43541343110) **success**：源码构建、全页 metadata/JSON-LD、下载 PDF、线上哈希验收通过。仓库 `VERIFY.md` 已有 180 页视觉 QA 记录，本轮未改 PDF。**剩余**：真机 Safari/Android 与具体地区当季工作资格和岗位复核。
 
 **工程交付判断**：四个站点和 PDF 具备公开可用的首版，四站最新 Pages 成功，自动验证覆盖源码、静态站点和下载。**严格全量 DONE 尚未满足**：跨设备实体真机浏览、高倍率剩余 PDF 页面审阅（全局册）及部分动态就业规则无法仅靠 CI 证明。后续只处理明确剩余验收问题；不要重做四个站。
+
+### 2026-11-14 · 本轮三站真实交付（进入 Stage 5，均未标 DONE）
+
+| 项目 | 完成的修改 / Commit | CI 与实测证据 | Pages / PDF | 阻塞与下一步 |
+|---|---|---|---|---|
+| how-to-get-offer（P0） | 源码 [70b5789](https://github.com/AIPMAndy/how-to-get-offer/commit/70b57897e501d4dfadc203567eb415891d11a571) 与 CI [98378ff](https://github.com/AIPMAndy/how-to-get-offer/commit/98378ff3df19a5af9793de0d9eab7c607cfb302c)；main 98378ff；新增 PDF 全页自动 QA、图片联系表、JSON 结果 | [Pages & QA #43556546313](https://github.com/AIPMAndy/how-to-get-offer/actions/runs/43556546313) success；82 页、199 个书签、75742 个提取字符、0 错误/警告；[完整逐页预览与报告](https://github.com/AIPMAndy/how-to-get-offer/actions/runs/43556546313/artifacts/14098801605) | [网站](https://aipmandy.github.io/how-to-get-offer/) / [PDF](https://aipmandy.github.io/how-to-get-offer/pdf/how-to-get-offer-guide.pdf)；Pages 部署成功，本轮未独立跑站外 SHA | 需人工高倍率逐页视觉、Safari/Android 真机与原有任务工具实机回归；自动缩略图不可代替人工签字 |
+| ai-china-content-commerce-handbook（P0） | [5da6a7b](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/commit/5da6a7b2a1feb149c9243350b2ad3d9b57c8defd) / [17961f5](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/commit/17961f54ee9f81dcb23501720d9990d1035f58f6)，机器人同步 PDF [672c456](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/commit/672c456566c7a16cae5b50a33657edfeb1ca5b0f)；main 672c456；新增全页 QA/视觉产物 | [Pages+QA #43556619737](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/actions/runs/43556619737) success；40 页、140 书签、32004 字符、SHA-256 前缀 9fb6b40f、0 错误/警告；[QA 图+报告](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/actions/runs/43556619737/artifacts/14098472503) | [网站](https://aipmandy.github.io/ai-china-content-commerce-handbook/) / [PDF](https://aipmandy.github.io/ai-china-content-commerce-handbook/downloads/ai-china-content-commerce-handbook.pdf)；本轮 Pages 部署成功，尚无独立在线 SHA 复核 | 逐页放大审阅、手机真机、经营/平台规则来源新鲜度核查 |
+| geo-handbook（P1，原缺 PDF） | 源码生成器 [76387a7](https://github.com/AIPMAndy/geo-handbook/commit/76387a7a9a0ed1d9e87e9ec233738bc007c0d23b)，工作流修复 [cc2a4b3](https://github.com/AIPMAndy/geo-handbook/commit/cc2a4b38ef237e34fd97c5085cbf7faf063c6529)，线上验收 [8c50d31](https://github.com/AIPMAndy/geo-handbook/commit/8c50d314b7468d739eed681b5228b6d163e82d31)，60 页 metadata 全检 [e969144](https://github.com/AIPMAndy/geo-handbook/commit/e969144b7dd25e319aa6e16df50ffcb7629d339d)；PDF 机器人入库 [75bc2a5](https://github.com/AIPMAndy/geo-handbook/commit/75bc2a56d4176416e7eccf9a467e0de0d2af2cb5)；main e969144 | [首次 PDF 发布 #43557003894](https://github.com/AIPMAndy/geo-handbook/actions/runs/43557003894)、[六个 URL 线上哈希 #43557145528](https://github.com/AIPMAndy/geo-handbook/actions/runs/43557145528)、[完整 SEO 回归 #43557187254](https://github.com/AIPMAndy/geo-handbook/actions/runs/43557187254) 全部 success；86 页/444 书签/70882 字符/0 错警；[86页 QA 图与报告](https://github.com/AIPMAndy/geo-handbook/actions/runs/43557187254/artifacts/14097794705) | [网站](https://aipmandy.github.io/geo-handbook/) / [新增 PDF](https://aipmandy.github.io/geo-handbook/downloads/geo-handbook-guide.pdf)；首页、课程、依据、sitemap、robots、PDF 六 URL 真正从线上 HTTP 200 且 SHA-256 相符 | 86 页人工高倍率审阅、真机和来源日期复核；项目路径 robots.txt 不代表域名根 robots.txt |
+
+**验收边界与失败复盘：** 每页 PDF 已在 CI 自动渲染为 PNG 并提取文本，自动结果全部通过，但未做人工逐页高倍率及真机验收，三站都不可记 DONE。GEO 初轮曾因并发 main 更新（正常非快进拒绝，无 force）和 PDF 在站内链接校验之后生成而失败；后续修复并以最终成功流水线及在线 6 URL 校验为准。Actions 产物有保存期限，仓库 PDF 和 Pages 正式 URL 持续保留。其他重点站点继续推进，不进入停止/维护。
 
 ## 七、迭代管理原则
 
