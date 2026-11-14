@@ -1,6 +1,6 @@
 # 星觉科技 · GitHub 知识网站升级作战计划
 
-> 版本 v1.8 · 2026-11-14（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
+> 版本 v1.9 · 2026-11-15（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
 
 ## 一、唯一目标
 
@@ -51,7 +51,7 @@
 
 ## 五、优先级与仓库/PDF 目录（首轮）
 
-已检索到 128 个仓库；其中选出 33 个教程/知识站点完成**仓库目录级检查**：首轮有 PDF 文件 22 个，未发现 11 个；本轮已补 1 份，截至本轮，26 个项目在仓库内有 PDF，7 个尚未发现（仅存在性，不代表质量完成）。这不是 PDF 视觉或 Pages 上线验收。
+已检索到 128 个仓库；其中选出 33 个教程/知识站点完成**仓库目录级检查**：首轮有 PDF 文件 22 个，未发现 11 个；本轮为 seo-handbook 补齐 PDF 并经仓库树确认，截至本轮 **27 个项目在仓库内有 PDF，6 个尚未发现**（仅存在性，不代表质量完成）。这不是 PDF 视觉或 Pages 上线验收。
 
 | 阶段 | 仓库 | PDF 目录状态 | 网站状态 | 本轮核心改造 |
 |---|---|---|---|---|
@@ -67,7 +67,7 @@
 | P1 | [ai-knowledge-paid-acquisition-handbook](https://github.com/AIPMAndy/ai-knowledge-paid-acquisition-handbook) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 知识付费漏斗与报价工具 |
 | P1 | [100m-in-5-years-handbook](https://github.com/AIPMAndy/100m-in-5-years-handbook) | 未在仓库发现 PDF | 目录已审；线上与视觉待验 | 收入模型的假设边界；补 PDF |
 | P1 | [geo-handbook](https://github.com/AIPMAndy/geo-handbook) | **新增86页PDF，906732字节，从56份源文件生成；全页自动QA零错误/警告** | **网站源码SEO/GEO/PDF上线；六个实际线上URL HTTP 200 且 SHA-256 匹配** | 补 PDF、全站 JSON-LD/公司/服务入口、根 canonical 与 sitemap、CI 自动测试；高倍率人工视觉和真机仍需补 |
-| P1 | [seo-handbook](https://github.com/AIPMAndy/seo-handbook) | 未在仓库发现 PDF | 目录已审；线上与视觉待验 | 关键词工作台/检查清单；补 PDF |
+| P1 | [seo-handbook](https://github.com/AIPMAndy/seo-handbook) | **新生成 118 页 PDF，已入库并上线；41 章+13 SOP+6 路线，全页文本/结构/渲染 QA 通过；人工高倍率待验** | **63 HTML 的 SEO/链接审计 0 错误、0 警告；验证/Pages success，线上首页+PDF HTTP 200 与构建 PDF SHA 一致；实体手机待验** | [源码提交 2fe23a0](https://github.com/AIPMAndy/seo-handbook/commit/2fe23a003651efe271b7fcc6770324da7894f912)、[PDF 入库 fa9f19c](https://github.com/AIPMAndy/seo-handbook/commit/fa9f19c91e43289e873158caef1c8ebb5f516267)；补同源 PDF 构建、全页 QA、人工可审预览、线上校验、双官网/微信，原工具通过回归 |
 | P1 | [xiaohongshu-income-handbook](https://github.com/AIPMAndy/xiaohongshu-income-handbook) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 平台约束/模板/PDF 同步 |
 | P1 | [anthropic-claude-code-agent-handbook](https://github.com/AIPMAndy/anthropic-claude-code-agent-handbook) | 仓库内有 PDF | 目录已审；线上与视觉待验 | Agent 实操与版本日期 |
 | P1 | [HowToMakeMoneyOnYouTube](https://github.com/AIPMAndy/HowToMakeMoneyOnYouTube) | 未在仓库发现 PDF | 目录已审；线上与视觉待验 | 视频工作台/收益条件；补 PDF |
@@ -137,7 +137,18 @@
 | [how-to-get-offer](https://github.com/AIPMAndy/how-to-get-offer) · P0 | [浏览器端到端脚本 e5ff5cc](https://github.com/AIPMAndy/how-to-get-offer/commit/e5ff5ccf0726f3df9b6d58608f0d31c80bf3f335)、[浏览器 CI 1777e55](https://github.com/AIPMAndy/how-to-get-offer/commit/1777e558259731dd58e497d9c6e732980515cc7d)、[兼容 Ubuntu 修复 bd4936d](https://github.com/AIPMAndy/how-to-get-offer/commit/bd4936d4fc622971b4b2ca68241202ee22301e7a)、[异步状态修复 9a8bc46](https://github.com/AIPMAndy/how-to-get-offer/commit/9a8bc462983efa97728e9d8332d32da234f0d74b)、[Pages 实际线上 SHA 检查 398828b](https://github.com/AIPMAndy/how-to-get-offer/commit/398828b8d841195a49c80a00166d1c37b7155ce6)；无新增虚构案例，原工具未改。 | [Browser #43585775608](https://github.com/AIPMAndy/how-to-get-offer/actions/runs/43585775608) **success**（390/360/1280px，任务打卡/重载、岗位记录与 CSV、复制微信动作、XSS 转义和横向溢出）；[截图产物](https://github.com/AIPMAndy/how-to-get-offer/actions/runs/43585775608/artifacts/14109982422)；[Pages #43585775618](https://github.com/AIPMAndy/how-to-get-offer/actions/runs/43585775618) **success**；[站点](https://aipmandy.github.io/how-to-get-offer/) / [82 页 PDF](https://aipmandy.github.io/how-to-get-offer/pdf/how-to-get-offer-guide.pdf)。 | [新线上 HTTP/SHA #43586025537](https://github.com/AIPMAndy/how-to-get-offer/actions/runs/43586025537) **success**：首页、robots、sitemap、PDF HTTP 200，PDF SHA-256 `f8ca008f24d469205635535c7be8f1d8db977081a5c877b3d30145193bf9aa33` 与构建版一致；真实 Safari/iOS 与 Android、82 页高倍率逐页人工视觉及原工具实际触屏回归未签字；不能标 DONE。 |
 | [github-income-handbook](https://github.com/AIPMAndy/github-income-handbook) · P1（原缺 PDF） | [Markdown→PDF 生成器 2c9927d](https://github.com/AIPMAndy/github-income-handbook/commit/2c9927d49781a27c74e0686a69be6264bb15e562)、[PDF 全页 QA bc29505](https://github.com/AIPMAndy/github-income-handbook/commit/bc295059a5f3fd9f0976ed9b55a66109f9c61f47)、[PDF 构建/提交/部署 CI ffdbe7e](https://github.com/AIPMAndy/github-income-handbook/commit/ffdbe7e4c7d32e2e99b468367a6499d385c10b95)、[下载 CTA 77fb90f](https://github.com/AIPMAndy/github-income-handbook/commit/77fb90fcb25fc9ea8de807d75b44da85546dd2e5)、[线上哈希验收 c018e60](https://github.com/AIPMAndy/github-income-handbook/commit/c018e60a653cfbe5aa35cca7b784c206da0ea72e)。 PDF 已由 GitHub Actions 入库，非仅 CI 临时文件。 | [发布 + QA + 线上检查 #43585933169](https://github.com/AIPMAndy/github-income-handbook/actions/runs/43585933169) **success**；**63 页 / 159 书签 / 194 链接 / 63 页全渲染，0 个自动错误**；首页/robots/sitemap/PDF 四个真实线上 URL HTTP 200，线上 PDF SHA-256 = `a170b4393351343694e158d2dcafce143a9d628a0456ca10475e29383fa0fbca` 与 [仓库 edition.json](https://github.com/AIPMAndy/github-income-handbook/blob/main/pdf/edition.json) 一致；[网站](https://aipmandy.github.io/github-income-handbook/) / [新 PDF](https://aipmandy.github.io/github-income-handbook/pdf/github-income-handbook.pdf)。 | 全页**人工高倍率**视觉签字、真实手机 PDF 阅读/按钮点击、外链日期和来源复查；不把自动渲染等于人工 QA，更不声称商业收益。 |
 
-**覆盖更新：**原本 25/33 个有 PDF，本轮首次补全 github-income-handbook，现为 **26/33**；还有 7 个仓库待补或确定不适用。这是覆盖数，**不是 26 个站点 DONE**。后续按 P0 残余实机与高倍率验收优先；实机不可执行时推进 P1 缺 PDF 的 seo-handbook / 100m-in-5-years-handbook，绝不伪造签字。
+**历史覆盖更新（v1.8）：**首次补全 github-income-handbook 后为 26/33；**v1.9** 新补 seo-handbook 后为 **27/33**，尚有 **6** 个待补或核定不适用。这是 PDF 存在性，绝不是 27 个站点 DONE。后续继续 P0 实机与高倍率验收，以及未完成 P1 的 100m-in-5-years-handbook 等。
+
+### 2026-11-15 · 本轮实际交付：seo-handbook（P1 PDF 缺失修复，Stage 5，未标 DONE）
+
+| 字段 | 本轮已核验信息 |
+|---|---|
+| 基线与权限 | 最新计划原始 blob `68bf9739ac1d`（v1.8）；目标仓库 main 原 SHA `f7ddae194b1a0e04e217dc7340b4bd7bab98a123`；连接显示 admin/push=true；仓库原有 41 章 JSON、13 SOP、6 路线、63 HTML 页面及工具源码，起始仓库树无 PDF |
+| 源码与出版 | [源码/CI/网站生成器提交 2fe23a0](https://github.com/AIPMAndy/seo-handbook/commit/2fe23a003651efe271b7fcc6770324da7894f912)：`scripts/build_pdf.py` 从四份 JSON 源生成 A4 可搜索 PDF；`scripts/pdf_quality_gate.py` 检查每章/SOP 文本、链接、边界并把 **118 页全部渲染**为 QA 总览和 JSON 报告；`scripts/check_live_pdf.py` 在 Pages 部署后比对线上 PDF 与本次构建 SHA。网站生成器补 PDF CTA、公司官网及每页页脚链接，原工具功能未删除；新增公司官网与 PDF 回归断言 |
+| 验证 CI | [verify #43615935117](https://github.com/AIPMAndy/seo-handbook/actions/runs/43615935117) `completed/success`：41 章、13 SOP、118 页、115 个 PDF 链接、53,519 个可提取字符，118 页渲染，0 QA 错误；网站 63 HTML 静态 SEO 审计 **0 错误/警告**；Python/JS 回归成功 |
+| 仓库 PDF 与 Pages | [PDF 自动入库 commit fa9f19c](https://github.com/AIPMAndy/seo-handbook/commit/fa9f19c91e43289e873158caef1c8ebb5f516267)，仓库 `pdf/seo-handbook-guide.pdf` 735,071 字节；[deploy #43615935208](https://github.com/AIPMAndy/seo-handbook/actions/runs/43615935208) `completed/success`，不仅代码提交：Pages 部署后 CI 对 [首页](https://aipmandy.github.io/seo-handbook/) 和 [PDF](https://aipmandy.github.io/seo-handbook/pdf/seo-handbook-guide.pdf) 实际 HTTP 200 验证，在线 PDF SHA-256 = `abc1719b4c907f82dca6546aa28628388321f1183af92ed0acd2f99b7acbe0c0`，与**该次 deploy 构建文件**一致；站点首页检测到 PDF 下载 CTA |
+| 知识/合规边界 | 来源标题、链接和 `data/sources.json` 中原始核验日期保留；教学场景明确标记，未编造客户、收入、排名、Offer 或成功率；PDF 包含微信 `AIPMAndy`、个人官网、公司官网、服务链接；GitHub Pages 项目子路径的 robots 文件不冒充域名根规则 |
+| 仍需完成 | **不能标 DONE**：118 页真人高倍率逐页视觉审阅、iOS Safari/Android 真实触屏与 PDF 阅读测试、官方来源最新有效性复核、生产 Core Web Vitals/无障碍实测。CI 的全页渲染和 SHA 验证不等于上述人工签字。**下一轮**先清 P0 实机/视觉残项；环境不可用时选择 100m-in-5-years-handbook 等缺 PDF P1，先核实其仓库可见性与 Pages 是否适用，禁止私有内容擅自公开 |
 
 ## 七、迭代管理原则
 
