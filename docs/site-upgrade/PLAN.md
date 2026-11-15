@@ -1,6 +1,6 @@
 # 星觉科技 · GitHub 知识网站升级作战计划
 
-> 版本 v1.11 · 2026-11-15（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
+> 版本 v1.12 · 2026-11-15（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
 
 ## 一、唯一目标
 
@@ -172,6 +172,18 @@
 
 **本轮边界：**GitHub Actions 的构建 + Chromium 测试 + Pages 发布已成功，不将代码提交等同上线；网页首次 GitHub Pages 站外请求由各自部署工作流完成，外部通用网页抓取器无法读取时以该工作流的原始线上 HTTP/哈希日志为证据。下一轮先补 P0 的源时效和无障碍/高倍率视觉缺口；真机不可用时转 P1 缺 PDF（HowToMakeMoneyOnYouTube、chatgpt-income-handbook），并继续等待 100m-in-5-years-handbook 的 Pages 管理员启用。**33/33 未完成，不停止持续 loop。**
 
+
+
+### 2026-11-15 · 两个 P0 网站可用性与证据链升级（本轮 Stage 5，不标最终 DONE）
+
+本轮从主计划 blob `7a65976bb6ecf81a333ed23e79a9447288507855` 出发，先获取两个仓库的实时 main SHA，修改权威网站脚本/静态源码，采用带预期 SHA 的非强制提交；保留原有 PDF 与工具数据，等待 GitHub Actions/Pages 结果成功后才记录发布。本轮 **PDF 覆盖 28/33 不变**，不是 28/33 个站点完成。
+
+| 项目 / 实测 main SHA | 实际修改与 Commit | CI、Pages 和线上 URL 证据 | PDF / 仍未完成 / 下一步 |
+|---|---|---|---|
+| [餐饮 AI 获客攻略](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook) · P0 · `7ec6d863f1b7ca6fba1661fd77db840a5f36ecd3` | 从 `662b274` 审核实际静态文件和 PDF/Pages 流水线；[3822cda](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/commit/3822cda2f85274b8d5c2dab286fe4d97c747418e) 修改 4 个站点文件、新增 Playwright 脚本及 CI：计算器输入即验、负值/空白/异常金额拒算、可下载本机 CSV；30 天打卡 TXT 导出、二次确认清空；剪贴板失败明确提示，不再伪报成功；手机触控/键盘焦点与计划、工具页 canonical/OG/robots/真实 JSON-LD。[7ec6d86](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/commit/7ec6d863f1b7ca6fba1661fd77db840a5f36ecd3) 增加上线版本的工具页/计划页/JS SHA 比对。未修改 PDF 版次。 | [浏览器 #43704523970](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/actions/runs/43704523970) **completed/success**：360/390/1280px、CSV 内容、无效输入、恢复零值、30 项任务本地持久化与导出/确认清空、微信复制成功/拒绝两种情况、横向溢出与结构化数据；[Pages #43704523953](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/actions/runs/43704523953) **completed/success**：真实线上 HTML/JS 与仓库 SHA 一致，原 47 页 PDF 在线 SHA 与仓库 edition 一致。[首页](https://aipmandy.github.io/restaurant-ai-customer-acquisition-handbook/) · [工具](https://aipmandy.github.io/restaurant-ai-customer-acquisition-handbook/tools.html) · [计划](https://aipmandy.github.io/restaurant-ai-customer-acquisition-handbook/plan.html) · [PDF](https://aipmandy.github.io/restaurant-ai-customer-acquisition-handbook/downloads/restaurant-ai-customer-acquisition-handbook-guide.pdf)。 | **Stage 5**：原 47 页 PDF 沿用已通过的结构/样张 QA，本轮未重新出版；逐页高清人工视觉、实体 iOS Safari/Android 触屏、真实辅助技术、动态餐饮平台规则/官方链接时效尚未签收，不能标 DONE。优先将实际来源时效和无障碍复核加入测试台账。 |
+| [AI 中国内容电商攻略](https://github.com/AIPMAndy/ai-china-content-commerce-handbook) · P0 · `e49275f7ef176d995b86a83a0c63b899b60f1cfd` | 从 `e6aafa7` 核验源生成器、案例/章节数据、PDF 和 Pages；[源码 111d30f](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/commit/111d30fe100d2595f6e6fd662fd634cfcd6d0a2b) 为全部生成课程与第三方案例加入可解析的 Article JSON-LD（真实 author/publisher/canonical 与源 URL citation）、来源台账日期、来源性质/限制说明；将「真实案例」严格标为「第三方披露案例」，不把平台披露业绩写成本站成功结果。加全量生成页面测试；[上线 SHA 校验 6855f25](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/commit/6855f257afb790e229b2592ead490e1855833626)；构建机器人的[正式生成页/PDF 同步 e49275f](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/commit/e49275f7ef176d995b86a83a0c63b899b60f1cfd) 入库。 | [首次源码+发布 #43704479914](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/actions/runs/43704479914) **verify/deploy/live_verify 全 success**；[最终线上页面 SHA 验收 #43704636190](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/actions/runs/43704636190) **verify/deploy/live_verify 全 success**：从源重建全部课程/案例页并验证 JSON-LD、原财务计算回归、PDF 全页 QA、Pages 真实 PDF SHA；新增线上 `chapters/01.html`、`cases/C001.html` 与仓库生成文件 SHA 相符且含来源日期/结构化数据。[首页](https://aipmandy.github.io/ai-china-content-commerce-handbook/) · [课程样页](https://aipmandy.github.io/ai-china-content-commerce-handbook/chapters/01.html) · [案例样页](https://aipmandy.github.io/ai-china-content-commerce-handbook/cases/C001.html) · [PDF](https://aipmandy.github.io/ai-china-content-commerce-handbook/downloads/ai-china-content-commerce-handbook.pdf)。 | **Stage 5**：PDF 沿用同一源版式并经过本轮构建/自动全页 QA，但尚无人工高倍率逐页签字/实体手机验收；来源台账日期 **不是** 本轮在线复核日期，需逐条检查政策、平台条款、动态价格、失效链接；不擅自更新台账日期或声明每个来源实时验证。 |
+
+**阻塞与后续：** 当前无法用 Chromium 模拟视口证明真实 iOS/Android 触屏和系统辅助技术可用。两站不是最终 DONE；保持定期升级。下轮 P0 优先查余下动态来源和可真实补齐的无障碍/视觉缺口；如真机受阻，转去仍缺 PDF 的 `HowToMakeMoneyOnYouTube`、`chatgpt-income-handbook`、`ai-era-survival-guide` 等，沿源文档→PDF→全页文本/视觉 QA→Pages 线上验证推进。原 `100m-in-5-years-handbook` 因 GitHub Pages 未启用导致的阻塞仍在，未擅自标完成；全站未达 33/33，不暂停循环。
 
 ## 七、迭代管理原则
 
