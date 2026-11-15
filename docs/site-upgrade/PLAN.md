@@ -1,6 +1,6 @@
 # 星觉科技 · GitHub 知识网站升级作战计划
 
-> 版本 v1.13 · 2026-11-16（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
+> 版本 v1.14 · 2026-11-16（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
 
 ## 一、唯一目标
 
@@ -59,7 +59,7 @@
 | P0 | [chinese-international-student-career-guide](https://github.com/AIPMAndy/chinese-international-student-career-guide) | **81 页 PDF 已发布，当前 SHA 结构/文字 QA 与全页缩略图通过；真人逐页高倍率待签** | **50 页 SEO/链接及 Pages 部署成功；新增 Chromium 360/390/1280px 交互测试 [#43677008201](https://github.com/AIPMAndy/chinese-international-student-career-guide/actions/runs/43677008201) success；实体 iOS/Android 待验** | 2026-11-15 增加地区筛选一键清空、移动菜单/微信复制/空筛选恢复/PDF 下载回归；[Pages #43676910117](https://github.com/AIPMAndy/chinese-international-student-career-guide/actions/runs/43676910117) success；保留旧工具和 81 页 PDF；来源时效与真人视觉仍待审 |
 | P0 | [chinese-international-student-ai-jobs](https://github.com/AIPMAndy/chinese-international-student-ai-jobs) | **109 页 PDF 已公开；线上 SHA 与历史逐页 QA 的 SHA 一致** | **源码驱动网站改版、SEO/GEO 完整性检查、Pages 与技术案例 CI 成功；移动端复验待补** | 52 页 canonical/OG/JSON-LD + sitemap/robots；来源打包链已恢复；继续核验移动浏览器、岗位链接更新与出版包视觉质量 |
 | P0 | [chinese-international-student-product-jobs](https://github.com/AIPMAndy/chinese-international-student-product-jobs) | **128 页 PDF 已入库，逐页视觉与哈希记录可查** | **源码重建 + 全页 SEO/GEO + GitHub Pages + 下载校验均成功** | 补 WebPage JSON-LD、OG、三个关联专题/服务入口；修复源码 ZIP 遗漏 site/home.html，并在 CI 重打包；iOS/Android 真机及新岗位有效性仍待周期复核 |
-| P0 | [chinese-international-student-business-jobs](https://github.com/AIPMAndy/chinese-international-student-business-jobs) | **180 页 PDF 完整视觉 QA 已记录，仓库与线上有成品** | **全部章节 canonical/OG/JSON-LD、源码重建、站内链接、PDF 下载与 Pages 验证成功** | 修复首页旧发布提示并添加跨专题入口；CI 改为从最新内容生成网站与 ZIP；iOS/Android 真机和动态招聘规则仍需复核 |
+| P0 | [chinese-international-student-business-jobs](https://github.com/AIPMAndy/chinese-international-student-business-jobs) | **180 页 PDF 版本未改，历史完整视觉 QA 已记录；本轮线上 SHA 再验成功** | **新源码与浏览器回归、Pages 真正上线均通过**：[浏览器 #43769273996](https://github.com/AIPMAndy/chinese-international-student-business-jobs/actions/runs/43769273996)、[Pages #43769153502](https://github.com/AIPMAndy/chinese-international-student-business-jobs/actions/runs/43769153502) | 2026-11-16 站内搜索清空、正确显示总命中数、联系卡对比度与独立 Chromium 360/390/1280px 回归；iOS/Android 真机、真实辅助技术、动态岗位与政策原文复核仍待验，不标 DONE |
 | P0 | [local-business-ai-growth-handbook](https://github.com/AIPMAndy/local-business-ai-growth-handbook) | **71 页 PDF 已按 SHA 校验并随 Pages 发布，已有渲染预览 QA；高倍率真人待签** | **新浏览器真实交互 [#43677102440](https://github.com/AIPMAndy/local-business-ai-growth-handbook/actions/runs/43677102440) success；[Pages #43677102449](https://github.com/AIPMAndy/local-business-ai-growth-handbook/actions/runs/43677102449) 成功并现场校验 PDF SHA；实体 iOS/Android 待验** | 2026-11-15 增加章节搜索清空、测算器重置教学示例，回归 26 章、30 天进度存储/导出/复位、测算器/微信复制和 PDF 下载；不把模拟测试代替真机/71 页逐页人工审核 |
 | P0 | [restaurant-ai-customer-acquisition-handbook](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook) | **47 页 PDF 已镜像到网站目录、线上 SHA 一致** | **首页/PDF/SEO/CI 与线上校验成功；手机/全页视觉待验** | 已补 PDF 下载、canonical/OG/JSON-LD 与结构、链接和视觉样张 QA |
 | P0 | [ai-china-content-commerce-handbook](https://github.com/AIPMAndy/ai-china-content-commerce-handbook) | **40 页 PDF、140 书签、32,004 字符；本轮重新生成/全页 QA 零错警并同步仓库** | **Pages 部署成功；新加独立线上首页/sitemap/robots/PDF SHA 对比全部通过；Safari/Android 实机待验** | [新增 live_verify f349860](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/commit/f349860ca2f553297374870a48bae1dbb0837ae6)；[CI/Pages/Live #43648606735](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/actions/runs/43648606735) 成功 |
@@ -197,6 +197,17 @@
 
 **覆盖更新：** 28/33 → **29/33** 项目仓库有 PDF；仍有 **4 个**缺 PDF 或待用户确认不适用（如 `chatgpt-income-handbook`、`ai-era-survival-guide`、`AI-Awareness-Club`、`AIPMAndy.github.io`）。这仅是**存在性覆盖**，不是 29 个站点 Stage 6 DONE。全站仍未 33/33，且 `100m-in-5-years-handbook` Pages 启用阻塞不因本轮其他成功而消失。下轮继续 P0 的政策来源时效和真实辅助技术验收；可执行时推进其余缺 PDF 的 P1/P2 仓库，不启动停止/维护模式。
 
+
+
+### 2026-11-16 · 本轮 P0 增量交付：商科留学生求职站搜索与高对比度、独立浏览器验收
+
+从主计划 blob `58ad985758ee57c6dc8f1487adf274b1a5d07bfc` 出发，读取 [商科求职仓库](https://github.com/AIPMAndy/chinese-international-student-business-jobs) 最新 main `4682aebe94d8bc2fc7539dc7b30741c05b384278`、真实源生成器 `scripts/build-site.mjs`、`assets/app.js`、`assets/style.css`、已锁定依赖、Pages 部署工作流和 PDF 出版状态。未重做已验收的 180 页 PDF；没有将旧来源记录标作今天核验，也没有新增真实客户/Offer/收入等无依据成果。采用 Git tree+parent commit 的非强制 fast-forward 更新，不覆盖其他并发提交。
+
+| 项目 / 当前 main SHA | 实际代码改动 | CI / 线上验收与真实链接 | 阻塞、状态和下一步 |
+|---|---|---|---|
+| [中国留学生商科岗位求职攻略](https://github.com/AIPMAndy/chinese-international-student-business-jobs) · P0 · `a99cb381b5b461a1518ba1527eebfa9a91c2963c` | [源码与新增 QA 435886f](https://github.com/AIPMAndy/chinese-international-student-business-jobs/commit/435886f750624a9f7a0119f617521350f6823d64)：改权威网页生成器、搜索 JS、样式；站内全文搜索新增显式「清空搜索」按钮，清空输入和结果并恢复焦点；准确显示匹配总数/前 15 项；服务按钮指向 [个人服务页](https://metaver.vip/services)；修复深色咨询卡上深色标题/正文的可读性，明确焦点和手机 48px 按钮。新增 `tests/browser_smoke.py` 和 `browser-qa.yml`。首次浏览器脚本因多行中文 H1 精确匹配失败，仅测试断言被 [a99cb38](https://github.com/AIPMAndy/chinese-international-student-business-jobs/commit/a99cb381b5b461a1518ba1527eebfa9a91c2963c) 修正，网页无须回滚。 | [Pages #43769153502](https://github.com/AIPMAndy/chinese-international-student-business-jobs/actions/runs/43769153502) **completed/success**，源码重建、逐页 SEO、站内链接与 PDF/ZIP 校验通过；部署后真实首页、4 个文档/静态 JS/CSS、PDF、XLSX 和 2 个 ZIP 均 HTTP 200，SHA-256 与本次发布 dist 一致。180 页 [正式 PDF](https://aipmandy.github.io/chinese-international-student-business-jobs/downloads/business-careers-guide.pdf) 线上 SHA-256 `02cca39d9eae914c57fa07e279eb4d678e0de1d11583208ccbe7842230196952`；[网站](https://aipmandy.github.io/chinese-international-student-business-jobs/)。[最终 Chromium #43769273996](https://github.com/AIPMAndy/chinese-international-student-business-jobs/actions/runs/43769273996) **completed/success**：360/390/1280px，六职能筛选/重置、站内搜索/清空/无结果、手机菜单、微信复制失败提示、服务链接与咨询标题高对比度、全页无横向溢出；CI 生成三种视口截图。 | **Stage 5，尚未 DONE**：Chromium 模拟宽度不等于 iOS Safari/Android 实机；真人高清逐页视觉签收与真实屏幕阅读器仍需执行。岗位和工作资格数据仍沿用核对日 `2026-11-13` 的来源记录，未对所有外链与当季职位重新在线核验；下轮做有原始证据的动态来源复查。PDF 仓库存在性 **29/33 不变**，剩余 4 个待补/确认不适用（`chatgpt-income-handbook`、`ai-era-survival-guide`、`AI-Awareness-Club`、`AIPMAndy.github.io`）。 |
+
+**本轮质量边界：**只有 GitHub Actions 和真实线上哈希成功才记本轮工程交付；源码提交本身不能证明 Pages 发布。原 PDF 二进制未修改，无新增 PDF 全书人工签收。33 个站点尚未全部 Stage 6 DONE；`100m-in-5-years-handbook` 的 Pages 启用阻塞仍在，持续 loop 不停止。
 
 ## 七、迭代管理原则
 
