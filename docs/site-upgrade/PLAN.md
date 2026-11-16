@@ -1,6 +1,6 @@
 # 星觉科技 · GitHub 知识网站升级作战计划
 
-> 版本 v1.17 · 2026-11-17（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
+> 版本 v1.18 · 2026-11-17（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
 
 ## 一、唯一目标
 
@@ -51,7 +51,7 @@
 
 ## 五、优先级与仓库/PDF 目录（首轮）
 
-已检索到 128 个仓库；其中选出 33 个教程/知识站点完成**仓库目录级检查**：首轮有 PDF 文件 22 个，未发现 11 个；本轮为 seo-handbook 补齐 PDF 并经仓库树确认，截至本轮 **29 个项目在仓库内有 PDF，4 个尚未发现**（仅存在性，不代表质量完成）。这不是 PDF 视觉或 Pages 上线验收。
+已检索到 128 个仓库；其中筛选出 33 个重点知识站点。最初仓库 PDF 存在性为 22/33；历轮已补齐多个源驱动 PDF，**截至 2026-11-17 本轮为 31/33 个仓库有 PDF，另 2 个待补或明确判定是否适用**（仅存在性，绝不等同于视觉 QA、Pages 上线或 Stage 6 DONE）。当前剩余 `ai-era-survival-guide`、`AIPMAndy.github.io`。
 
 | 阶段 | 仓库 | PDF 目录状态 | 网站状态 | 本轮核心改造 |
 |---|---|---|---|---|
@@ -85,7 +85,7 @@
 | P2 | [intj-growth-guide](https://github.com/AIPMAndy/intj-growth-guide) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 成长工具与证据 |
 | P2 | [how-to-survive-unemployment](https://github.com/AIPMAndy/how-to-survive-unemployment) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 失业流程与政策来源 |
 | P2 | [how-to-job-hop-and-raise-salary](https://github.com/AIPMAndy/how-to-job-hop-and-raise-salary) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 薪酬换岗验证与证据 |
-| P2 | [AI-Awareness-Club](https://github.com/AIPMAndy/AI-Awareness-Club) | 未在仓库发现 PDF | 目录已审；线上与视觉待验 | 社群介绍与统一品牌；补 PDF |
+| P2 | [AI-Awareness-Club](https://github.com/AIPMAndy/AI-Awareness-Club) | **新增 23 页正式 PDF，9 条公开指南 + 12 FAQ；40 书签、35 外/内链、10,510 可提取字符；23 页全渲染、布局/文本/链接 QA 零错误，仓库归档及线上 SHA 一致** | **[Pages #43971080444](https://github.com/AIPMAndy/AI-Awareness-Club/actions/runs/43971080444) success，独立在线首页/章节/llms/sitemap/PDF HTTP 及 SHA 校验成功；[视觉 QA #43971080406](https://github.com/AIPMAndy/AI-Awareness-Club/actions/runs/43971080406) success** | 已补源驱动 PDF、全站 PDF/公司官网/服务链接、完整出版质量门禁并修复 Playwright runner；仍 Stage 5：真人逐页高清、真实 iOS/Android、可访问性与动态会员政策复核未最终签收 |
 | P2 | [AIPMAndy.github.io](https://github.com/AIPMAndy/AIPMAndy.github.io) | 未在仓库发现 PDF | 目录已审；线上与视觉待验 | 矩阵入口门户；是否需 PDF 另定 |
 | P2 | [Gemini-Canvas-Video-Kit](https://github.com/AIPMAndy/Gemini-Canvas-Video-Kit) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 视频制作可复现示例 |
 
@@ -241,6 +241,18 @@
 | [how-to-get-offer](https://github.com/AIPMAndy/how-to-get-offer) · [功能提交 298fdf5](https://github.com/AIPMAndy/how-to-get-offer/commit/298fdf58cd19a270cf33749a74d3df75ca3bd4bd) · [TXT 字节修正 6259218](https://github.com/AIPMAndy/how-to-get-offer/commit/6259218275a297cc05bf9141b9142354b49ffcb4)。在源生成器、静态 JS/CSS 与仓库首页同步新增「仅看未完成」、一键重置筛选、空结果提示、当前筛选任务的离线 UTF-8 TXT 导出，包含任务动作/完成凭证/卡点建议及准确的微信 AIPMAndy、个人/公司官网；**不导出用户岗位记录或薪酬输入**。勾选任务后保持可见复选框的键盘焦点；新增 Chromium 3 视口自动断言，检查已完成任务过滤、搜索空态、筛选重置、TXT 的中文内容与联系人。 | [原有内容/数据完整性 CI #43908463265](https://github.com/AIPMAndy/how-to-get-offer/actions/runs/43908463265) **success**。新 [Chromium 交互回归 #43908463124](https://github.com/AIPMAndy/how-to-get-offer/actions/runs/43908463124) **completed/success**：360/390/1280px 三视口通过新筛选、导出及原100任务、本地持久化、岗位 CSV、XSS、无横向溢出测试；[Pages/PDF/线上哈希 #43908463123](https://github.com/AIPMAndy/how-to-get-offer/actions/runs/43908463123) **completed/success**，部署版本 `6259218275a297cc05bf9141b9142354b49ffcb4`，首页/robots/sitemap 在线 HTTP 200、线上 PDF SHA-256 `f8ca008f24d469205635535c7be8f1d8db977081a5c877b3d30145193bf9aa33` 与源版一致；82 页全部自动渲染（PDF QA 产物 ID `14246383580`）、3 份浏览器截图已入 CI 产物（ID `14245509076`）。计划网站：https://aipmandy.github.io/how-to-get-offer/ ；正式 PDF：https://aipmandy.github.io/how-to-get-offer/pdf/how-to-get-offer-guide.pdf 。 | 最终三个工作流均已 success；仍尚需真正 iOS Safari/Android 和屏幕阅读器、82 页 PDF 人工高倍率逐页视觉验收，不能因为 Chromium 模拟视口成功就标记 DONE。静态官方来源台账多数上次核验日期为 2026-10-12；本轮独立读取《人力资源市场暂行条例》与《个人信息保护法》两条原文，但未全面核实其余法规及修订情况，**不将旧源日期批量改写为新日期**。不标 Stage 6 DONE。 |
 
 **覆盖口径**：30/33 仓库存在 PDF（3 个 P2 待补/判定不适用），本轮不新增 PDF，也不把新功能发布当成 33 站最终完工。上轮 `100m-in-5-years-handbook` Pages 设置阻塞仍需仓库管理员确认。下一轮优先处理本次自动回归失败项（若有）、P0 来源版本和实体设备/视觉核验；不可执行的人工签收保留独立待办，改推进 P2 缺 PDF。持续循环不停止。
+
+
+### 2026-11-17 · P2「AI 醒觉社」九篇公开知识源驱动 PDF 首次上线（Stage 5）
+
+先读取本计划 v1.17（blob `c33517485a487299cc1d03531e942b02faef873f`）和 3 个缺 PDF 仓库的真实 main 树；所有 P0 上次已完成 CI/Pages 工程升级，待做的实体 iOS/Android/真人高倍率审核此环境不具备，因此选择仍缺正式 PDF、代码与出版链可直接处理的 [AI-Awareness-Club](https://github.com/AIPMAndy/AI-Awareness-Club)。起始 main `49eed43354b8364f5cffbaf261334b34fc7ed52b`，非强制分支/PR 更改，未动付费会员知识、客户案例或 9 条公开指南原始事实。
+
+| 本轮真正交付 | 可复现 CI / GitHub Pages 实测 | 未完成 / 风险 / 下步 |
+|---|---|---|
+| [PR #1](https://github.com/AIPMAndy/AI-Awareness-Club/pull/1) 通过审查并 [squash merge 3a60550](https://github.com/AIPMAndy/AI-Awareness-Club/commit/3a60550bc36506385eb31d1a0d79c6face5c6509)。新增权威 [PDF 生成器](https://github.com/AIPMAndy/AI-Awareness-Club/blob/main/scripts/build_pdf.py)、[PDF QA 脚本](https://github.com/AIPMAndy/AI-Awareness-Club/blob/main/scripts/check_pdf.py)、锁版本依赖；仅从 `data/guides.json` 九条已公开指南与 `data/faq.json` 十二条 FAQ 编排 **23 页**正式出版物。自动 QA：**40 书签 / 35 可点击链接 / 10,510 可提取字符 / 23/23 页全页光栅化 / 0 项文本越界或缺章节**。PDF 版次 [SHA-256 `34a9a60679e0bb4d6bee51327962992c02ed9dbca5af28176d677d51c5c7b8a5`](https://github.com/AIPMAndy/AI-Awareness-Club/blob/main/pdf/edition.json)，[正式 PDF](https://github.com/AIPMAndy/AI-Awareness-Club/blob/main/pdf/ai-awareness-club-guide.pdf)、[可复核 QA 报告](https://github.com/AIPMAndy/AI-Awareness-Club/blob/main/pdf/qa-report.json) 已由 Actions 归档到 main，非临时产物。14 个网站页面的 footer 增加正式 PDF、星觉科技公司官网 `https://www.a6no1.cn/` 和 `https://metaver.vip/services`，首页增加免费 PDF 下载 CTA，微信 AIPMAndy 与 `https://metaver.vip/` 保持准确；原 SEO canonical/robots/sitemap/JSON-LD 与 9 篇训练工作台沿用完整来源、不写虚构业绩。公开内容初稿日期仍标为 **2026-10-29**，未谎称外部政策今天已复核。 | [PR 首次全站内容/PDF CI #43970625894](https://github.com/AIPMAndy/AI-Awareness-Club/actions/runs/43970625894) **success**；[初次 Pages+线上 PDF SHA #43970810185](https://github.com/AIPMAndy/AI-Awareness-Club/actions/runs/43970810185) **success**、[主分支内容 CI #43970810224](https://github.com/AIPMAndy/AI-Awareness-Club/actions/runs/43970810224) **success**。首次视觉测试遇 GitHub `ubuntu-latest` 跳转到 Ubuntu 26.04、不兼容 Playwright 1.56；[修复提交 5646c5f](https://github.com/AIPMAndy/AI-Awareness-Club/commit/5646c5f757cb5a6b00bdb54bbf994aff0a42dd1d) 明确锁为 Ubuntu 24.04，随后 [最终视觉测试 #43971080406](https://github.com/AIPMAndy/AI-Awareness-Club/actions/runs/43971080406) **success**、[内容 CI #43971080346](https://github.com/AIPMAndy/AI-Awareness-Club/actions/runs/43971080346) **success**、[最终 Pages+独立线上 SHA #43971080444](https://github.com/AIPMAndy/AI-Awareness-Club/actions/runs/43971080444) **success**。最终 main `5646c5f757cb5a6b00bdb54bbf994aff0a42dd1d`；[在线站点](https://aipmandy.github.io/AI-Awareness-Club/) / [在线 PDF](https://aipmandy.github.io/AI-Awareness-Club/pdf/ai-awareness-club-guide.pdf)，工作流在真实 Pages 下载 PDF 后 SHA-256 与仓库正式版一致。 | **Stage 5，不标 DONE**：PDF 全量机器渲染不是人工 200% 逐页高清视觉签字；Chromium 响应式检查不是 iOS Safari/Android 实机；会员条款仍以官方页面为准，需核实实时有效性；还须做屏幕阅读器辅助技术/用户流程测试。PDF 在 GitHub 仓库中存在性 **30/33 → 31/33**；剩余 `ai-era-survival-guide` 和 `AIPMAndy.github.io`（后者是否需要 PDF 尚未获得用户同意排除）。`100m-in-5-years-handbook` Pages 历史启用阻塞仍独立挂起。持续 loop 不停止。 |
+
+**本轮结论：**可复现源码→PDF→全页自动 QA→正式入库→Pages 部署→线上哈希一致完整链路已验证，且因环境升级导致的浏览器测试失败已恢复成功。正式验收仍依定义待人工/实体设备签字，不能把 PDF 31/33 混同为 31 站 DONE。
+
 
 ## 七、迭代管理原则
 
