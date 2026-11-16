@@ -1,6 +1,6 @@
 # 星觉科技 · GitHub 知识网站升级作战计划
 
-> 版本 v1.16 · 2026-11-16（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
+> 版本 v1.17 · 2026-11-17（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
 
 ## 一、唯一目标
 
@@ -231,6 +231,16 @@
 | 发布过程发现同源多次 PDF 构建 SHA 不稳定：原先的 PyMuPDF 后处理添加随机 trailer ID，且新版本字体子集化也可能带来字节差异。已去除二次元数据写入、从源内容生成固定 `pdf_identifier`，将 WeasyPrint/fonttools/pydyf 等版本锁定，并加入同源二次生成 SHA 相等的严格质量门禁 [43d6609](https://github.com/AIPMAndy/chatgpt-income-handbook/commit/43d66090b979fcb241254a571ea503864bfdc9cb)。 | [**最终编译 + 全页自动 QA + Pages + LIVE 核验 #43851564326**](https://github.com/AIPMAndy/chatgpt-income-handbook/actions/runs/43851564326) 已全部 **success**；版次 SHA-256 `8a92d77b4e23e1f8d8d3544e66b939e81db1b49d8ffa474aae01db2b903e0daf`，线上 PDF 与仓库 `pdf/edition.json` 一致，[正式二进制入库 b8e738e](https://github.com/AIPMAndy/chatgpt-income-handbook/commit/b8e738e0cf6fc3e2b28d9f9e4b33436de35823c5)。源指纹校验命中时复用上一版经过 hash 验证的 PDF，保证**同一已发布版次字节稳定**；不声称未缓存的全新字体子集渲染具有天然位级确定性。非快进 push 曾在并发源更新时被安全拒绝，未使用 force push、未覆盖他人提交。 | 最新版 PDF 自动 QA：75 页/34 章/197 书签/156 链接/31,576 字符/5 份全页拼版、0 个文本边界告警；[正式 QA 产物](https://github.com/AIPMAndy/chatgpt-income-handbook/actions/runs/43851564326/artifacts/14216484679)。注意这仍不是人工逐页高清视觉签字、移动实机验收或官方条款当日复核，不能标 Stage 6 DONE。 |
 
 **当前 PDF 仓库存在性覆盖：29/33 → 30/33**，余下 **3 个**（`ai-era-survival-guide`、`AI-Awareness-Club`、`AIPMAndy.github.io`）仍需补齐或经用户同意判定不适用；**30/33 不是 30 个站点 DONE**。前序 `100m-in-5-years-handbook` GitHub Pages 初始启用问题仍需管理员复核，未因本轮交付自动解除。下一轮仍优先 P0 残余真实政策来源复核与实机/高清视觉签收；不具备实机条件时推进 P2 缺 PDF 的合适内容站。33 个站点尚未全部 Stage 6，持续循环不停止。
+
+### 2026-11-17 · P0「社招拿 Offer」行动清单实用性与可访问性升级（Stage 5，待最终签收）
+
+本轮从实时 GitHub 读取主计划 blob `050c61394b6a9c35bcf79118d195e4d9c0cf44b8`，核对 [how-to-get-offer](https://github.com/AIPMAndy/how-to-get-offer) main `398828b8d841195a49c80a00166d1c37b7155ce6` 以及实际权威生成器 `build.py`、`assets/app.js` / `app.css`、100 个任务 JSON、Pages/Browser CI 和 82 页 PDF 出版链路。项目已有正式 PDF 与 SEO/GEO 元数据，因此不重写教程、不虚构求职结果、不改动既有薪酬计算器、岗位 CSV 和个人本地数据逻辑。
+
+| 本轮 P0 修改 / 提交 | 测试与发布证据 | 仍需完成 / 阻塞 |
+|---|---|---|
+| [how-to-get-offer](https://github.com/AIPMAndy/how-to-get-offer) · [功能提交 298fdf5](https://github.com/AIPMAndy/how-to-get-offer/commit/298fdf58cd19a270cf33749a74d3df75ca3bd4bd) · [TXT 字节修正 6259218](https://github.com/AIPMAndy/how-to-get-offer/commit/6259218275a297cc05bf9141b9142354b49ffcb4)。在源生成器、静态 JS/CSS 与仓库首页同步新增「仅看未完成」、一键重置筛选、空结果提示、当前筛选任务的离线 UTF-8 TXT 导出，包含任务动作/完成凭证/卡点建议及准确的微信 AIPMAndy、个人/公司官网；**不导出用户岗位记录或薪酬输入**。勾选任务后保持可见复选框的键盘焦点；新增 Chromium 3 视口自动断言，检查已完成任务过滤、搜索空态、筛选重置、TXT 的中文内容与联系人。 | [原有内容/数据完整性 CI #43908463265](https://github.com/AIPMAndy/how-to-get-offer/actions/runs/43908463265) **success**。新 [Chromium 交互回归 #43908463124](https://github.com/AIPMAndy/how-to-get-offer/actions/runs/43908463124) 与 [Pages/PDF/线上哈希 #43908463123](https://github.com/AIPMAndy/how-to-get-offer/actions/runs/43908463123) 已触发，**本次写账时仍运行中，未据此声称部署成功**。计划网站：https://aipmandy.github.io/how-to-get-offer/ ；正式 PDF：https://aipmandy.github.io/how-to-get-offer/pdf/how-to-get-offer-guide.pdf 。 | 需以最终工作流 completed/success 与部署后 HTTP/SHA 为准；尚需真正 iOS Safari/Android 和屏幕阅读器、82 页 PDF 人工高倍率逐页视觉验收。静态官方来源台账多数上次核验日期为 2026-10-12；本轮独立读取《人力资源市场暂行条例》与《个人信息保护法》两条原文，但未全面核实其余法规及修订情况，**不将旧源日期批量改写为新日期**。不标 Stage 6 DONE。 |
+
+**覆盖口径**：30/33 仓库存在 PDF（3 个 P2 待补/判定不适用），本轮不新增 PDF，也不把新功能发布当成 33 站最终完工。上轮 `100m-in-5-years-handbook` Pages 设置阻塞仍需仓库管理员确认。下一轮优先处理本次自动回归失败项（若有）、P0 来源版本和实体设备/视觉核验；不可执行的人工签收保留独立待办，改推进 P2 缺 PDF。持续循环不停止。
 
 ## 七、迭代管理原则
 
