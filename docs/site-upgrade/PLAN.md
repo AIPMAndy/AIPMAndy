@@ -1,6 +1,6 @@
 # 星觉科技 · GitHub 知识网站升级作战计划
 
-> 版本 v1.19 · 2026-11-17（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
+> 版本 v1.20 · 2026-11-17（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
 
 ## 一、唯一目标
 
@@ -254,16 +254,16 @@
 **本轮结论：**可复现源码→PDF→全页自动 QA→正式入库→Pages 部署→线上哈希一致完整链路已验证，且因环境升级导致的浏览器测试失败已恢复成功。正式验收仍依定义待人工/实体设备签字，不能把 PDF 31/33 混同为 31 站 DONE。
 
 
-### 2026-11-17 · P0 餐饮 AI 获客：保本单量实用功能 + GEO 来源证据 + 静态发布链整改（Stage 3/4 进行中）
+### 2026-11-17 · P0 餐饮 AI 获客：保本单量实用功能 + GEO 来源证据 + 静态发布链整改（Stage 5：已部署，未最终签收）
 
 本轮先取最新计划 blob `7f191b4a756f87ca7df73da703091c98dedab915`、P0 餐饮仓库 main `7ec6d863f1b7ca6fba1661fd77db840a5f36ecd3`，核对真实仓库树、站点/JS/样式、浏览器回归、Pages 工作流、47 页已归档 PDF 和线上校验链。发现 README 所述 `src/content.py`、`scripts/build.py` 等源生成器**实际不存在**：当前权威网站源码是 `site/` 下静态 HTML/CSS/JS，已更正文档，未把网站误写成已接入同源构建。
 
 | 项目与代码证据 | 本轮变动 | 验收与尚未完成 |
 |---|---|---|
-| [restaurant-ai-customer-acquisition-handbook PR #1](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/pull/1) · 工作分支 `site-upgrade/20261117-break-even-and-source-audit`，最新待审 SHA `9bdcdf1f7b15a9c308a63323019c9eaabf7011a7` | 在真实 `site/tools.html`、`site/assets/app.js`、`style.css` 增加**选填每月固定成本→估算理论保本单量→本地 CSV 导出**，包含非负/上界校验、亏损订单不能靠加量保本的正确提示、重置、无上传及清晰的教学模拟边界。原六输入单单贡献和 30 天计划不删除；Chromium 360/390/1280px 增加 450 单例子、非法输入/亏损口径/导出验证。修复 README 对不存在源码链路的陈述。 | PR 首版浏览器回归 [#44017506922](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/actions/runs/44017506922) **success**；后续 GEO 与 sitemap 提交的新一轮浏览器 CI [#44017822946](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/actions/runs/44017822946) **运行中，尚未确认通过**；**PR 尚未合并，Pages 不能记作本轮成功部署**。 |
-| [官方来源台账](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/blob/site-upgrade/20261117-break-even-and-source-audit/docs/SOURCES.md) 与 [在线来源页源码](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/blob/site-upgrade/20261117-break-even-and-source-audit/site/sources.html) | 2026-11-17 独立打开抖音行业角色认证、中国网信网 AI 生成内容标识办法（官方发布日期 2025-03-14）及个人信息保护法原文（官方发布日期 2021-08-20），留原文链接、作者/公司、核验边界；美团访问超时、小红书只有登录页，明确**未核实动态规则**。来源页补 canonical、robots、有效 WebPage JSON-LD/citation；robots 增 sitemap、sitemap 根 URL 与 canonical 一致、来源页加 lastmod、删 404。 | 后续需要主分支 CI / Pages 确实 success，线上首页、tools、sources、robots、sitemap 及 PDF 重新检查；不能以代码提交代替发布。法律文本可读不等于完整合规意见，不将无法读取的商家后台标记为已核验。 |
+| [restaurant-ai-customer-acquisition-handbook PR #1](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/pull/1) · 工作分支 `site-upgrade/20261117-break-even-and-source-audit`，经 PR 成功 [squash 合并 cedec36](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/commit/cedec369591f9269d49b664138236079397f8c4c) 至 main（原 PR 头 `9bdcdf1`） | 在真实 `site/tools.html`、`site/assets/app.js`、`style.css` 增加**选填每月固定成本→估算理论保本单量→本地 CSV 导出**，包含非负/上界校验、亏损订单不能靠加量保本的正确提示、重置、无上传及清晰的教学模拟边界。原六输入单单贡献和 30 天计划不删除；Chromium 360/390/1280px 增加 450 单例子、非法输入/亏损口径/导出验证。修复 README 对不存在源码链路的陈述。 | PR 最终浏览器回归 [#44017822946](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/actions/runs/44017822946) **success**；main 再跑 [#44017925897](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/actions/runs/44017925897) **success**，覆盖 360/390/1280px 的新增保本估算、原有计算/CSV、计划存储、复制失败、SEO 与无横向溢出。最终 [Pages/PDF/线上 SHA #44017925957](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/actions/runs/44017925957) **completed/success**：部署 commit `cedec36`，Actions 日志实际 GET 首页、tools、plan、app.js、47 页 PDF，逐项文件 SHA 与仓库版匹配。网站 https://aipmandy.github.io/restaurant-ai-customer-acquisition-handbook/，工具 https://aipmandy.github.io/restaurant-ai-customer-acquisition-handbook/tools.html，PDF https://aipmandy.github.io/restaurant-ai-customer-acquisition-handbook/downloads/restaurant-ai-customer-acquisition-handbook-guide.pdf。 |
+| [官方来源台账](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/blob/site-upgrade/20261117-break-even-and-source-audit/docs/SOURCES.md) 与 [在线来源页源码](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/blob/site-upgrade/20261117-break-even-and-source-audit/site/sources.html) | 2026-11-17 独立打开抖音行业角色认证、中国网信网 AI 生成内容标识办法（官方发布日期 2025-03-14）及个人信息保护法原文（官方发布日期 2021-08-20），留原文链接、作者/公司、核验边界；美团访问超时、小红书只有登录页，明确**未核实动态规则**。来源页补 canonical、robots、有效 WebPage JSON-LD/citation；robots 增 sitemap、sitemap 根 URL 与 canonical 一致、来源页加 lastmod、删 404。 | 本轮已经通过 main Pages 部署及对首页/工具/计划/JS/PDF 的线上哈希校验，来源页 canonical/JSON-LD 和本地源码中的 sitemap/robots 经浏览器测试及静态检查；**sources.html/robots/sitemap 的独立线上逐字节哈希未列入当次 Pages 脚本**，下一轮增补相应 CI，不能冒称已逐 URL 校验。法律原文可读不等于完整合规意见，不将无法读取的商家后台标记为已核验。 |
 
-**当前仍 Stage 3/4，非 DONE**：实体 iOS Safari/Android、屏幕阅读器与 47 页 PDF 人工高清逐页签字待办；PDF 文件本轮未修改，31/33 PDF 仓库覆盖保持不变，缺口 `ai-era-survival-guide` 和 `AIPMAndy.github.io`。待浏览器 CI success 后审查/合并 PR，再等待 Pages CI 的真实部署和线上 SHA 验证；失败则记录日志并修复。其他 P0 旧的 Stage 5 和 `100m-in-5-years-handbook` Pages 首次启用阻塞不因此自动解除。持续 loop 不停止。
+**当前 Stage 5，非 Stage 6 DONE**：代码已合并、Chromium 三视口与真实 Pages 发布以及已列文件的线上 SHA/PDF 一致性均通过；实体 iOS Safari/Android、屏幕阅读器、47 页 PDF 人工高清逐页签字及 sources/robots/sitemap 独立在线哈希待办。PDF 文件本轮未修改，31/33 PDF 仓库覆盖保持不变，缺口 `ai-era-survival-guide` 和 `AIPMAndy.github.io`。其他 P0 旧 Stage 5 和 `100m-in-5-years-handbook` Pages 首次启用阻塞不因此自动解除。持续 loop 不停止。
 
 ## 七、迭代管理原则
 
