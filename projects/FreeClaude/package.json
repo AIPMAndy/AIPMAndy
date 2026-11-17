@@ -1,0 +1,18 @@
+{
+  "name": "freeclaude-guide",
+  "version": "1.0.0",
+  "description": "FreeClaude — an unofficial, privacy-first Claude free-tier guide, troubleshooting wizard and network diagnostics CLI.",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "freeclaude": "./bin/freeclaude.mjs"
+  },
+  "scripts": {
+    "test": "node --test",
+    "doctor": "node ./bin/freeclaude.mjs doctor",
+    "start": "node ./src/serve.mjs"
+  },
+  "engines": { "node": ">=20" },
+  "license": "MIT",
+  "keywords": ["claude", "anthropic", "free", "guide", "troubleshooting", "open-source", "privacy"]
+}

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0a0a0c" />
+  <meta name="description" content="FreeClaude：免费开源的 Claude 保姆级教程、交互式登录问题诊断、账号安全避坑和本地环境检测。不卖账号，不收集隐私。" />
+  <meta property="og:title" content="FreeClaude — 少走弯路，安全用 Claude" />
+  <meta property="og:description" content="从官方注册到免费功能、登录故障和隐私保护，一套开源工具箱帮你搞定。" />
+  <meta property="og:type" content="website" />
+  <title>FreeClaude — 少走弯路，安全用 Claude</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳至主要内容</a>
+  <div class="ambient" aria-hidden="true"></div>
+  <header class="topbar">
+    <div class="container nav-layout">
+      <a class="brand" href="#top" aria-label="FreeClaude 首页"><span class="brand-icon" aria-hidden="true">F<span>✦</span></span><span>FreeClaude<span class="brand-dot">.</span></span></a>
+      <nav aria-label="主导航" class="main-nav">
+        <a href="#journey">使用路径</a>
+        <a href="#diagnose">故障诊断</a>
+        <a href="#features">免费能力</a>
+        <a href="#prompts">提示词</a>
+      </nav>
+      <a class="nav-github" href="https://github.com/AIPMAndy" target="_blank" rel="noopener noreferrer" aria-label="访问作者 GitHub">GitHub <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="top" aria-labelledby="hero-title">
+      <div class="hero-meta"><span class="dot-pulse" aria-hidden="true"></span> 开源 · 无需登录 · 本地可用 <span class="meta-sep">/</span> 2026.11 校验</div>
+      <div class="hero-body">
+        <div class="hero-copy">
+          <p class="eyebrow">THE UNOFFICIAL CLAUDE FIELD GUIDE</p>
+          <h1 id="hero-title">真正免费的，<br>是<span class="underline-glow">少走弯路。</span></h1>
+          <p class="hero-lead">注册、登录、排错、免费功能、安全避坑。<br>把网上散落的 Claude 教程，做成一套<span>可验证、无套路</span>的开源工具箱。</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#diagnose">立即诊断问题 <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-ghost" href="#journey">5 分钟开始 <span aria-hidden="true">→</span></a>
+          </div>
+          <p class="under-note"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 2 7 3v5c0 4.5-3 7-7 8-4-1-7-3.5-7-8V5l7-3Z"/><path d="m7 10 2 2 4-4"/></svg> 不买号 · 不代收验证码 · 不存账号信息</p>
+        </div>
+        <div class="hero-panel" aria-label="FreeClaude 功能展示">
+          <div class="panel-top"><span class="panel-signal"><i></i><i></i><i></i></span><span>FREECLAUDE / START HERE</span><span class="panel-tag">v1.0</span></div>
+          <div class="panel-inner">
+            <span class="panel-label">YOUR NEXT ACTION</span>
+            <div class="panel-big">从问题出发，<br><em>一步到位。</em></div>
+            <div class="mini-timeline">
+              <div><span class="timeline-num">01</span><span><strong>先确认使用资格</strong><small>官方支持地区 · 自有邮箱 · 手机验证</small></span><span class="mini-check">✓</span></div>
+              <div><span class="timeline-num">02</span><span><strong>再走官方登录流程</strong><small>Google / 邮箱安全链接</small></span><span class="mini-check">✓</span></div>
+              <div><span class="timeline-num">03</span><span><strong>最后真正把 Claude 用起来</strong><small>Free 功能 · 提示词 · 成本边界</small></span><span class="mini-arrow">↗</span></div>
+            </div>
+            <div class="panel-bottom"><span>NO PASSWORDS. NO TRACKING.</span><span>100% LOCAL UI</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-bottom"><span>01 / 看懂边界</span><span>02 / 解决问题</span><span>03 / 安全使用</span><span>↓</span></div>
+    </section>
+
+    <section class="section light-section" id="journey">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow ink-eyebrow">01 / GET STARTED</p><h2>只有三个步骤，<br>不需要神秘教程。</h2></div><p>不研究“怎么伪装成新用户”，先解决真正的入门障碍：资格、登录和功能理解。</p></div>
+        <div class="steps-grid">
+          <article class="step-card"><span class="step-number">01</span><span class="step-symbol">◎</span><h3>确认资格</h3><p>先查看 Claude 官方支持地区与最低年龄要求，准备自己长期可控制的邮箱和手机号码。</p><a href="https://support.claude.com/en/articles/8461763-where-can-i-access-claude" target="_blank" rel="noopener noreferrer">查看官方支持地区 <span aria-hidden="true">↗</span></a></article>
+          <article class="step-card"><span class="step-number">02</span><span class="step-symbol">↗</span><h3>官方登录</h3><p>访问 claude.ai，使用 Google 账户或邮箱安全链接登录；跨设备收邮件时使用原设备显示的验证流程。</p><a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">前往 Claude 官网 <span aria-hidden="true">↗</span></a></article>
+          <article class="step-card"><span class="step-number">03</span><span class="step-symbol">✳</span><h3>先用免费版</h3><p>从问答、网页搜索、文件处理与 Artifacts 入手，先验证自己的使用频率，再决定是否付费。</p><a href="#features">查看免费能力 <span aria-hidden="true">↗</span></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="diagnose" aria-labelledby="diagnose-title">
+      <div class="container diagnose-layout">
+        <div class="diagnose-aside"><p class="eyebrow">02 / TROUBLESHOOTER</p><h2 id="diagnose-title">卡住了？<br>先找到原因。</h2><p>选择你遇到的问题，我们只展示对应的<strong>官方推荐排查路径</strong>。所有操作在本地浏览器完成，不发送信息到服务器。</p><div class="aside-feature"><span>●</span> 无需上传账号截图</div><div class="aside-feature"><span>●</span> 不要求填写账号或 IP</div><div class="aside-feature"><span>●</span> 不采集验证码与密钥</div></div>
+        <div class="diagnose-tool">
+          <div class="tool-header"><span>INTERACTIVE DIAGNOSTIC</span><span>LOCAL ONLY <span class="status-point"></span></span></div>
+          <h3>你现在遇到哪种问题？</h3>
+          <div class="diagnose-grid" id="issue-options" role="group" aria-label="选择问题类型">
+            <button type="button" class="issue-option is-selected" data-issue="email">没收到登录邮件 <span aria-hidden="true">↗</span></button>
+            <button type="button" class="issue-option" data-issue="google">Google 登录失败 <span aria-hidden="true">↗</span></button>
+            <button type="button" class="issue-option" data-issue="phone">手机验证失败 <span aria-hidden="true">↗</span></button>
+            <button type="button" class="issue-option" data-issue="account">账号被限制 <span aria-hidden="true">↗</span></button>
+            <button type="button" class="issue-option" data-issue="access">网站无法打开 <span aria-hidden="true">↗</span></button>
+            <button type="button" class="issue-option" data-issue="limit">免费额度不够 <span aria-hidden="true">↗</span></button>
+            <button type="button" class="issue-option" data-issue="code">想用 Claude Code <span aria-hidden="true">↗</span></button>
+            <button type="button" class="issue-option" data-issue="security">担心账号安全 <span aria-hidden="true">↗</span></button>
+          </div>
+          <div class="diagnosis-result" aria-live="polite" aria-atomic="true"><div class="result-kicker">RECOMMENDED CHECKLIST <span id="result-count">3 STEPS</span></div><h4 id="result-title">没收到登录邮件</h4><ol id="result-steps"></ol><div class="result-foot"><a id="result-link" href="https://support.claude.com/" target="_blank" rel="noopener noreferrer">查看官方说明 <span aria-hidden="true">↗</span></a><button id="copy-steps" type="button" class="text-button">复制排查清单 <span aria-hidden="true">⧉</span></button></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light-section" id="features">
+      <div class="container"><div class="section-heading"><div><p class="eyebrow ink-eyebrow">03 / KNOW THE LIMITS</p><h2>免费版很好用。<br>但它不是无限额度。</h2></div><p>别把 Claude 网页版、Claude Code 和 API 混为一谈。想少花钱，先把边界搞明白。</p></div>
+        <div class="compare-table-wrap"><table class="compare-table"><thead><tr><th scope="col">能力 / 场景</th><th scope="col">Claude Free</th><th scope="col">付费 / 另行计费</th></tr></thead><tbody><tr><th scope="row">网页、桌面、手机对话</th><td><span class="tick">✓</span> 支持，有使用额度</td><td>更高额度视套餐而定</td></tr><tr><th scope="row">网页搜索、Artifacts</th><td><span class="tick">✓</span> 支持</td><td>更多权益因套餐而异</td></tr><tr><th scope="row">Projects</th><td><span class="tick">✓</span> 最多 5 个</td><td>按套餐规则</td></tr><tr><th scope="row">文件处理 / 代码执行</th><td><span class="tick">✓</span> 受额度与功能限制</td><td>按套餐规则</td></tr><tr><th scope="row">Claude Code</th><td><span class="no">—</span> 非 Free 标准权益</td><td>支持的付费计划</td></tr><tr><th scope="row">Claude API</th><td><span class="no">—</span> 不是 Free 聊天额度</td><td>按 API 计费规则</td></tr></tbody></table></div>
+        <p class="source-note">信息核验于 2026-11-17；官方会调整套餐、区域和限额。<a href="https://claude.com/pricing" target="_blank" rel="noopener noreferrer">以实时官方价格页为准 ↗</a></p>
+        <div class="tip-banner"><span class="tip-icon">💡</span><div><strong>省钱的真正方法</strong><p>先用免费版完成 3 个真实任务，再看是否经常触发额度；不要为“可能会用到的高级功能”先付费。</p></div><a href="#prompts">获取 5 个任务模板 ↗</a></div>
+      </div>
+    </section>
+
+    <section class="section bone-section" id="safety">
+      <div class="container safety-layout"><div><p class="eyebrow ink-eyebrow">04 / ACCOUNT SAFETY</p><h2>最贵的，不是会员费。<br>是丢掉账号。</h2><p class="safety-lead">网上教程可能让你购买“现成邮箱”、向陌生网站粘贴 2FA 密钥、套用指纹浏览器模板。这些做法可能产生账号接管、数据泄露与条款风险。</p><a href="https://github.com/AIPMAndy/AIPMAndy/tree/main/projects/FreeClaude/docs/03-security.md" target="_blank" rel="noopener noreferrer" class="text-link">查看完整风险清单 →</a></div><div class="safety-card"><div class="safety-head"><span>DO NOT SHARE</span><span>!</span></div><ul><li><span class="forbid">×</span> 手机验证码 / 邮箱登录链接</li><li><span class="forbid">×</span> 2FA 恢复码 / TOTP 原始密钥</li><li><span class="forbid">×</span> Cookie、Token、API Key</li><li><span class="forbid">×</span> 第三方购买的共享账号</li><li><span class="forbid">×</span> 未打码的邮箱、手机、身份截图</li></ul><p>你的凭据，只应该输入对应服务的官方页面或你本人可信的密码管理器。</p></div></div>
+    </section>
+
+    <section class="section light-section" id="prompts"><div class="container"><div class="section-heading"><div><p class="eyebrow ink-eyebrow">05 / PUT IT TO WORK</p><h2>不要只会登录。<br>今天就产出结果。</h2></div><p>这些模板不依赖付费功能。复制后替换括号里的信息，发给 Claude Free 或其他支持文本对话的 AI。</p></div><div class="prompt-grid" id="prompt-cards"></div></div></section>
+
+    <section class="section ending-section"><div class="container ending-layout"><div><p class="eyebrow">OPEN-SOURCE, NOT A SHORTCUT</p><h2>用 AI 改变结果。<br>别让“注册”成为终点。</h2><p>一个开源项目：更少套路、更清楚的边界、更好用的工具。</p></div><div class="ending-actions"><a class="btn btn-white" href="https://github.com/AIPMAndy" target="_blank" rel="noopener noreferrer">关注 GitHub <span aria-hidden="true">↗</span></a><a class="btn btn-outline-white" href="https://claude.ai/" target="_blank" rel="noopener noreferrer">前往 Claude 官网 <span aria-hidden="true">↗</span></a></div></div></section>
+  </main>
+
+  <footer><div class="container footer-layout"><div><a class="brand footer-brand" href="#top">FreeClaude<span class="brand-dot">.</span></a><p>非官方开源教程 · 不隶属于 Anthropic</p></div><div><a href="https://github.com/AIPMAndy" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://metaver.vip/" target="_blank" rel="noopener noreferrer">AI 酋长 Andy</a><a href="https://support.claude.com/" target="_blank" rel="noopener noreferrer">Claude Help</a><a href="https://status.claude.com/" target="_blank" rel="noopener noreferrer">服务状态</a></div><small>© 2026 FreeClaude · MIT · Last reviewed 2026.11.17</small></div></footer>
+  <div class="toast" role="status" aria-live="polite" id="toast" hidden>已复制到剪贴板</div>
+</body>
+</html>
