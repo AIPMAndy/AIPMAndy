@@ -1,6 +1,6 @@
 # 星觉科技 · GitHub 知识网站升级作战计划
 
-> 版本 v1.20 · 2026-11-17（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
+> 版本 v1.21 · 2026-11-17（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
 
 ## 一、唯一目标
 
@@ -51,7 +51,7 @@
 
 ## 五、优先级与仓库/PDF 目录（首轮）
 
-已检索到 128 个仓库；其中筛选出 33 个重点知识站点。最初仓库 PDF 存在性为 22/33；历轮已补齐多个源驱动 PDF，**截至 2026-11-17 本轮为 31/33 个仓库有 PDF，另 2 个待补或明确判定是否适用**（仅存在性，绝不等同于视觉 QA、Pages 上线或 Stage 6 DONE）。当前剩余 `ai-era-survival-guide`、`AIPMAndy.github.io`。
+已检索到 128 个仓库；其中筛选出 33 个重点知识站点。最初仓库 PDF 存在性为 22/33；历轮以源码驱动补齐正式 PDF，**截至 2026-11-17 本轮仓库 PDF 存在性为 32/33，仍有 1 个待补或由用户明确确认 PDF 不适用**。最后一项为门户 `AIPMAndy.github.io`，尚未收到用户同意排除；**32/33 不是网站 Stage 6 DONE 数，也不是人工视觉签收率**。
 
 | 阶段 | 仓库 | PDF 目录状态 | 网站状态 | 本轮核心改造 |
 |---|---|---|---|---|
@@ -78,7 +78,7 @@
 | P1 | [one-person-ai-income-guide](https://github.com/AIPMAndy/one-person-ai-income-guide) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 进度/业务计算器 |
 | P1 | [how-to-earn-usd-from-china](https://github.com/AIPMAndy/how-to-earn-usd-from-china) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 合规条件/地区边界 |
 | P1 | [HowToBeAnAICreator](https://github.com/AIPMAndy/HowToBeAnAICreator) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 创作者工作流/内容实操 |
-| P2 | [ai-era-survival-guide](https://github.com/AIPMAndy/ai-era-survival-guide) | 未在仓库发现 PDF | 目录已审；线上与视觉待验 | 岗位风险评估/行动计划；补 PDF |
+| P2 | [ai-era-survival-guide](https://github.com/AIPMAndy/ai-era-survival-guide) | **新增正式 69 页 PDF：12 份 Markdown 源驱动，99 书签/158 链接/35,655 字，69 页自动光栅与边界 QA 通过；正式版 SHA `01b2d359…6570ac`，已入库并 Pages 在线哈希验收** | **源码 CI [#44067297268](https://github.com/AIPMAndy/ai-era-survival-guide/actions/runs/44067297268)、PDF [#44067297090](https://github.com/AIPMAndy/ai-era-survival-guide/actions/runs/44067297090)、Pages [#44067296652](https://github.com/AIPMAndy/ai-era-survival-guide/actions/runs/44067296652)、独立 Live 8 文件 SHA [#44067297267](https://github.com/AIPMAndy/ai-era-survival-guide/actions/runs/44067297267) 均成功；仍 Stage 5** | 新增 PDF 下载 CTA、Book JSON-LD、公司/服务入口、四个重点页 canonical/OG/WebPage/sitemap；原岗位与评分工具不回归；人工高倍率69页/真机/可访问性/实时政策核验待签，未标 DONE |
 | P2 | [grok-bot-handbook](https://github.com/AIPMAndy/grok-bot-handbook) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 教程平台版本核对 |
 | P2 | [muse-guide](https://github.com/AIPMAndy/muse-guide) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 交互体验/案例 |
 | P2 | [infj-career-growth-guide](https://github.com/AIPMAndy/infj-career-growth-guide) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 职业路径工具 |
@@ -264,6 +264,18 @@
 | [官方来源台账](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/blob/site-upgrade/20261117-break-even-and-source-audit/docs/SOURCES.md) 与 [在线来源页源码](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/blob/site-upgrade/20261117-break-even-and-source-audit/site/sources.html) | 2026-11-17 独立打开抖音行业角色认证、中国网信网 AI 生成内容标识办法（官方发布日期 2025-03-14）及个人信息保护法原文（官方发布日期 2021-08-20），留原文链接、作者/公司、核验边界；美团访问超时、小红书只有登录页，明确**未核实动态规则**。来源页补 canonical、robots、有效 WebPage JSON-LD/citation；robots 增 sitemap、sitemap 根 URL 与 canonical 一致、来源页加 lastmod、删 404。 | 本轮已经通过 main Pages 部署及对首页/工具/计划/JS/PDF 的线上哈希校验，来源页 canonical/JSON-LD 和本地源码中的 sitemap/robots 经浏览器测试及静态检查；**sources.html/robots/sitemap 的独立线上逐字节哈希未列入当次 Pages 脚本**，下一轮增补相应 CI，不能冒称已逐 URL 校验。法律原文可读不等于完整合规意见，不将无法读取的商家后台标记为已核验。 |
 
 **当前 Stage 5，非 Stage 6 DONE**：代码已合并、Chromium 三视口与真实 Pages 发布以及已列文件的线上 SHA/PDF 一致性均通过；实体 iOS Safari/Android、屏幕阅读器、47 页 PDF 人工高清逐页签字及 sources/robots/sitemap 独立在线哈希待办。PDF 文件本轮未修改，31/33 PDF 仓库覆盖保持不变，缺口 `ai-era-survival-guide` 和 `AIPMAndy.github.io`。其他 P0 旧 Stage 5 和 `100m-in-5-years-handbook` Pages 首次启用阻塞不因此自动解除。持续 loop 不停止。
+
+
+### 2026-11-17 · P0 餐饮站独立在线证据门禁 + P2 AI 时代正式 PDF 出版（Stage 5，均已上线且未最终签收）
+
+先读取本计划 v1.20（blob `64661397eef40b3d04fff58a7aafe3a4285cf054`）并逐仓核对 main 树、工作流和发布链。餐饮 P0 原始 main `cedec369591f9269d49b664138236079397f8c4c`；AI 时代 P2 原始 main `ae2f951626352295013008afa185b8f7117c863c`。P0 已部署的功能不重写，修复之前待办中 **sources.html / robots / sitemap 未独立进行线上 SHA 对比** 的缺口；原先需要人工实体设备才能执行的 Stage 5 待办保留，转而交付一个缺正式 PDF 的知识站点。
+
+| 实际源码/发布 | 可复核的 CI、Pages、在线产物 | 仍未完成 / 风险 |
+|---|---|---|
+| **P0 餐饮 AI 获客**：[PR #2 已合并](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/pull/2)，最终 main [`33f8708`](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/commit/33f8708bd64d63a590efd598b56315dbb97ba574)。新增独立 `scripts/verify_live.py`、PR 源校验与 Pages 后验门禁；解析 WebPage JSON-LD 和 3 个**实际页面可见**官方 citation，校验作者/微信 `AIPMAndy`/双官网/服务、robots、35 条无重复 sitemap URL、PDF 版本；部署后真实 HTTP GET 首页、工具、计划、来源、robots、sitemap、两端章节、静态 JS/CSS、**47 页 PDF 共 15 项资源**，逐项比较 SHA-256 并归档 `live-qa.json`。没有改动原计算器、30 天打卡或 PDF 二进制。 | [PR Chromium #44065278911](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/actions/runs/44065278911) **success**；main [浏览器 #44065579259](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/actions/runs/44065579259) **success**；[Pages + Live #44065579248](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/actions/runs/44065579248) **success**，原始日志：`PASS: 15 exact live SHA-256 matches, 35 sitemap URLs, 3 visible citations, 47-page PDF`；[线上站点](https://aipmandy.github.io/restaurant-ai-customer-acquisition-handbook/) · [线上 PDF](https://aipmandy.github.io/restaurant-ai-customer-acquisition-handbook/downloads/restaurant-ai-customer-acquisition-handbook-guide.pdf)。 | **Stage 5 非 DONE**：47 页 PDF 人工 200% 逐页审核、真实 iOS Safari/Android、屏幕阅读器及小红书/美团等未可读动态后台规则仍未签收；2026-11-17 来源台账是有边界的局部核验，不代表全部官方平台条款复核。 |
+| **P2 AI 时代不被淘汰**：[PR #2 已合并](https://github.com/AIPMAndy/ai-era-survival-guide/pull/2) 至 [`fd0b4df`](https://github.com/AIPMAndy/ai-era-survival-guide/commit/fd0b4dfd14b8660c19ad7996f35d6a687026e3ef)；GitHub Actions bot 在 main 以正常快进提交 [`833a4b8`](https://github.com/AIPMAndy/ai-era-survival-guide/commit/833a4b8aba98d9a52fb64bd92e54bf3dd65bc93f) 正式 PDF、`edition.json`、`qa-report.json`；[PR #3 已合并](https://github.com/AIPMAndy/ai-era-survival-guide/pull/3) 至最终 main [`e0356c2`](https://github.com/AIPMAndy/ai-era-survival-guide/commit/e0356c24f218c19456bad16a7eb48c5cd9f9f87b)。12 份公开 Markdown → 锁版本 WeasyPrint → A5 **69 页**、99 书签、158 可点击链接、35,655 文本字符；69/69 页自动渲染和文本边界 QA 通过；正式 PDF SHA-256 `01b2d359460b176e608fee5336ac6df45cd014c9104d6142e68e7189486570ac`。修复历史失败的 3 处 JSON-LD/JS CI 混淆；网页新增 PDF CTA、Book schema、真实微信/公司官网/服务；`article.html`、`lab.html`、`docs/START-HERE.html`、`docs/SOURCES.html` 改为自指 canonical/OG/WebPage schema 并纳入 sitemap。 | [main 内容检查 #44067297268](https://github.com/AIPMAndy/ai-era-survival-guide/actions/runs/44067297268) **success**、[正式 PDF CI #44067297090](https://github.com/AIPMAndy/ai-era-survival-guide/actions/runs/44067297090) **success**、[GitHub Pages #44067296652](https://github.com/AIPMAndy/ai-era-survival-guide/actions/runs/44067296652) **success**、[独立真实线上哈希 #44067297267](https://github.com/AIPMAndy/ai-era-survival-guide/actions/runs/44067297267) **success**；日志先检出旧 CDN SHA，后重试并确认`live_pages_sha_verified`：首页、正文、评分器、开始页、来源页、robots、sitemap 与正式 PDF **8 项线上资源逐字节 SHA-256 一致**；QA 证据 [artifact](https://github.com/AIPMAndy/ai-era-survival-guide/actions/runs/44067297267/artifacts/14321705475)。[正式网站](https://aipmandy.github.io/ai-era-survival-guide/) · [正式在线 PDF](https://aipmandy.github.io/ai-era-survival-guide/pdf/ai-era-survival-guide.pdf) · [公开 QA 报告](https://github.com/AIPMAndy/ai-era-survival-guide/blob/main/pdf/qa-report.json)。 | **Stage 5 非 DONE**：人工高倍率 69 页逐页签字、真实 iOS/Android、屏幕阅读器、招聘趋势与法规/平台规则新鲜度仍待。原历史来源日期保持不变，不伪称全部当日查证；教学模拟和公开第三方案例不冒充本人业绩。其他未抽检的 HTML 页仍需后续逐步核实 canonical/内链。 |
+
+**覆盖变动：31/33 → 32/33（仅 PDF 仓库存在性）**。仅剩门户 `AIPMAndy.github.io` 缺独立 PDF，属于矩阵导航入口，是否无需 PDF 必须获得用户明确同意，不能自行排除；同时 `100m-in-5-years-handbook` 的 GitHub Pages 初次启用权限阻塞依旧待管理员复核。其余站点大多未完成 Stage 5 人工/真机与政策证据验收，**33 个站点没有全部 Stage 6 DONE，持续循环不停止**。下轮优先 P0 真实缺口中可复现的来源日期/无障碍与线上质量检查，无法执行真人/实体设备时继续 P1/P2 可执行项；严禁为了凑进度重复修改已验收功能。
 
 ## 七、迭代管理原则
 
