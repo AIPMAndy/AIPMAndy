@@ -1,6 +1,6 @@
 # 星觉科技 · GitHub 知识网站升级作战计划
 
-> 版本 v1.21 · 2026-11-17（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
+> 版本 v1.22 · 2026-11-18（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
 
 ## 一、唯一目标
 
@@ -51,7 +51,7 @@
 
 ## 五、优先级与仓库/PDF 目录（首轮）
 
-已检索到 128 个仓库；其中筛选出 33 个重点知识站点。最初仓库 PDF 存在性为 22/33；历轮以源码驱动补齐正式 PDF，**截至 2026-11-17 本轮仓库 PDF 存在性为 32/33，仍有 1 个待补或由用户明确确认 PDF 不适用**。最后一项为门户 `AIPMAndy.github.io`，尚未收到用户同意排除；**32/33 不是网站 Stage 6 DONE 数，也不是人工视觉签收率**。
+已检索到 128 个仓库；其中筛选出 33 个重点知识站点。最初仓库 PDF 存在性为 22/33；历轮以源码驱动补齐正式 PDF，**截至 2026-11-18，33/33 个重点仓库已有 PDF**。最后一项门户 `AIPMAndy.github.io` 已使用唯一权威 JSON-LD ItemList 生成 **5 页导航型 PDF** 并通过完整机器 QA、Pages 部署和独立实时 SHA-256 校验。**PDF 仓库存在性 33/33 不代表 33 个网站 Stage 6 DONE，也不代表全部 PDF 人工高清视觉验收完成**；门户 PDF 是开源导航册，不是假装 44 个独立项目都已审计。
 
 | 阶段 | 仓库 | PDF 目录状态 | 网站状态 | 本轮核心改造 |
 |---|---|---|---|---|
@@ -74,7 +74,7 @@
 | P1 | [github-income-handbook](https://github.com/AIPMAndy/github-income-handbook) | **本轮新增 63 页 PDF（20 章 Markdown、3 份来源研究、13 份模板）入库并上线；159 书签、194 链接、63/63 页自动渲染与文本/边界 QA 通过；人工高倍率待验** | **[Pages+PDF QA #43585933169](https://github.com/AIPMAndy/github-income-handbook/actions/runs/43585933169) success，首页/PDF/sitemap/robots 在线 HTTP 200，PDF SHA-256 与仓库一致；实体移动端待验** | 将 [源文档生成器](https://github.com/AIPMAndy/github-income-handbook/blob/main/scripts/build_pdf.py)、[全页检查](https://github.com/AIPMAndy/github-income-handbook/blob/main/scripts/pdf_quality_gate.py)、PDF 下载 CTA、无强制留资服务入口入库；逐页人工审核和移动端回归待办 |
 | P1 | [threads-income-handbook](https://github.com/AIPMAndy/threads-income-handbook) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 内容实验/数据看板 |
 | P1 | [x-income-handbook](https://github.com/AIPMAndy/x-income-handbook) | 仓库内有 PDF | 目录已审；线上与视觉待验 | X 转化漏斗/模板 |
-| P1 | [chatgpt-income-handbook](https://github.com/AIPMAndy/chatgpt-income-handbook) | 未在仓库发现 PDF | 目录已审；线上与视觉待验 | 交易路线与服务卡；补 PDF |
+| P1 | [chatgpt-income-handbook](https://github.com/AIPMAndy/chatgpt-income-handbook) | **已归档正式 75 页 PDF：pdf/chatgpt-income-handbook-guide.pdf；原来源驱动生成与自动 QA 已验收** | **[Pages/构建/线上 SHA #43851564326](https://github.com/AIPMAndy/chatgpt-income-handbook/actions/runs/43851564326) success；真正手机/高倍率人工视觉仍待验，Stage 5** | 34 章原始教程 + 20 份 SOP/模板等源内容；个人与公司入口已补，动态来源核验待续 |
 | P1 | [one-person-ai-income-guide](https://github.com/AIPMAndy/one-person-ai-income-guide) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 进度/业务计算器 |
 | P1 | [how-to-earn-usd-from-china](https://github.com/AIPMAndy/how-to-earn-usd-from-china) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 合规条件/地区边界 |
 | P1 | [HowToBeAnAICreator](https://github.com/AIPMAndy/HowToBeAnAICreator) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 创作者工作流/内容实操 |
@@ -86,7 +86,7 @@
 | P2 | [how-to-survive-unemployment](https://github.com/AIPMAndy/how-to-survive-unemployment) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 失业流程与政策来源 |
 | P2 | [how-to-job-hop-and-raise-salary](https://github.com/AIPMAndy/how-to-job-hop-and-raise-salary) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 薪酬换岗验证与证据 |
 | P2 | [AI-Awareness-Club](https://github.com/AIPMAndy/AI-Awareness-Club) | **新增 23 页正式 PDF，9 条公开指南 + 12 FAQ；40 书签、35 外/内链、10,510 可提取字符；23 页全渲染、布局/文本/链接 QA 零错误，仓库归档及线上 SHA 一致** | **[Pages #43971080444](https://github.com/AIPMAndy/AI-Awareness-Club/actions/runs/43971080444) success，独立在线首页/章节/llms/sitemap/PDF HTTP 及 SHA 校验成功；[视觉 QA #43971080406](https://github.com/AIPMAndy/AI-Awareness-Club/actions/runs/43971080406) success** | 已补源驱动 PDF、全站 PDF/公司官网/服务链接、完整出版质量门禁并修复 Playwright runner；仍 Stage 5：真人逐页高清、真实 iOS/Android、可访问性与动态会员政策复核未最终签收 |
-| P2 | [AIPMAndy.github.io](https://github.com/AIPMAndy/AIPMAndy.github.io) | 未在仓库发现 PDF | 目录已审；线上与视觉待验 | 矩阵入口门户；是否需 PDF 另定 |
+| P2 | [AIPMAndy.github.io](https://github.com/AIPMAndy/AIPMAndy.github.io) | **新增 5 页正式导航 PDF，44 个 ItemList 项目条目、48 个可点击 URL 注释、3098 可提取字符、5/5 页自动渲染，已归档 main/Pages；人工高倍率待签** | **首页可搜索、分类、TXT 导出；[Pages #44127940175](https://github.com/AIPMAndy/AIPMAndy.github.io/actions/runs/44127940175) success、[独立 6 文件线上 SHA #44127944447](https://github.com/AIPMAndy/AIPMAndy.github.io/actions/runs/44127944447) success；仍 Stage 5** | 目录 PDF 同源自 index.html JSON-LD，不编造客户/收益；3 视口 Chromium 成功，canonical/robots/sitemap/DigitalDocument JSON-LD/llms.txt 已补；真实 Safari/Android、屏幕阅读器与人工逐页签收待做 |
 | P2 | [Gemini-Canvas-Video-Kit](https://github.com/AIPMAndy/Gemini-Canvas-Video-Kit) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 视频制作可复现示例 |
 
 ## 六、进度记录
@@ -277,6 +277,17 @@
 
 **覆盖变动：31/33 → 32/33（仅 PDF 仓库存在性）**。仅剩门户 `AIPMAndy.github.io` 缺独立 PDF，属于矩阵导航入口，是否无需 PDF 必须获得用户明确同意，不能自行排除；同时 `100m-in-5-years-handbook` 的 GitHub Pages 初次启用权限阻塞依旧待管理员复核。其余站点大多未完成 Stage 5 人工/真机与政策证据验收，**33 个站点没有全部 Stage 6 DONE，持续循环不停止**。下轮优先 P0 真实缺口中可复现的来源日期/无障碍与线上质量检查，无法执行真人/实体设备时继续 P1/P2 可执行项；严禁为了凑进度重复修改已验收功能。
 
+
+### 2026-11-18 · 33/33 PDF 仓库存在性达成：根门户「44 项目同源导航 PDF + 可搜索工具 + 6 文件实时线上 SHA」正式上线（Stage 5，非全部 DONE）
+
+此轮严格从计划 v1.21（blob `1d9feacfbc9e220d410fe195f37237983f503ea9`）与根门户真实 main `f8c7f53d2a14247fcf49f9cd406f39544931f4f4` 开始，审查仓库 101 个文件、原 `index.html` 的 ItemList 44 项、原 `robots.txt` / `sitemap.xml` / `llms.txt` 及唯一未补 PDF 的门户。主要 P0 项目最近工程/Pages 已通过，剩余真正实体 iOS/Android、真人高倍率 PDF 审核与动态政策逐项核验不能在当前环境完成，未伪称完成；本轮转做**用户不曾排除的最后一份可执行 PDF**。门户仍使用 GitHub Pages 根站，不切换发布配置。
+
+| 实际提交 / 源改动 | 完整 CI、PDF 与真实 Pages 证据 | 仍未完成与限制 |
+|---|---|---|
+| [门户 PR #2](https://github.com/AIPMAndy/AIPMAndy.github.io/pull/2) 已 squash 合并主分支 [4a14be7](https://github.com/AIPMAndy/AIPMAndy.github.io/commit/4a14be7fc18ce4a75ebd1f51985c5ee4b27152ff)。新增 `assets/portal-catalog.js`：44 项原始网页公开目录本地搜索、6 类筛选、清空、实时结果数、UTF-8 TXT 离线导出；保持原有项目链接，不上传输入，用户可不用微信阅读。主页视觉升级为专业白底、轻描边、响应式双列/单列、明确焦点与无结果提示；补 `DigitalDocument` JSON-LD、PDF sitemap、llms.txt、微信 **AIPMAndy**、个人 https://metaver.vip/、公司 https://www.a6no1.cn/、服务 https://metaver.vip/services。新增 [PDF 同源生成器](https://github.com/AIPMAndy/AIPMAndy.github.io/blob/main/scripts/build_portal_pdf.py)、[PDF 检查器](https://github.com/AIPMAndy/AIPMAndy.github.io/blob/main/scripts/check_portal_pdf.py)、[浏览器回归](https://github.com/AIPMAndy/AIPMAndy.github.io/blob/main/scripts/browser_smoke.mjs)；PDF 以主页 JSON-LD **ItemList** 为唯一数据源，不设第二份人工项目台账。| PR [CI #44126461060](https://github.com/AIPMAndy/AIPMAndy.github.io/actions/runs/44126461060) **success**。首次 main [#44126949274](https://github.com/AIPMAndy/AIPMAndy.github.io/actions/runs/44126949274) 因新增第二份有效 JSON-LD 后，浏览器测试仍假设仅 1 个 script 而失败；明确修复测试解析 [83b4732](https://github.com/AIPMAndy/AIPMAndy.github.io/commit/83b4732f274f8794ceedc6f7c895a91c29e6cc2a)，并补 `push` 路径触发 [242c198](https://github.com/AIPMAndy/AIPMAndy.github.io/commit/242c1988c14d6506f9ab3614b6ec0ddcd36062b8)；最终 [CI #44127554804](https://github.com/AIPMAndy/AIPMAndy.github.io/actions/runs/44127554804) **completed/success**。浏览器 360/390/1280px 对全部 44 项、关键词单结果/零结果、领域筛选、导出中文 TXT、PDF 文件头/HTTP、本地页面宽度无溢出均通过。PDF **5 页、44 项、48 点击链接、3098 字符、5/5 页渲染、无空白页**；正式 [PDF](https://aipmandy.github.io/pdf/andy-open-source-catalog.pdf) 和 [edition](https://github.com/AIPMAndy/AIPMAndy.github.io/blob/main/pdf/edition.json) 已由机器人经非强制 push 归档 main `901c6dad`，源 SHA-256 `5fd3b5cbf1992bfabdbd008ca14ece3492193960365788d1e0d4ed57fe76c145`，PDF SHA-256 `4823184c872ee97a8f9cdb69f574e51a51e2812f02a635f38450b67b0e255c1b`。| PDF 是**导航目录**而不是 44 个项目的事实审计；目录来源页面标注 2026-11-18 并不等于逐项外链已于当天独立核验。仍缺真人 200% 高清逐页审阅、实体 iOS Safari/Android、屏幕阅读器与全部外部链接/第三方规则复核。机器渲染和 Playwright 不可替代真人签字。|
+| [门户 PR #3](https://github.com/AIPMAndy/AIPMAndy.github.io/pull/3) 已 squash 合并 [bd88cbd](https://github.com/AIPMAndy/AIPMAndy.github.io/commit/bd88cbdb381f996bd580a6c6d6509e7f022dc8aa)，新增 `scripts/verify_portal_live.py` 与 `portal-live.yml`，不修改原 Pages 发布源配置；实际 HTTP 下载根站首页、JS、sitemap、robots、llms.txt、PDF 六项资源逐文件 SHA-256 对照当前主分支。| [Pages build/deployment #44127940175](https://github.com/AIPMAndy/AIPMAndy.github.io/actions/runs/44127940175) **completed/success**；独立 [Live SHA #44127944447](https://github.com/AIPMAndy/AIPMAndy.github.io/actions/runs/44127944447) **completed/success**，原始作业日志：`PASS: actual Pages verified with 6 exact SHA-256 matches`。已真实校验 [首页](https://aipmandy.github.io/) 与 [PDF](https://aipmandy.github.io/pdf/andy-open-source-catalog.pdf)，而不是把 PR/commit 等同上线。| 根站现 Stage 5，不虚构真机/人工视觉验收；后续源项变更需重建同源 PDF，重新跑 CI 与在线门禁，避免门户目录漂移。|
+
+**结算**：33 个重点仓库的 PDF **存在性 32/33 → 33/33**，剩余**缺 PDF = 0**，且本轮经源码—生成—全页自动 QA—正式仓库归档—Pages 部署—6 文件真实线上 SHA 闭环完成。**33/33 Stage 6 DONE 尚未达成**：P0/其他站点仍有真人 PDF 高倍率、实体系统触控/辅助技术与来源日期核对；私有 `100m-in-5-years-handbook` Pages 首次启用失败仍未解除，不能因为其 PDF 已入库就算已上线。下轮优先处理可机器复现的 P0 无障碍/来源核验及未完成的 P1 网页，无法完成的真机人工项目继续保留阻塞，**不暂停此循环**。
 ## 七、迭代管理原则
 
 1. 只把**核实过的结果**标成已完成；不能用「代码已写」代替「网站已上线」。
