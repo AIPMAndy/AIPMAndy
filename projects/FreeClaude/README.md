@@ -2,11 +2,11 @@
 
 # FreeClaude
 
-**Claude 免费入门 · 登录故障自查 · 账号安全避坑 · 本地环境诊断**
+**Claude 免费入门 · IP/网络环境检测 · 登录故障自查 · 账号安全避坑**
 
 **开源免费 · 不收集账号信息 · 不依赖第三方浏览器 · 不承诺绕过限制**
 
-[🚀 打开交互式指南](site/index.html) · [📚 保姆级文档](docs/00-start-here.md) · [🛠️ 故障排查](docs/02-troubleshooting.md) · [🛡️ 安全](docs/03-security.md) · [🌐 English](README.en.md)
+[🚀 打开交互式指南](site/index.html) · [🧪 Claude 网络体检](site/check/index.html) · [📚 保姆级文档](docs/00-start-here.md) · [🛠️ 故障排查](docs/02-troubleshooting.md) · [🛡️ 安全](docs/03-security.md) · [🌐 English](README.en.md)
 
 </div>
 
@@ -28,6 +28,7 @@
 | --- | --- | --- |
 | 🧭 交互导航 | 5 分钟使用路径：检查资格 → 登录 → 体验功能 | ✅ |
 | 🧯 诊断向导 | 邮件未收到、Google 授权、短信验证、封号、额度、Claude Code | ✅ |
+| 🌐 Claude IP 网络体检 | 三路 HTTP IP 源、第三方 VPN/Tor 情报、ASN、WebRTC、设备环境、历史与报告；未知即未知 | ✅（主动检测） |
 | 🧪 Network Doctor | 对官方域名做 DNS/HTTPS 基础连通性检测，无账号操作 | ✅ |
 | 🧱 免费能力地图 | Free 与付费功能的边界，动态跳转官方价格页核对 | ✅ |
 | 🧰 场景提示词 | 写作、研究、简历、代码解释、内容选题 | ✅ |
@@ -36,11 +37,12 @@
 
 ## 1 分钟启动
 
-**看网站：** 直接用浏览器打开 `site/index.html`。也可运行本地服务：
+**看网站：** 在仓库里打开 `site/index.html`，或启动本地服务器。网络检测页包含 JavaScript 模块，**必须通过本地 HTTP 服务器或 HTTPS 访问**，不能依赖 `file://`：
 
 ```bash
 node src/serve.mjs
-# 打开 http://localhost:4173
+# 主页 http://127.0.0.1:4173/
+# 新增 Claude 检测页 http://127.0.0.1:4173/check/
 ```
 
 **看终端：** 需要 Node.js 20 或更新版本（依赖为 0）。
@@ -59,6 +61,23 @@ npm test
 ```
 
 > `doctor` 只检查 DNS 和 HTTPS 连通性。它**无法判断账号是否安全、能否注册、是否被封，亦不能证明地域合规**。某些公司网络、证书代理或防火墙会造成假阳性或假阴性。
+
+## 新增：Claude IP / 网络环境检测
+
+**入口：** [FreeClaude Check — Claude 网络环境检测](site/check/index.html)。在本地执行 `npm start` 后打开 `/check/`。
+
+这一页参考 [Net.Coffee 的 Claude 检测工具](https://ip.net.coffee/claude/)可观察到的布局和模块，使用独立编写的 HTML / CSS / JS，实现：
+
+- 浏览器主动检测公开出口 IP（ipify）与地域/ASN（ipwho.is），Cloudflare Meta 可访问时补充第三视角。
+- 读取 IP 情报提供方 IPSnapshot 对当前 IP 的 VPN、Tor、机房等属性，**没有数据就显示“未检测”**，不擅自解释为“安全”。
+- 提供**明确公式的网络信息一致性参考分**：不是对原站私有风险算法的复制，更不是 Anthropic 官方的风控/封禁概率。
+- 检测 Claude 与 Anthropic 静态资源的**有限连通性**（不能据此判断登录、地区许可或服务端 IP）。
+- 用户主动点击后可做 WebRTC/STUN 深度检测；DNS 泄露需跳转专门的检测服务，**不会虚构 DNS 出口**。
+- 本地显示时区、语言、浏览器、WebGL / Canvas 摘要；IP 默认隐藏，历史保存**默认关闭**，开启后仅保存至浏览器 localStorage。
+
+**检测隐私说明：** 启动检测即表示你同意浏览器直接联系 `api.ipify.org` / `api64.ipify.org`、`ipwho.is`、`speed.cloudflare.com`、`ipsnapshot.com`、`claude.ai` 和 `anthropic.com`；这些服务会接触到连接它们时使用的 IP，FreeClaude 自身不设置服务端日志或分析 SDK。手动点 WebRTC 深度检测才会访问 Google 公共 STUN。请自行核对这些服务的使用条款及限额；`ipwho.is` 免费接口有配额/用途限制，生产化或商业部署建议使用经许可的数据源。IPSnapshot 的 Geo/ASN 内容标注来源 DB-IP Lite，遵守其 CC BY 4.0 署名要求。
+
+**关键边界：** 静态网页无法证明 Claude **实际看到的出口 IP**，无法独立获取系统 DNS 解析器，也无法给出官方“安全分”。网络分流不同出口可能完全正常，不能直接解释为账号异常。有关技术限制和本项目实现详见 [检测技术说明](docs/08-network-check.md)。
 
 ## Claude Free 可以做什么？
 
@@ -91,6 +110,7 @@ FreeClaude **不会**提供：批量注册、验证码代收、身份冒用、�
 ```text
 FreeClaude/
 ├── site/                 # 静态网站：引导+问题向导+提示词
+│   └── check/           # Claude 网络环境检测仪表盘（独立原创实现）
 ├── bin/freeclaude.mjs    # 终端入口
 ├── src/                  # 无依赖的网络诊断和静态服务器
 ├── test/                 # Node 内置测试

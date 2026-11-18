@@ -53,4 +53,6 @@ test('static server rejects directory traversal', () => {
   assert.equal(safeFilePath('/%2e%2e/%2e%2e/etc/passwd'), null);
   assert.equal(safeFilePath('/%5cwindows'), null);
   assert.match(safeFilePath('/'), /site\/index\.html$/);
+  assert.match(safeFilePath('/check/'), /site\/check\/index\.html$/);
+  assert.match(safeFilePath('/check/app.mjs'), /site\/check\/app\.mjs$/);
 });

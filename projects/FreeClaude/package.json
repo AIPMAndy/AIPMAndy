@@ -1,7 +1,7 @@
 {
   "name": "freeclaude-guide",
-  "version": "1.0.0",
-  "description": "FreeClaude — an unofficial, privacy-first Claude free-tier guide, troubleshooting wizard and network diagnostics CLI.",
+  "version": "1.1.0",
+  "description": "FreeClaude — free-tier Claude guide, original browser-based IP diagnostic dashboard and zero-dependency troubleshooting CLI.",
   "type": "module",
   "private": true,
   "bin": {

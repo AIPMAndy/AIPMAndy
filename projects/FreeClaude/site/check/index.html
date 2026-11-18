@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#f8f9fb" />
+  <meta name="description" content="FreeClaude 开源 Claude 网络环境体检。真实查询 IP 出口、地理位置、ASN、浏览器环境及 WebRTC，缺失数据明确标注。" />
+  <meta property="og:title" content="Claude 网络环境检测 | FreeClaude" />
+  <meta property="og:description" content="参考 Net.Coffee 的检测思路，独立开源实现，不猜测账户封禁风险。" />
+  <title>Claude AI IP 风险检测 · FreeClaude Check</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="stylesheet" href="./style.css" />
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到检测结果</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="../" aria-label="返回 FreeClaude 主页"><span class="brand-mark">F<span>✦</span></span><span>FreeClaude<small>NETWORK CHECK</small></span></a>
+      <nav class="header-links" aria-label="主导航">
+        <a class="is-active" href="#main">Claude 检测</a>
+        <a href="#history">检测历史</a>
+        <a href="../#diagnose">问题排查</a>
+        <a href="https://status.claude.com/" target="_blank" rel="noopener noreferrer">服务状态 ↗</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" id="toggle-ip" class="icon-btn" aria-pressed="true" title="切换 IP 显示">◉ <span>显示 IP</span></button>
+        <button type="button" id="toggle-theme" class="icon-btn" title="切换深浅色模式" aria-label="切换深浅色模式">☾</button>
+        <a class="github-link" href="https://github.com/AIPMAndy/AIPMAndy/tree/main/projects/FreeClaude" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="shell">
+    <section class="intro" aria-labelledby="page-title">
+      <div class="intro-head">
+        <div class="intro-copy">
+          <p class="eyebrow"><span class="pulse"></span> FREECLAUDE · 网络环境自检 <span class="micro-tag">BETA</span></p>
+          <h1 id="page-title">Claude AI IP 风险检测<span class="title-accent">.</span></h1>
+          <p class="subtitle">检查当前网络出口、IP 归属与 ASN、连通性、WebRTC、时区和浏览器信息。<br class="desktop-only" /> 只展示可验证的检测结果，不把推测当成 Claude 官方风控判断。</p>
+        </div>
+        <div class="intro-controls">
+          <button type="button" class="primary-btn" id="run-scan"><span class="spin-icon" aria-hidden="true">↻</span> 开始检测</button>
+          <p id="last-run" class="scan-time" aria-live="polite">尚未检测 · 点击后由浏览器请求公开 IP 服务</p>
+        </div>
+      </div>
+      <div class="notice" role="note"><span aria-hidden="true">⚠</span><p><strong>注意：</strong>本工具不是 Anthropic 官方产品。第三方“信任分”和封号概率没有官方验证标准。普通静态页面无法直接获取 Claude 实际看到的出口 IP。<a href="#how-it-works">查看技术边界</a></p></div>
+    </section>
+
+    <section class="cards top-cards" aria-label="IP 检测结果">
+      <article class="card ip-card" id="ipv4-card"><div class="card-top"><h2><span class="tiny-icon">◎</span> 常规出口 IPv4</h2><span class="small-pill neutral" id="regular-status">未检测</span></div><div class="ip-main"><span class="flag" id="regular-flag">🌐</span><strong class="mono ip-text" id="regular-ip">—</strong></div><p class="ip-caption" id="regular-summary">由公开 IP 服务观测的 HTTP 出口</p><div class="subline"><span>数据来源</span><span>api.ipify.org</span></div></article>
+      <article class="card ip-card"><div class="card-top"><h2><span class="tiny-icon cf-icon">☁</span> Cloudflare 出口 IP</h2><span class="small-pill neutral" id="cf-status">未检测</span></div><div class="ip-main"><span class="flag" id="cf-flag">🌐</span><strong class="mono ip-text" id="cf-ip">—</strong></div><p class="ip-caption" id="cf-summary">仅在 Cloudflare 允许跨域读取时显示</p><div class="subline"><span>数据来源</span><span>Cloudflare Meta</span></div></article>
+      <article class="card ip-card"><div class="card-top"><h2><span class="tiny-icon claude-icon">✳</span> Claude AI 出口 IP</h2><span class="small-pill muted-pill">需服务侧验证</span></div><div class="ip-main"><span class="flag">◌</span><strong class="mono ip-text muted">不可直接读取</strong></div><p class="ip-caption">Claude 服务端未提供公开的访客 IP 回显接口</p><div class="subline"><span>检测边界</span><a href="#how-it-works">为什么不能直接查询？ ↗</a></div></article>
+    </section>
+
+    <section class="cards detail-grid" aria-label="诊断详情">
+      <article class="card score-card"><div class="card-top"><h2>环境信息一致性 <span class="info-icon" title="自定义启发式一致性分，仅用于对比网络来源，不代表安全性或账号风控">ⓘ</span></h2><span class="small-pill purple">实验性</span></div>
+        <div class="score-area"><div class="gauge" id="gauge" style="--score:0%"><div class="gauge-center"><strong id="score-number" class="score-number">—</strong><small>/ 100</small></div></div><span class="score-tag" id="score-tag">等待双源数据</span><p class="score-explain" id="score-explain">需要至少两个独立 IP 数据源才能计算</p></div>
+        <div class="score-legend"><span>0 信息差异</span><span>50</span><span>100 来源一致</span></div>
+        <div class="score-bar"><div id="score-fill"></div></div>
+        <details class="factor-details"><summary>查看评分公式 <span aria-hidden="true">⌄</span></summary><p>基础值 70 分：两路 HTTP IP 一致 +20 / 不同 -20；浏览器与公开 IP 时区文本一致 +10；Cloudflare 或 WebRTC 出口不同各 -10。<strong>不同出口不代表风险，分数高也不代表账号安全。</strong></p><ul id="score-factors"></ul></details>
+      </article>
+
+      <article class="card data-card"><div class="card-top"><h2>出口 IP 属性</h2><span class="small-pill neutral" id="geo-status">未检测</span></div><dl class="data-list"><div><dt>地区</dt><dd id="geo-country">—</dd></div><div><dt>城市</dt><dd id="geo-city">—</dd></div><div><dt>IP 类型</dt><dd><span id="geo-type" class="small-pill neutral">未知</span></dd></div><div><dt>ASN</dt><dd class="mono" id="geo-asn">—</dd></div><div><dt>运营商</dt><dd id="geo-isp">—</dd></div><div><dt>服务器位置</dt><dd id="geo-region">—</dd></div></dl><div class="card-hint">来源：ipwho.is。地理位置和 ISP 数据可能存在误差；此源不提供可核实的住宅/机房分类。</div></article>
+
+      <article class="card data-card"><div class="card-top"><h2>出口 IP 安全检测</h2><span class="small-pill neutral" id="security-status">未检测</span></div><dl class="data-list"><div><dt>VPN</dt><dd><span class="small-pill neutral" id="sec-vpn">未检测</span></dd></div><div><dt>代理 (Proxy)</dt><dd><span class="small-pill neutral" id="sec-proxy">未检测</span></dd></div><div><dt>Tor</dt><dd><span class="small-pill neutral" id="sec-tor">未检测</span></dd></div><div><dt>机器人 (Crawler)</dt><dd><span class="small-pill neutral" id="sec-crawler">未检测</span></dd></div><div><dt>滥用记录</dt><dd><span class="small-pill neutral" id="sec-abuse">未检测</span></dd></div></dl><div class="card-hint">“未检测”表示本工具没有有效情报，<strong>不是“检测结果为安全”</strong>。部分字段由 IPSnapshot 第三方情报提供，缺失时保持未知。</div></article>
+
+      <article class="card data-card"><div class="card-top"><h2>Claude 可用性检测 <span class="info-icon" title="探测静态资源是否能被浏览器请求，不代表登录或 API 可用">ⓘ</span></h2><button type="button" class="mini-btn" id="refresh-latency">刷新 ↻</button></div><dl class="data-list latency-list"><div><dt><span class="green-dot"></span> claude.ai</dt><dd id="latency-claude"><span class="small-pill neutral">未检测</span></dd></div><div><dt><span class="green-dot"></span> anthropic.com</dt><dd id="latency-anthropic"><span class="small-pill neutral">未检测</span></dd></div><div><dt>Claude 官方状态</dt><dd><a href="https://status.claude.com/" target="_blank" rel="noopener noreferrer">查看服务状态 ↗</a></dd></div></dl><p class="card-hint">浏览器跨域探测仅表示请求是否发出，不等于登录成功、官方地区许可或 API 可用。</p></article>
+
+      <article class="card data-card"><div class="card-top"><h2>DNS 泄露检测</h2><a class="mini-btn" href="https://www.dnsleaktest.com/" target="_blank" rel="noopener noreferrer">深度查询 ↗</a></div><dl class="data-list"><div><dt>状态</dt><dd><span class="small-pill amber">需要专门测试</span></dd></div><div><dt>DNS 出口 IP</dt><dd>浏览器不可直接读取</dd></div><div><dt>检测方式</dt><dd>独立 DNS 解析器查询</dd></div></dl><p class="card-hint">常规静态网页无法检测实际系统解析器。上方按钮将打开第三方检测网站，结果请以其现场显示为准。</p></article>
+
+      <article class="card data-card"><div class="card-top"><h2>WebRTC UDP 泄露检测</h2><button type="button" id="run-webrtc" class="mini-btn">深度检测 ↗</button></div><dl class="data-list"><div><dt>状态</dt><dd id="webrtc-state"><span class="small-pill neutral">未检测</span></dd></div><div><dt>候选公网 IP</dt><dd class="mono" id="webrtc-ip">—</dd></div><div><dt>技术限制</dt><dd>mDNS / 浏览器隐私策略</dd></div></dl><p class="card-hint">点击后会由浏览器向 Google 公共 STUN 服务器发送 UDP 探测。没有发现地址不等于没有泄露；浏览器可能隐藏候选地址。</p></article>
+    </section>
+
+    <section class="card device-card" aria-labelledby="device-title"><div class="card-top"><h2 id="device-title">用户设备信息 <span class="section-subtitle">BROWSER ENVIRONMENT</span></h2><span class="small-pill neutral">仅本地读取</span></div><dl class="device-list"><div><dt>时区</dt><dd id="device-timezone">—</dd></div><div><dt>语言</dt><dd id="device-language">—</dd></div><div><dt>操作系统 / 浏览器</dt><dd id="device-ua">—</dd></div><div><dt>触屏</dt><dd id="device-touch">—</dd></div><div><dt>网络类型</dt><dd id="device-network">—</dd></div><div><dt>Do Not Track</dt><dd id="device-dnt">—</dd></div><div><dt>WebGL 渲染器</dt><dd id="device-webgl">—</dd></div><div><dt>Canvas 摘要</dt><dd class="mono" id="device-canvas">—</dd></div></dl><p class="card-hint">设备信息只在本机分析；Canvas 仅计算浏览器内的短摘要，不传到 FreeClaude 服务器或第三方。浏览器指纹不能推断国籍或封号概率。</p></section>
+
+    <section class="card history-card" id="history" aria-labelledby="history-title"><div class="card-top history-top"><div><h2 id="history-title">Claude 网络环境历史记录</h2><p class="history-intro">只有主动勾选保存时才写入当前浏览器 localStorage，FreeClaude 不设后台数据库。</p></div><div class="history-buttons"><label class="check-label"><input type="checkbox" id="save-history" /> 保存本机历史</label><button type="button" class="mini-btn" id="copy-report">复制当前报告</button><button type="button" class="mini-btn danger-btn" id="clear-history">清除</button></div></div><div class="history-table-wrap"><table class="history-table"><thead><tr><th>时间</th><th>常规 IP</th><th>国家 / 地区</th><th>ASN</th><th>一致性参考分</th></tr></thead><tbody id="history-rows"><tr><td colspan="5" class="history-empty">暂无历史记录，开启“保存本机历史”后运行检测即可保存。</td></tr></tbody></table></div></section>
+
+    <section class="reading" id="how-it-works"><div class="reading-head"><div><p class="eyebrow">HOW IT WORKS</p><h2>看见事实，而不是猜测。</h2></div><p>独立实现，参考同类网络工具的可用功能设计。我们的检测对象是浏览器网络环境，不是你在 Claude 的账号状态。</p></div><div class="reading-grid"><article><span>01 / 数据源</span><h3>公开 IP 与网络归属</h3><p>在你点击检测后，浏览器分别请求 ipify、ipwho.is 和可用时的 Cloudflare Meta 和 IPSnapshot IP 安全情报。IP 会被相应第三方服务器看到。IPSnapshot 的 Geo/ASN 信息由 DB-IP Lite（CC BY 4.0）提供。</p></article><article><span>02 / 检测边界</span><h3>服务端 IP 不能冒充</h3><p>想知道 Claude 收到的真实客户端 IP，必须由 Claude 服务端或你有权限的目标端点回显。第三方网站不能独立证明。</p></article><article><span>03 / 隐私优先</span><h3>没有账号与验证码采集</h3><p>无注册、无分析 SDK、无广告追踪；IP 默认隐藏，结果不会主动上传到我们自己服务器。STUN 测试需要用户手动触发。</p></article></div><div class="official-links"><a href="https://support.claude.com/en/articles/8461763-where-can-i-access-claude" target="_blank" rel="noopener noreferrer">Claude 官方支持地区 ↗</a><a href="https://status.claude.com/" target="_blank" rel="noopener noreferrer">Claude 官方服务状态 ↗</a><a href="../#diagnose">FreeClaude 登录问题诊断 ↗</a><a href="https://ip.net.coffee/claude/" target="_blank" rel="noopener noreferrer">参考网站 Net.Coffee ↗</a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-inner"><div><strong>FreeClaude<span class="title-accent">.</span></strong><p>开源网络诊断 · AI 酋长 Andy / 星觉科技</p></div><span>不是 Anthropic 或 Net.Coffee 的官方服务；品牌与检测算法均为独立实现。</span><a href="https://metaver.vip/" target="_blank" rel="noopener noreferrer">metaver.vip ↗</a></div></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

@@ -7,13 +7,13 @@ import { dirname, join, resolve, sep } from 'node:path';
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..', 'site');
 const port = Number(process.env.PORT ?? 4173);
 if (!Number.isInteger(port) || port < 1 || port > 65535) throw new Error('Invalid PORT');
-const mimeTypes = { '.css': 'text/css', '.js': 'text/javascript', '.svg': 'image/svg+xml', '.html': 'text/html' };
+const mimeTypes = { '.css': 'text/css', '.js': 'text/javascript', '.mjs': 'text/javascript', '.svg': 'image/svg+xml', '.html': 'text/html' };
 
 export function safeFilePath(pathname) {
   let decoded;
   try { decoded = decodeURIComponent(pathname); } catch { return null; }
   if (decoded.includes('\\') || decoded.includes('\0')) return null;
-  const filename = decoded === '/' ? 'index.html' : decoded.replace(/^\/+/, '');
+  const filename = decoded === '/' ? 'index.html' : decoded.endsWith('/') ? `${decoded.replace(/^\/+/, '')}index.html` : decoded.replace(/^\/+/, '');
   const path = resolve(join(root, filename));
   return path.startsWith(root + sep) ? path : null;
 }
