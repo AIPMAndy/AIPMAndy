@@ -1,6 +1,6 @@
 # 星觉科技 · GitHub 知识网站升级作战计划
 
-> 版本 v1.29 · 2026-11-19（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
+> 版本 v1.30 · 2026-11-20（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
 
 ## 一、唯一目标
 
@@ -358,6 +358,16 @@
 | [真实 main Pages #44507148608](https://github.com/AIPMAndy/ai-knowledge-paid-acquisition-handbook/actions/runs/44507148608) 已 **completed/success**，而不只是 PR/commit：部署完成后的 `scripts/verify_live.py` 使用 HTTP 200、SHA-256 **7/7 全部匹配**。6 项 Pages 文件：主页 `5a9e474d…2f9897`、新工具 HTML `0cc5299d…217498a`、JS `e48a5d2e…246439`、CSS `f36424bd…a35a6`、robots `4d7ab98c…9579f8d`、sitemap `0e0b15b7…3c102`；第 7 项为**公开 GitHub raw 97 页原 PDF**（非 Pages 托管）`9122eb9d…33097058a`。 | 下一轮优先处理未改造且有明显功能/SEO缺口的 P1；站点部署后哈希门禁已固化，但只能证明文件内容一致，不能替代真实交互、无障碍及人工 PDF 视觉检查。 |
 
 **本轮结算：PDF 仓库存在性继续 33/33（不增加），33 个站点仍未全部 Stage 6 DONE，自动循环保留。**
+
+### 2026-11-20 · P0 内容电商经济账输入完整性、可审计 CSV 与真浏览器门禁（待 CI/部署）
+
+本轮起点 [PLAN.md](https://github.com/AIPMAndy/AIPMAndy/blob/main/docs/site-upgrade/PLAN.md) v1.29（blob `2a5ab9e04db02127e6b7d7f8aa85a56cda7948e4`），检查 P0 `ai-china-content-commerce-handbook` main `e49275f7ef176d995b86a83a0c63b899b60f1cfd`、原 `scripts/build_data.py`→`scripts/build_site.py` 生成链、`site/assets/model.js` 纯函数、`site/assets/app.js` 动态表单、已有 40 页 PDF、`pages.yml` 与历史 [Pages/PDF live #43648606735](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/actions/runs/43648606735)。源站经营计算器原把**空值自动转 0**，允许 **1.5 单/客户**，点击复制无论实际失败都立即显示“已复制”；来源列表不显示 29 条台账历史日期。这些是真实影响计算与可信度的缺陷，不是重复包装已完成的功能。
+
+| 本轮实际源码改动 | 可复现测试/发布状态（严格区分） | 阻塞、下一步 |
+|---|---|---|
+| 已在独立分支 `upgrade/calc-evidence-20261120` 提交 [PR #1](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/pull/1)，当前 head `ae835bb01f0ad98d04ad6bc9ffe9ff893b9c18bd`。修改 `site/assets/model.js` 以拒绝空白/小数订单客户数；`site/assets/app.js` 禁止缺失数据当零、无效表格不复制不导出、复制结果实际确认、旧来源展示台账日期；`site/index.html` 添加可下载教学测算 CSV，包含用户输入、结果及未审计/不保盈利声明；CSS 改错误及禁用状态。旧三种利润模型、案例、30 天打卡和 PDF 未删改。 | 新增 Node 非法输入测试、Python DOM/绑定一致性检查、Chromium 360/390/1280px 的实际数据输入/CSV 下载/案例搜索/溢出脚本与截图归档，以及 Pages 后首页、JS、CSS、robots、sitemap、章节、案例、PDF 的独立在线 SHA 校验。**首次 PR Actions [#44567096847](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/actions/runs/44567096847) 截至本轮仍处于 PDF 构建步骤，未获成功结论**；新增快失败测试顺序与 18 分钟上限的 head `ae835bb0` 已触发新 PR CI（GitHub 运行记录待结论）。**当前仅为已提交 PR，既未合并，也未新部署，禁止标记上线或 Stage 5。** | 等新 PR CI Node/Python/Chromium 与 PDF QA 真正全绿再 merge（遵守 head SHA），然后检查 main 重建、部署和发布文件哈希；任何 GitHub runner apt/字体/PDF 构建长时间无结果视为暂时阻塞并记录，不通过绕过 QA 来强合并。PDF 既有版本未在 PR 内修改：源内容→PDF 重建→QA 链仍在原发布工作流中。真机 iOS/Android、VoiceOver/TalkBack、40 页 PDF 人眼高倍率签收与法规台账逐项当日核验尚不可代签。 |
+
+**结算**：PDF 存在性 33/33 不变；全站仍未 33/33 Stage 6 DONE。本轮确实更改可执行源码并开放 PR，但未把 PR/待运行 CI 说成部署成功。下一轮优先完成此 PR 的测试/合并/真实线上证据；若持续受平台阻塞，转可执行 P0/P1，避免重复做本轮功能。自动循环暂不停止。
 
 ## 七、迭代管理原则
 
