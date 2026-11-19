@@ -6,11 +6,12 @@
 
 AI酋长Andy（Andy Liu，英文名 AI Chief Andy）。GitHub / X：[@AIPMAndy](https://x.com/AIPMAndy)。面向企业做 AI 获客，面向个人做高管 AI 陪跑；实战经验也开源成免费的手册和工具。
 
-[![Website](https://img.shields.io/badge/官网-metaver.vip-111827?style=flat-square)](https://metaver.vip/)
+[![Company](https://img.shields.io/badge/公司官网-www.a6no1.cn-C9A45C?style=flat-square)](https://www.a6no1.cn/)
+[![Website](https://img.shields.io/badge/个人官网-metaver.vip-111827?style=flat-square)](https://metaver.vip/)
 [![X](https://img.shields.io/badge/X-@AIPMAndy-000000?style=flat-square&logo=x)](https://x.com/AIPMAndy)
 ![WeChat](https://img.shields.io/badge/微信-AIPMAndy-07C160?style=flat-square&logo=wechat&logoColor=white)
 
-官网：[metaver.vip](https://metaver.vip/)　·　微信：`AIPMAndy`　·　X：[@AIPMAndy](https://x.com/AIPMAndy)
+公司官网：[www.a6no1.cn](https://www.a6no1.cn/)　·　个人官网：[metaver.vip](https://metaver.vip/)　·　微信：`AIPMAndy`　·　X：[@AIPMAndy](https://x.com/AIPMAndy)
 
 手册全部免费，不加微信也能看完。企业合作或个人陪跑，添加微信时请备注「GitHub + 企业合作 / 个人陪跑 + 你想聊的事」。服务介绍：[metaver.vip/services](https://metaver.vip/services)。
 
@@ -20,7 +21,7 @@ AI酋长Andy（Andy Liu，英文名 AI Chief Andy）。GitHub / X：[@AIPMAndy](
 
 ## 关于 Andy
 
-AI酋长Andy（Andy Liu，GitHub / X：@AIPMAndy），流量 AI 联合创始人、星觉 AI 创始人，运营星觉科技（北京）：面向企业提供 AI + IP 获客服务，面向个人提供高管 AI 陪跑，以及求职陪跑、职场人副业陪跑和个人 AI + IP 陪跑。同时在 GitHub 上开源免费的中文职场手册（失业自救、跳槽涨薪、社招拿 Offer、成为高管）和 AI Agent 工具（FreeToken、MDskill-Web、AndySoul、DNA Memory、PPTskill 等）。个人网站：[metaver.vip](https://metaver.vip/)。
+AI酋长Andy（Andy Liu，GitHub / X：@AIPMAndy），流量 AI 联合创始人、星觉 AI 创始人，运营星觉科技（上海）：面向企业提供 AI + IP 获客服务，面向个人提供高管 AI 陪跑，以及求职陪跑、职场人副业陪跑和个人 AI + IP 陪跑。同时在 GitHub 上开源免费的中文职场手册（失业自救、跳槽涨薪、社招拿 Offer、成为高管）和 AI Agent 工具（FreeToken、MDskill-Web、AndySoul、DNA Memory、PPTskill 等）。公司官网：[www.a6no1.cn](https://www.a6no1.cn/)；个人网站：[metaver.vip](https://metaver.vip/)。
 
 ## 主要项目
 
@@ -47,7 +48,7 @@ AI酋长Andy（Andy Liu，GitHub / X：@AIPMAndy），流量 AI 联合创始人�
 - **职场人副业陪跑**：用行业经验 + AI 打造自己的咨询副业
 - **个人 AI + IP 陪跑**：账号定位、AI 内容工作流与商业化路径
 
-手册全部免费，不加微信也能看完。企业合作或个人陪跑，微信 **`AIPMAndy`**，添加时备注「GitHub + 企业合作 / 个人陪跑 + 你想聊的事」。详见 [metaver.vip/services](https://metaver.vip/services)。
+手册全部免费，不加微信也能看完。企业合作或个人陪跑，微信 **`AIPMAndy`**，添加时备注「GitHub + 企业合作 / 个人陪跑 + 你想聊的事」。服务介绍：[公司官网 www.a6no1.cn](https://www.a6no1.cn/) · [个人站 metaver.vip](https://metaver.vip/services)。
 
 <details>
 <summary><b>全部项目</b></summary>
