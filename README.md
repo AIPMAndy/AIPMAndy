@@ -11,7 +11,7 @@ AI酋长Andy（Andy Liu，英文名 AI Chief Andy）。GitHub / X：[@AIPMAndy](
 [![X](https://img.shields.io/badge/X-@AIPMAndy-000000?style=flat-square&logo=x)](https://x.com/AIPMAndy)
 ![WeChat](https://img.shields.io/badge/微信-AIPMAndy-07C160?style=flat-square&logo=wechat&logoColor=white)
 
-公司官网：[www.a6no1.cn](https://www.a6no1.cn/)　·　个人官网：[metaver.vip](https://metaver.vip/)　·　微信：`AIPMAndy`　·　X：[@AIPMAndy](https://x.com/AIPMAndy)
+公司官网：[www.a6no1.cn](https://www.a6no1.cn/)　·　英文站：[www.a6no1.cn/en](https://www.a6no1.cn/en)　·　个人官网：[metaver.vip](https://metaver.vip/)　·　微信：`AIPMAndy`　·　X：[@AIPMAndy](https://x.com/AIPMAndy)
 
 手册全部免费，不加微信也能看完。企业合作或个人陪跑，添加微信时请备注「GitHub + 企业合作 / 个人陪跑 + 你想聊的事」。服务介绍：[metaver.vip/services](https://metaver.vip/services)。
 
