@@ -1,6 +1,6 @@
 # 星觉科技 · GitHub 知识网站升级作战计划
 
-> 版本 v1.32 · 2026-11-20（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
+> 版本 v1.33 · 2026-11-20（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
 
 ## 一、唯一目标
 
@@ -391,6 +391,16 @@
 | 新建独立分支 `fix/robots-live-verify-20261120`，将 `site/robots.txt` 与生成器输出完全对齐（含项目 sitemap 的准确 URL）；修改 `.github/workflows/pages.yml` 将 `site/robots.txt`、`site/sitemap.xml`、`site/data.js` 纳入生成产物的版本同步，避免后续再出现仓库源版与发布版偏差。只改两份真实源文件；没有触碰 37 条第三方案例、30 章正文、历史来源日、既有经营模型或 40 页 PDF。 [PR #2](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/pull/2) 的独立 head `ea646846d8b47d6a397431c8d0c4859b09b0c99f` 在 [PR CI #44628453527](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/actions/runs/44628453527) **completed/success** 后按 head SHA 守卫 squash merge，最终 main [`7e9954bda04363a9af3e4dc10a6bddb5259c0eff`](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/commit/7e9954bda04363a9af3e4dc10a6bddb5259c0eff)；无 force push。 | [main #44628627476](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/actions/runs/44628627476) **verify、deploy、live_verify 三个 job 均 completed/success**。Node 模型测试、Python 内容一致性、40 页旧 PDF 全页自动 QA/视觉 contact sheet、Chromium 360/390/1280px 实际表单+CSV 均过。独立部署后 live job [#135929731582](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/actions/runs/44628627476/job/135929731582) 验证公开 [首页](https://aipmandy.github.io/ai-china-content-commerce-handbook/)、[应用 JS](https://aipmandy.github.io/ai-china-content-commerce-handbook/assets/app.js)、[模型 JS](https://aipmandy.github.io/ai-china-content-commerce-handbook/assets/model.js)、CSS、[sitemap](https://aipmandy.github.io/ai-china-content-commerce-handbook/sitemap.xml)、[robots](https://aipmandy.github.io/ai-china-content-commerce-handbook/robots.txt)、[章节](https://aipmandy.github.io/ai-china-content-commerce-handbook/chapters/01.html)、[案例](https://aipmandy.github.io/ai-china-content-commerce-handbook/cases/C001.html) **8/8 HTTP 200、SHA-256 与仓库构建字节一致**，另 [原 40 页 PDF](https://aipmandy.github.io/ai-china-content-commerce-handbook/downloads/ai-china-content-commerce-handbook.pdf) 在线 SHA-256 `42f50cfe334b1e6c07f00fc6dd1cdc28309503f79334c48ecdae378e6bc586d9` 与源版相同。 | **Stage 5 未到 Stage 6 DONE**：实体 iOS Safari/Android、VoiceOver/TalkBack、40 页 PDF 人眼 200% 逐页签收、动态法律/政策来源逐项真实新核验及 Chromium 截图人眼复核仍待办，不冒充本轮执行；本轮 PDF 源未改变，因此跳过重复生成、对原 PDF 完成全页自动 QA，不虚称重新生成。保持 33 站升级循环启用，不能将 PDF 覆盖 33/33 当成网站验收 33/33。 |
 
 **结算**：本轮从真实部署回归失败中修复 P0 发布确定性缺陷并闭环；主仓 33/33 SHA 查询覆盖，无新的未经验证用户数据、Offer、收入或流量承诺。下一轮优先审查其他未达到 Stage 5/6 的 P0/P1，不重复改此站已成功上线功能；遇真实设备/人工复核限制继续标阻塞。停机条件依旧是 33 个站点逐一 Stage 6 DONE 或 Andy 明确同意排除。
+
+### 2026-11-20 · P0 餐饮到店核销真实漏斗工具（正在验收，不冒充已上线）
+
+本轮以唯一主计划 v1.32（blob `d8b11a5bd6419e31401d07ce6ef8863d18562c0a`）为准，从 33 个重点站点逐一读取实时 GitHub `main` SHA（**33/33 均返回有效 40 位 SHA**），避开已经交付功能的 P0/P1；选择仍需提升真实核销可用性的 P0 `restaurant-ai-customer-acquisition-handbook`，本轮起始 main `33f8708bd64d63a590efd598b56315dbb97ba574`。已有单单贡献计算器、30 天计划、26 章原教程、历史来源台账与 47 页 PDF 均已核对，**原 PDF 未修改，历史人工 200% 逐页检查仍待签收**。
+
+| 本轮代码产物与版本 | 可复现门禁 / Pages 状态 | 阻塞与下一步 |
+|---|---|---|
+| [PR #3](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/pull/3)（独立分支 `upgrade/restaurant-funnel-20261120`，head `50edc73a58a55ffb5c1a73994ff8bcfac1dc27f7`）：新增源文件 `site/funnel.html` / `site/assets/funnel.js` / `site/assets/funnel.css`，对同活动/同批次**触达→打开→到店→核销**的去重人数做整数、日期、包含关系校验，给观察性比例与无上传 CSV；避免把曝光次数、订单笔数、跨渠道人数混算。不造实际经营数据，不把相关性说成因果。站点新工具有独立 canonical、WebApplication JSON-LD、2026-11-20 实际修改日期、来源/作者/微信 AIPMAndy/个人与公司官网、明确 PDF 版本边界。同步修改首页入口、原 `tools.html` 内链与 sitemap；共 9 个文本文件改变，不覆盖原工具。 | PR 专用 [Chromium 工作流 #44674375585](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/actions/runs/44674375585) 已启动，360/390/1280px 交互用例覆盖真实比例、日期/整数/队列关系、CSV 二进制下载与页面横向溢出；`scripts/verify_live.py --local` 对原 SEO/引用/PDF SHA、新页 JSON-LD/元数据及 sitemap 做源码检查；Pages 正式部署后验收清单从 15 个增为 18 个完整 HTTP 200 + SHA-256 文件。**当前 PR CI 尚未报告成功；也尚未合并、未上线。** | **Stage 2–3，未到 Stage 5/6**。须待本 PR CI 真实成功，检查最新 main/head 无并行冲突，守卫 SHA 合并；再验正式 GitHub Pages 流程 `deploy` 与 `live_verify` 全绿、线上地址与 PDF 文件哈希，再更新本行状态。后续仍需实体 iOS/Android、VoiceOver/TalkBack、47 页 PDF 人眼 200% 全页审核以及动态平台规则实地复查。 |
+
+本轮发布判断不以 commit/PR 代替线上验收；本自动循环保持启用。33/33 是 PDF 仓库存在性与本轮 main SHA 返回数，**不是 33/33 网站最终 DONE**。
 
 ## 七、迭代管理原则
 
