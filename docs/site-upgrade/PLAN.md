@@ -1,6 +1,6 @@
 # 星觉科技 · GitHub 知识网站升级作战计划
 
-> 版本 v1.33 · 2026-11-20（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
+> 版本 v1.34 · 2026-11-20（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
 
 ## 一、唯一目标
 
@@ -392,15 +392,15 @@
 
 **结算**：本轮从真实部署回归失败中修复 P0 发布确定性缺陷并闭环；主仓 33/33 SHA 查询覆盖，无新的未经验证用户数据、Offer、收入或流量承诺。下一轮优先审查其他未达到 Stage 5/6 的 P0/P1，不重复改此站已成功上线功能；遇真实设备/人工复核限制继续标阻塞。停机条件依旧是 33 个站点逐一 Stage 6 DONE 或 Andy 明确同意排除。
 
-### 2026-11-20 · P0 餐饮到店核销真实漏斗工具（正在验收，不冒充已上线）
+### 2026-11-20 · P0 餐饮到店核销真实漏斗工具：PR、Chromium、Pages 线上 18 文件哈希全部通过（Stage 5）
 
-本轮以唯一主计划 v1.32（blob `d8b11a5bd6419e31401d07ce6ef8863d18562c0a`）为准，从 33 个重点站点逐一读取实时 GitHub `main` SHA（**33/33 均返回有效 40 位 SHA**），避开已经交付功能的 P0/P1；选择仍需提升真实核销可用性的 P0 `restaurant-ai-customer-acquisition-handbook`，本轮起始 main `33f8708bd64d63a590efd598b56315dbb97ba574`。已有单单贡献计算器、30 天计划、26 章原教程、历史来源台账与 47 页 PDF 均已核对，**原 PDF 未修改，历史人工 200% 逐页检查仍待签收**。
+从本计划 v1.32（blob `d8b11a5bd6419e31401d07ce6ef8863d18562c0a`）出发，以 P0/P1/P2 清单逐仓库读取实时 GitHub `main` SHA，**33/33 全部有效返回**。本轮选 P0 `restaurant-ai-customer-acquisition-handbook`：开始 main `33f8708bd64d63a590efd598b56315dbb97ba574`，确认既有 26 章、单单贡献计算器、30 天计划、历史官方来源、47 页 PDF 与真实 `site/*.html`/静态 JS/CSS 出版链；原有工具与旧 PDF 不覆盖。主分支最终为 [`9086a5084f47602f5fe535de047d372c4e1daee4`](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/commit/9086a5084f47602f5fe535de047d372c4e1daee4)，未 force push。
 
-| 本轮代码产物与版本 | 可复现门禁 / Pages 状态 | 阻塞与下一步 |
+| 已实际交付的修改 | 已取得的可复现 / 真正线上证据 | 剩余阻塞 / Stage 6 边界 |
 |---|---|---|
-| [PR #3](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/pull/3)（独立分支 `upgrade/restaurant-funnel-20261120`，head `50edc73a58a55ffb5c1a73994ff8bcfac1dc27f7`）：新增源文件 `site/funnel.html` / `site/assets/funnel.js` / `site/assets/funnel.css`，对同活动/同批次**触达→打开→到店→核销**的去重人数做整数、日期、包含关系校验，给观察性比例与无上传 CSV；避免把曝光次数、订单笔数、跨渠道人数混算。不造实际经营数据，不把相关性说成因果。站点新工具有独立 canonical、WebApplication JSON-LD、2026-11-20 实际修改日期、来源/作者/微信 AIPMAndy/个人与公司官网、明确 PDF 版本边界。同步修改首页入口、原 `tools.html` 内链与 sitemap；共 9 个文本文件改变，不覆盖原工具。 | PR 专用 [Chromium 工作流 #44674375585](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/actions/runs/44674375585) 已启动，360/390/1280px 交互用例覆盖真实比例、日期/整数/队列关系、CSV 二进制下载与页面横向溢出；`scripts/verify_live.py --local` 对原 SEO/引用/PDF SHA、新页 JSON-LD/元数据及 sitemap 做源码检查；Pages 正式部署后验收清单从 15 个增为 18 个完整 HTTP 200 + SHA-256 文件。**当前 PR CI 尚未报告成功；也尚未合并、未上线。** | **Stage 2–3，未到 Stage 5/6**。须待本 PR CI 真实成功，检查最新 main/head 无并行冲突，守卫 SHA 合并；再验正式 GitHub Pages 流程 `deploy` 与 `live_verify` 全绿、线上地址与 PDF 文件哈希，再更新本行状态。后续仍需实体 iOS/Android、VoiceOver/TalkBack、47 页 PDF 人眼 200% 全页审核以及动态平台规则实地复查。 |
+| [PR #3](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/pull/3) 从独立分支 `upgrade/restaurant-funnel-20261120`（最终 head `50edc73a58a55ffb5c1a73994ff8bcfac1dc27f7`）在 PR CI 成功后以**预期 head SHA 守卫 squash merge**。变更共 9 份文本文件：新增 [到店核销漏斗工作台](https://aipmandy.github.io/restaurant-ai-customer-acquisition-handbook/funnel.html) 的 HTML、JS、CSS，填写同活动、同周期、同批次**触达→活动页打开→实际到店→完成核销**四层去重人数，必须输入统计时间与 0–10 亿非负整数，检查逐层包含关系；给出各层观察比例与本机中文 BOM CSV 下载，拒绝用播放/曝光次数或订单笔数冒充去重人数。无第三方遥测、不上传经营记录、不捏造流量/客户收入/业绩、不把观察性相关当因果。同步首页与原单单贡献工具交叉入口；新页 canonical、sitemap、可解析 WebApplication JSON-LD、实际修改日 `2026-11-20`、作者/官方来源与历史边界、微信 `AIPMAndy`、个人官网、企业官网与服务入口均齐全。 | [PR Chromium #44674375585](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/actions/runs/44674375585) **completed/success**；[最终 main Chromium #44674833982](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/actions/runs/44674833982) **completed/success**：360/390/1280px 实际日期/四项人数输入、10.0%/25.0%/80.0%/2.0% 结果、BOM CSV 下载内容、逆序日期/非整数/批次包含关系拒绝、清空与无横向溢出。 [最终 main Pages #44674834099](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/actions/runs/44674834099) **completed/success**，其 `deploy`、**发布后独立 `verify_live`**、47 页 PDF QA、证据归档步骤均 success；工作流日志明确 `PASS: 18 exact live SHA-256 matches, 36 sitemap URLs, 3 visible citations, 47-page PDF`。18 项实际 Pages 资源包括首页、新工具 HTML、工具 JS/CSS、旧工具/章节、robots/sitemap/llms、官方证据与原 47 页 PDF，皆 HTTP 200 且 SHA-256 与仓库源版同字节。 [验收 JSON 归档](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/actions/runs/44674834099/artifacts/14601123133)。旧 PDF 791601 字节，源版 SHA-256 `2437c28a6133ba72dc17fb6ae903cd2cbf5a44e8e19ae0656422d0166a3a1f26`；未修改，自动 PDF 检查成功且 `warnings: []`，视觉状态仍明确 `awaiting human inspection`。 | **Stage 5，未签 Stage 6 DONE**：没有实体 iOS Safari/Android 与 VoiceOver/TalkBack 的实际验收，47 页原 PDF 的人眼 200% 逐页签收仍待完成；官方平台费用、规则与准入页面本轮未逐条重新核对，只保留 2026-11-17 局部历史核验记录，不冒充今天复核。新功能是 2026-11-20 网站新增，不声称 2026-11-13 出版的 PDF 已包含它；页面明确写了版本差异。另 P1 私有 `100m-in-5-years-handbook` 的 Pages 首次启用阻塞继续单独保留。 |
 
-本轮发布判断不以 commit/PR 代替线上验收；本自动循环保持启用。33/33 是 PDF 仓库存在性与本轮 main SHA 返回数，**不是 33/33 网站最终 DONE**。
+**结算**：本轮是在真实源文件改造和两次 Chromium 成功门禁后合并，并有部署后的公开 URL 及 **18/18 文件独立哈希**核验；没有把 PR/commit 当作部署成功。PDF 仓库存量仍 **33/33**，**不等于网站 33/33 Stage 6 DONE**。自动升级循环继续，下一轮优先未改造 P0/P1 的真实可用性缺口或能真正解决的签收项，不重复包装这个已上线的工具。
 
 ## 七、迭代管理原则
 
