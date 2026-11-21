@@ -1,6 +1,6 @@
 # 星觉科技 · GitHub 知识网站升级作战计划
 
-> 版本 v1.39 · 2026-11-21（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
+> 版本 v1.40 · 2026-11-22（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
 
 ## 一、唯一目标
 
@@ -77,7 +77,7 @@
 | P1 | [chatgpt-income-handbook](https://github.com/AIPMAndy/chatgpt-income-handbook) | **已归档正式 75 页 PDF：pdf/chatgpt-income-handbook-guide.pdf；原来源驱动生成与自动 QA 已验收** | **[Pages/构建/线上 SHA #43851564326](https://github.com/AIPMAndy/chatgpt-income-handbook/actions/runs/43851564326) success；真正手机/高倍率人工视觉仍待验，Stage 5** | 34 章原始教程 + 20 份 SOP/模板等源内容；个人与公司入口已补，动态来源核验待续 |
 | P1 | [one-person-ai-income-guide](https://github.com/AIPMAndy/one-person-ai-income-guide) | **199 页原 PDF（2026-11-13）字节未改，官网资源上线 + SHA-256 一致；真人 200% 逐页待签** | **Stage 5（2026-11-21）**：[现金流工具](https://aipmandy.github.io/one-person-ai-income-guide/cashflow.html) 已实际上线，原 55 任务和订单经济账保留；[PR #3](https://github.com/AIPMAndy/one-person-ai-income-guide/pull/3) 合并 main c6d053a，[main 验证+公开 6/6 SHA #44866183843](https://github.com/AIPMAndy/one-person-ai-income-guide/actions/runs/44866183843)、[Pages 部署 #44866183221](https://github.com/AIPMAndy/one-person-ai-income-guide/actions/runs/44866183221) completed/success；真实 iOS/Android/辅助技术/PDF 人工审核尚未完成 | 新增本机 13 周确定现金流/最低储备预警/CSV 导出和手动本机保存；首页补工具与 PDF CTA、公司官网/服务，canonical/JSON-LD/sitemap，Python+Node 测试与 Pages 实时校验门禁；历史来源日期未冒充当日核验 |
 | P1 | [how-to-earn-usd-from-china](https://github.com/AIPMAndy/how-to-earn-usd-from-china) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 合规条件/地区边界 |
-| P1 | [HowToBeAnAICreator](https://github.com/AIPMAndy/HowToBeAnAICreator) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 创作者工作流/内容实操 |
+| P1 | [HowToBeAnAICreator](https://github.com/AIPMAndy/HowToBeAnAICreator) | **89 页历史版 PDF**：`pdf/HowToBeAnAICreator-guide.pdf`，`pdf/edition.json` 2026-11-13/837602 字节/SHA-256 `a1f93d9e…bcd885`；本轮未改 PDF、未重生成或完成人眼逐页 QA | **Stage 5（2026-11-22）**：[选题实验台](https://aipmandy.github.io/HowToBeAnAICreator/topic-lab.html) 实际上线；[PR #1](https://github.com/AIPMAndy/HowToBeAnAICreator/pull/1) 合并；[main `77955b9`](https://github.com/AIPMAndy/HowToBeAnAICreator/commit/77955b9f65291baa1ac07a69cc9c0a5a2e3f03f7)；[CI](https://github.com/AIPMAndy/HowToBeAnAICreator/actions/runs/44924782662)、[Pages](https://github.com/AIPMAndy/HowToBeAnAICreator/actions/runs/44924781913)、[真实线上 4/4 SHA-256](https://github.com/AIPMAndy/HowToBeAnAICreator/actions/runs/44924782690) 全部 success | 录入真实用户问题/HTTPS 证据、主观评分、最多 100 条本地记录、删除确认、CSV 安全导出；新增独立 canonical/OG/WebApplication JSON-LD/sitemap、双官网/服务/微信/历史 PDF 入口，保持原 59 卡/30 日/离线版生成一致；真机/读屏/89 页 PDF 人眼 200% 与动态外部规则仍待验，不是 DONE |
 | P2 | [ai-era-survival-guide](https://github.com/AIPMAndy/ai-era-survival-guide) | **新增正式 69 页 PDF：12 份 Markdown 源驱动，99 书签/158 链接/35,655 字，69 页自动光栅与边界 QA 通过；正式版 SHA `01b2d359…6570ac`，已入库并 Pages 在线哈希验收** | **源码 CI [#44067297268](https://github.com/AIPMAndy/ai-era-survival-guide/actions/runs/44067297268)、PDF [#44067297090](https://github.com/AIPMAndy/ai-era-survival-guide/actions/runs/44067297090)、Pages [#44067296652](https://github.com/AIPMAndy/ai-era-survival-guide/actions/runs/44067296652)、独立 Live 8 文件 SHA [#44067297267](https://github.com/AIPMAndy/ai-era-survival-guide/actions/runs/44067297267) 均成功；仍 Stage 5** | 新增 PDF 下载 CTA、Book JSON-LD、公司/服务入口、四个重点页 canonical/OG/WebPage/sitemap；原岗位与评分工具不回归；人工高倍率69页/真机/可访问性/实时政策核验待签，未标 DONE |
 | P2 | [grok-bot-handbook](https://github.com/AIPMAndy/grok-bot-handbook) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 教程平台版本核对 |
 | P2 | [muse-guide](https://github.com/AIPMAndy/muse-guide) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 交互体验/案例 |
@@ -532,6 +532,17 @@
 **本轮额外阻塞核对**：`100m-in-5-years-handbook` 权限可读写但仓库当前为 **private**，原主计划 Pages 未启用（旧流水线 configure-pages 404），此轮没有擅自公开私有仓库或把站点误报上线；若需发布到公共 Pages，先核清保密/Pages 策略及仓库所有者意愿。
 
 **总状态**：33/33 重点仓库 PDF *存在性* 不变，33 个站点没有全部 Stage 6 DONE 的逐项证据；真机、真实辅助技术和 PDF 真人逐页验收未完成。本轮不触发循环暂停；后续优先 P1 尚未实质升级或能真正解除的安全阻塞。
+
+### 2026-11-22 · P1 AI 创作者：真实选题实验台、历史 PDF 入口与部署字节验收（Stage 5）
+
+**选择依据与去重**：以唯一主计划 v1.39（起始 blob \`6010824f3ff9b298b972d65ab83d70cd1e9a1e00\`）为基线；分批从 GitHub REST 实时读取 **33/33 个重点仓库 main SHA**，逐一成功，不以 33 份 PDF 代替全部 Stage 6。P0 已有实际工程交付；P1 \`HowToBeAnAICreator\` 原记录只到目录初审，因此优先选择。目标起始 main \`da874eba8d22a550f9793c056e9db8e11a517b1e\`，仓库 public、GitHub 连接有写权限，Pages 来源为 main 的 /docs；原始 59 条操作卡、30 天进度、离线 HTML 和原版 PDF 不动。
+
+| 修改和可用功能 | 真实 CI / 发布 / 线上证据 | 剩余阻塞与下一步 |
+|---|---|---|
+| [PR #1](https://github.com/AIPMAndy/HowToBeAnAICreator/pull/1)（9 份源文件新增/修改）合并为 [\`90db5b7\`](https://github.com/AIPMAndy/HowToBeAnAICreator/commit/90db5b70aeb91031a371c912265b913c5ed63f87)：新 [\`topic-lab.html\`](https://aipmandy.github.io/HowToBeAnAICreator/topic-lab.html) 可输入题目、目标读者、真实用户问题、可选 HTTPS 证据链接、主观证据/可复现/商业相关性等级与估算工时，按**显式公开公式**排序；100 条本地持久化、删除/清空确认、离线 CSV 导出且过滤表格公式注入，HTML 转义、拒绝非 HTTPS 链接、不收集隐私、不上传输入；输入证据均标记为用户自填且**未经自动核验**。评分不是平台算法、流量/收入预测。主页与离线单文件均通往新工具，新增历史 89 页 PDF 入口，微信 \`AIPMAndy\`、[个人官网](https://metaver.vip/)、[公司官网](https://www.a6no1.cn/)、[服务页](https://metaver.vip/services)。独立 title/description/canonical/OG/WebApplication JSON-LD、sitemap、llms.txt。原 \`tools/build.py\` 同步处理离线 URL，原 59 卡/30 天任务无修改。 | 第一次 PR [#44924634757](https://github.com/AIPMAndy/HowToBeAnAICreator/actions/runs/44924634757) 失败，原因是新测试断言错误，已在 branch 提交 [\`9527b47\`](https://github.com/AIPMAndy/HowToBeAnAICreator/commit/9527b477e28454472f77fe14ca9748a96eb20dd0) 修复；第二次 [PR CI #44924673432](https://github.com/AIPMAndy/HowToBeAnAICreator/actions/runs/44924673432) **completed/success**。主站 [CI #44924782662](https://github.com/AIPMAndy/HowToBeAnAICreator/actions/runs/44924782662)、[Pages #44924781913](https://github.com/AIPMAndy/HowToBeAnAICreator/actions/runs/44924781913) **completed/success**。为保证真实交付，补主分支 [\`77955b9\`](https://github.com/AIPMAndy/HowToBeAnAICreator/commit/77955b9f65291baa1ac07a69cc9c0a5a2e3f03f7) 的 \`Verify live GitHub Pages\`： [#44924782690](https://github.com/AIPMAndy/HowToBeAnAICreator/actions/runs/44924782690) **completed/success**，job 日志对**4 个公网 HTTP 文件** \`index.html\`、\`topic-lab.html\`、\`sitemap.xml\`、\`robots.txt\` 报 \`PASS\`，SHA-256 与同次 main docs 源文件**逐字节一致**。新工具线上 SHA-256 \`0630764d386dc2750a04db8ae13f5981c2c5301e8239c598d73b166d6e470bce\`。 | **仍 Stage 5，严禁标 Stage 6**：没有 iOS Safari/Android 实体设备交互、VoiceOver/TalkBack、真人对新工具与 CSV 的交互体验、89 页 PDF 200% 全页视觉签收及各平台动态规则的逐条最新核验。历史 PDF 仅依据原 \`pdf/edition.json\` 的 2026-11-13 出版记录，路径 \`pdf/HowToBeAnAICreator-guide.pdf\`、89 页、837602 字节、SHA-256 \`a1f93d9e31e5d76c3beb8b29bb6b99257b63015c61d904273631faf315bcd885\`；本轮未修改 PDF、没有新版源文档→重生→人工 QA，也未声称 PDF 已以 Pages PDF 托管（入口为 GitHub raw PDF）。下一步先完善新工具实机/辅助技术验收，再准备 PDF 原版全页人眼审阅记录；若需要更新 PDF 内容才按源→生成→文本/视觉 QA 走新发行版。 |
+
+**循环约束**：33/33 PDF 仅是仓库存在性，不是网站的 Stage 6 DONE。尚有 P1 \`how-to-earn-usd-from-china\` 及若干 P2 未实质升级，P0/P1 还有真机、辅助技术和高倍率 PDF 人工验收缺口；继续选择**有新价值且可验收**的未处理项目，不堆叠已完成站点、不在此轮暂停任务。
+
 
 ## 七、迭代管理原则
 
