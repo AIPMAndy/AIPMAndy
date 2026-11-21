@@ -1,6 +1,6 @@
 # 星觉科技 · GitHub 知识网站升级作战计划
 
-> 版本 v1.37 · 2026-11-21（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
+> 版本 v1.38 · 2026-11-21（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
 
 ## 一、唯一目标
 
@@ -75,7 +75,7 @@
 | P1 | [threads-income-handbook](https://github.com/AIPMAndy/threads-income-handbook) | **57 页原正式 PDF 未改动**；源版 SHA-256 `a4a0e3db…b13168320ac9ee`，2026-11-21 线上哈希与仓库一致，人工 200% 逐页待签 | **Stage 5（2026-11-21）**：[周期经营复盘工作台](https://aipmandy.github.io/threads-income-handbook/lab.html) 上线，支持本机最多 60 期实际汇总、相邻两期差额观察、重复日期保护、确认删除、CSV 备份；[功能 PR #1](https://github.com/AIPMAndy/threads-income-handbook/pull/1)、[上线 SHA 门禁 PR #2](https://github.com/AIPMAndy/threads-income-handbook/pull/2)、[Chromium 三视口 PR #3](https://github.com/AIPMAndy/threads-income-handbook/pull/3) 均已合并；[PR Chromium 106 断言成功](https://github.com/AIPMAndy/threads-income-handbook/actions/runs/44829543001)，[main Pages 及线上 8/8 SHA 成功](https://github.com/AIPMAndy/threads-income-handbook/actions/runs/44829732157) | 新增品牌公司官网/微信/服务入口，保留原 24 章/诊断/服务卡/原 PDF；仍缺真实 iOS/Android、VoiceOver/TalkBack、PDF 人工高清逐页、动态平台政策完整复核，不标 Stage 6 |
 | P1 | [x-income-handbook](https://github.com/AIPMAndy/x-income-handbook) | **原 97 页 PDF 未改动**：原始出版快照 `pdf/edition.json`（2026-11-13）、SHA-256 `42890a3a…f14c842`；2026-11-20 [main Pages 实际线上 HTTP 200 与 SHA-256 一致](https://github.com/AIPMAndy/x-income-handbook/actions/runs/44573774374)，真人 200% 逐页仍待签 | **Stage 5**：新增真实内容实验台，主页已有入口，筛选/浏览器本地持久化/CSV 导出/删改控制（只支持新增、删除），Chrome 360/390/1280px [PR 浏览器回归成功](https://github.com/AIPMAndy/x-income-handbook/actions/runs/44572931242)；[main CI success](https://github.com/AIPMAndy/x-income-handbook/actions/runs/44573774401) 与 [Pages live 7/7 SHA 成功](https://github.com/AIPMAndy/x-income-handbook/actions/runs/44573774374) | 实机 iOS/Android、VoiceOver/TalkBack、PDF 真人人眼高倍率逐页和 X 平台动态政策新核验待办；工具数据不做因果归因或收益承诺 |
 | P1 | [chatgpt-income-handbook](https://github.com/AIPMAndy/chatgpt-income-handbook) | **已归档正式 75 页 PDF：pdf/chatgpt-income-handbook-guide.pdf；原来源驱动生成与自动 QA 已验收** | **[Pages/构建/线上 SHA #43851564326](https://github.com/AIPMAndy/chatgpt-income-handbook/actions/runs/43851564326) success；真正手机/高倍率人工视觉仍待验，Stage 5** | 34 章原始教程 + 20 份 SOP/模板等源内容；个人与公司入口已补，动态来源核验待续 |
-| P1 | [one-person-ai-income-guide](https://github.com/AIPMAndy/one-person-ai-income-guide) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 进度/业务计算器 |
+| P1 | [one-person-ai-income-guide](https://github.com/AIPMAndy/one-person-ai-income-guide) | **199 页原 PDF（2026-11-13）字节未改，官网资源上线 + SHA-256 一致；真人 200% 逐页待签** | **Stage 5（2026-11-21）**：[现金流工具](https://aipmandy.github.io/one-person-ai-income-guide/cashflow.html) 已实际上线，原 55 任务和订单经济账保留；[PR #3](https://github.com/AIPMAndy/one-person-ai-income-guide/pull/3) 合并 main c6d053a，[main 验证+公开 6/6 SHA #44866183843](https://github.com/AIPMAndy/one-person-ai-income-guide/actions/runs/44866183843)、[Pages 部署 #44866183221](https://github.com/AIPMAndy/one-person-ai-income-guide/actions/runs/44866183221) completed/success；真实 iOS/Android/辅助技术/PDF 人工审核尚未完成 | 新增本机 13 周确定现金流/最低储备预警/CSV 导出和手动本机保存；首页补工具与 PDF CTA、公司官网/服务，canonical/JSON-LD/sitemap，Python+Node 测试与 Pages 实时校验门禁；历史来源日期未冒充当日核验 |
 | P1 | [how-to-earn-usd-from-china](https://github.com/AIPMAndy/how-to-earn-usd-from-china) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 合规条件/地区边界 |
 | P1 | [HowToBeAnAICreator](https://github.com/AIPMAndy/HowToBeAnAICreator) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 创作者工作流/内容实操 |
 | P2 | [ai-era-survival-guide](https://github.com/AIPMAndy/ai-era-survival-guide) | **新增正式 69 页 PDF：12 份 Markdown 源驱动，99 书签/158 链接/35,655 字，69 页自动光栅与边界 QA 通过；正式版 SHA `01b2d359…6570ac`，已入库并 Pages 在线哈希验收** | **源码 CI [#44067297268](https://github.com/AIPMAndy/ai-era-survival-guide/actions/runs/44067297268)、PDF [#44067297090](https://github.com/AIPMAndy/ai-era-survival-guide/actions/runs/44067297090)、Pages [#44067296652](https://github.com/AIPMAndy/ai-era-survival-guide/actions/runs/44067296652)、独立 Live 8 文件 SHA [#44067297267](https://github.com/AIPMAndy/ai-era-survival-guide/actions/runs/44067297267) 均成功；仍 Stage 5** | 新增 PDF 下载 CTA、Book JSON-LD、公司/服务入口、四个重点页 canonical/OG/WebPage/sitemap；原岗位与评分工具不回归；人工高倍率69页/真机/可访问性/实时政策核验待签，未标 DONE |
@@ -471,6 +471,55 @@
 | [最终 main `5a45046b57926d4fd5936bbfac761a01b5cf30ab`](https://github.com/AIPMAndy/threads-income-handbook/commit/5a45046b57926d4fd5936bbfac761a01b5cf30ab)，[正式 Pages+verify-live #44829732157](https://github.com/AIPMAndy/threads-income-handbook/actions/runs/44829732157) **build/deploy/verify-live 三阶段均 completed/success**。 | 8/8 实际公开 HTTPS 文件均 HTTP 200 且 SHA-256 与 main 源字节完全一致：[工作台](https://aipmandy.github.io/threads-income-handbook/lab.html)、[PDF](https://aipmandy.github.io/threads-income-handbook/pdf/threads-income-handbook-guide.pdf) 可实测。PDF 792421 字节、SHA `a4a0e3db…b13168320ac9ee`，未修改、未冒充重新生成。 | **Stage 5，未签 DONE**：57 页 PDF 真人 200% 全页视觉、实体 iOS/Android、VoiceOver/TalkBack、动态 Threads 规则逐条官方复核尚待做，33 站也未全部 Stage 6。 |
 
 **结算**：PDF 存在性仍为 33/33，不等于最终验收。下一轮优先实质升级 P1 `one-person-ai-income-guide` 或解决其他站点具体阻塞；任务保持启用，避免重复建设。
+
+### 2026-11-21 · P1 一人 AI 创业：13 周现金流压力测试与上线字节级验收（Stage 5）
+
+**选项与去重**：本轮先读取唯一主计划 v1.37（起始 blob 7bd4f29c），并用 GitHub 分四批实时核对 **33/33 个重点仓库 main SHA**；已升级 P0 及 Threads 不再堆相同组件。此前 one-person-ai-income-guide 仅有旧版目录初检，起始 main 0bf455d、199 页正式 PDF，故作为本轮 P1。实际未发现 33 站已全部 Stage 6 签收的证据，**不能关闭自动循环**。
+
+| 本轮代码与功能 | 自动化和真实上线证据 | 剩余阻塞 / 下一步 |
+|---|---|---|
+| [PR #3](https://github.com/AIPMAndy/one-person-ai-income-guide/pull/3) **10 个文件**新增/变更，最终 squash main [c6d053a](https://github.com/AIPMAndy/one-person-ai-income-guide/commit/c6d053ad47c00f91c8ed1965843fa9b948c66eec)。新增 [现金流工具](https://aipmandy.github.io/one-person-ai-income-guide/cashflow.html) 与 [同站脚本](https://aipmandy.github.io/one-person-ai-income-guide/assets/cashflow.js)：13 周已确认到账和必须支付、期末余额、最低现金值、首次跌破储备预警、CSV 离线导出、用户主动选择才写 localStorage、清空确认；不上传经营数据或把意向收款视为实收。补作者/源方法、独立 canonical、WebApplication JSON-LD、页面真实修改日期、robots/sitemap；首页补现金流工具、199 页 PDF CTA、公司官网与服务；旧 55 任务和订单经济账保留。 | [PR 终态 CI #44866149260](https://github.com/AIPMAndy/one-person-ai-income-guide/actions/runs/44866149260) **success**：Python 单测/同源 build.py 产物稳定性、Node 8 个现金流边界测试（初次测试样本把首周余额误判，已据 CI 日志修正，未掩盖失败）。[main Validate + verify-live #44866183843](https://github.com/AIPMAndy/one-person-ai-income-guide/actions/runs/44866183843) **completed/success**，日志明确显示 **6/6** 个真正公开 HTTPS 文件均 HTTP 200、SHA-256 与 main 一致：首页、现金流页、JS、robots、sitemap 和 199 页 PDF。[独立 GitHub Pages build/deploy #44866183221](https://github.com/AIPMAndy/one-person-ai-income-guide/actions/runs/44866183221) **success**。 | **仍 Stage 5**：尚未真实 iOS Safari / Android Chrome、VoiceOver / TalkBack 的表单、CSV/保存和焦点实测。原 199 页 PDF 的 pdf/edition.json 版次为 2026-11-13，本轮完全没有修改 PDF；不得声称已重生成或真人 200% 全页视觉 QA。动态财税/平台/支付政策原始来源尚未逐项核验。下一步完成真机、辅助技术与 PDF 人工逐页签收，核实旧版 PDF 完整生成环境再评估 Stage 6。 |
+
+<details><summary>本轮逐仓 main SHA 快照（2026-11-21；PR 合并后更新目标仓库）</summary>
+
+- AIPMAndy/how-to-get-offer — 09b35cd3b6e05c0594d7e07d6511bf1320c877b2
+- AIPMAndy/chinese-international-student-career-guide — 7b2fd5b6107d10351142427fdcffdd7cbf21396e
+- AIPMAndy/chinese-international-student-ai-jobs — 2efac0398b5a5600764108a633fd0a132957105f
+- AIPMAndy/chinese-international-student-product-jobs — e40a39f27fabcefb93223f15bd0b921c66d52f43
+- AIPMAndy/chinese-international-student-business-jobs — 77e2362f9a7c6fe9a928086e0efc654c96717203
+- AIPMAndy/local-business-ai-growth-handbook — cc931c34efaa44a27a0d0bde2ae926372946bc19
+- AIPMAndy/restaurant-ai-customer-acquisition-handbook — 9086a5084f47602f5fe535de047d372c4e1daee4
+- AIPMAndy/ai-china-content-commerce-handbook — 7e9954bda04363a9af3e4dc10a6bddb5259c0eff
+- AIPMAndy/ai-cross-border-ecommerce-playbook — d455679aaf6314532081baff7f8b8fce24f3b2ac
+- AIPMAndy/ai-knowledge-paid-acquisition-handbook — e740d7af9381f2383243139b2f25ecd6cd1a106f
+- AIPMAndy/100m-in-5-years-handbook — d610e7e472ad2f2ad8df230f4f23a7a5eed82f15
+- AIPMAndy/geo-handbook — e969144b7dd25e319aa6e16df50ffcb7629d339d
+- AIPMAndy/seo-handbook — fa9f19c91e43289e873158caef1c8ebb5f516267
+- AIPMAndy/xiaohongshu-income-handbook — 621bf63005d31e324a70f9984c72f500eff2bb1f
+- AIPMAndy/anthropic-claude-code-agent-handbook — 639884ee64d16748578993cf2d8dd70a55e19985
+- AIPMAndy/HowToMakeMoneyOnYouTube — ae5f9561ce692d1fd365d54867392cf2f0ee2d03
+- AIPMAndy/github-income-handbook — 9c766db43331ec9e64ba816b32689480b48628d3
+- AIPMAndy/threads-income-handbook — 5a45046b57926d4fd5936bbfac761a01b5cf30ab
+- AIPMAndy/x-income-handbook — 85db321883a86015fc384568bfba72e1c95971cf
+- AIPMAndy/chatgpt-income-handbook — b8e738e0cf6fc3e2b28d9f9e4b33436de35823c5
+- AIPMAndy/one-person-ai-income-guide — c6d053ad47c00f91c8ed1965843fa9b948c66eec
+- AIPMAndy/how-to-earn-usd-from-china — c0a63b5d4cb00040dab3c359b8becaddaaa4b60c
+- AIPMAndy/HowToBeAnAICreator — da874eba8d22a550f9793c056e9db8e11a517b1e
+- AIPMAndy/ai-era-survival-guide — e0356c24f218c19456bad16a7eb48c5cd9f9f87b
+- AIPMAndy/grok-bot-handbook — e6bd320995c8bd1891800a5a124c768652bdf9aa
+- AIPMAndy/muse-guide — f091559e72970d9a1a4be751f39cc25bfeff17eb
+- AIPMAndy/infj-career-growth-guide — 72b702b7ac68c4b7432f71d8418aecb87537cf7d
+- AIPMAndy/intj-growth-guide — d4f5d748a3274896a0100bb2b367d26b7a5c7df0
+- AIPMAndy/how-to-survive-unemployment — 8fd6d621be3a73e241bfef597c7621efe5223933
+- AIPMAndy/how-to-job-hop-and-raise-salary — c48df3de42c096d512127b7edd2e3ffd190fe39f
+- AIPMAndy/AI-Awareness-Club — 5646c5f757cb5a6b00bdb54bbf994aff0a42dd1d
+- AIPMAndy/AIPMAndy.github.io — bd88cbdb381f996bd580a6c6d6509e7f022dc8aa
+- AIPMAndy/Gemini-Canvas-Video-Kit — af2aa71843c3c932fd6180749da3b731f3db3a79
+
+</details>
+
+**本轮结算**：PDF 仓库存量 33/33，**不是**网站 33/33 Stage 6。下一轮优先剩余未实质升级项目，不重复建设本轮功能。循环继续启用。
+
 ## 七、迭代管理原则
 
 1. 只把**核实过的结果**标成已完成；不能用「代码已写」代替「网站已上线」。
