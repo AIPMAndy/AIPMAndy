@@ -1,6 +1,6 @@
 # 星觉科技 · GitHub 知识网站升级作战计划
 
-> 版本 v1.42 · 2026-11-22（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
+> 版本 v1.43 · 2026-11-22（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
 
 ## 一、唯一目标
 
@@ -80,7 +80,7 @@
 | P1 | [HowToBeAnAICreator](https://github.com/AIPMAndy/HowToBeAnAICreator) | **89 页历史版 PDF**：`pdf/HowToBeAnAICreator-guide.pdf`，`pdf/edition.json` 2026-11-13/837602 字节/SHA-256 `a1f93d9e…bcd885`；本轮未改 PDF、未重生成或完成人眼逐页 QA | **Stage 5（2026-11-22）**：[选题实验台](https://aipmandy.github.io/HowToBeAnAICreator/topic-lab.html) 实际上线；[PR #1](https://github.com/AIPMAndy/HowToBeAnAICreator/pull/1) 合并；[main `77955b9`](https://github.com/AIPMAndy/HowToBeAnAICreator/commit/77955b9f65291baa1ac07a69cc9c0a5a2e3f03f7)；[CI](https://github.com/AIPMAndy/HowToBeAnAICreator/actions/runs/44924782662)、[Pages](https://github.com/AIPMAndy/HowToBeAnAICreator/actions/runs/44924781913)、[真实线上 4/4 SHA-256](https://github.com/AIPMAndy/HowToBeAnAICreator/actions/runs/44924782690) 全部 success | 录入真实用户问题/HTTPS 证据、主观评分、最多 100 条本地记录、删除确认、CSV 安全导出；新增独立 canonical/OG/WebApplication JSON-LD/sitemap、双官网/服务/微信/历史 PDF 入口，保持原 59 卡/30 日/离线版生成一致；真机/读屏/89 页 PDF 人眼 200% 与动态外部规则仍待验，不是 DONE |
 | P2 | [ai-era-survival-guide](https://github.com/AIPMAndy/ai-era-survival-guide) | **新增正式 69 页 PDF：12 份 Markdown 源驱动，99 书签/158 链接/35,655 字，69 页自动光栅与边界 QA 通过；正式版 SHA `01b2d359…6570ac`，已入库并 Pages 在线哈希验收** | **源码 CI [#44067297268](https://github.com/AIPMAndy/ai-era-survival-guide/actions/runs/44067297268)、PDF [#44067297090](https://github.com/AIPMAndy/ai-era-survival-guide/actions/runs/44067297090)、Pages [#44067296652](https://github.com/AIPMAndy/ai-era-survival-guide/actions/runs/44067296652)、独立 Live 8 文件 SHA [#44067297267](https://github.com/AIPMAndy/ai-era-survival-guide/actions/runs/44067297267) 均成功；仍 Stage 5** | 新增 PDF 下载 CTA、Book JSON-LD、公司/服务入口、四个重点页 canonical/OG/WebPage/sitemap；原岗位与评分工具不回归；人工高倍率69页/真机/可访问性/实时政策核验待签，未标 DONE |
 | P2 | [grok-bot-handbook](https://github.com/AIPMAndy/grok-bot-handbook) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 教程平台版本核对 |
-| P2 | [muse-guide](https://github.com/AIPMAndy/muse-guide) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 交互体验/案例 |
+| P2 | [muse-guide](https://github.com/AIPMAndy/muse-guide) | **171 页历史 PDF 保留原文件**；2026-11-13 版次 `f7e22886…12f4c`，部署后线上 HTTP 200/SHA-256 与 `edition.json` 完全一致；**未重新生成或完成真人 200% 逐页审阅** | **Stage 5（2026-11-22）**：新增 [12 条官方来源复核台](https://aipmandy.github.io/muse-guide/sources.html)；[PR #1](https://github.com/AIPMAndy/muse-guide/pull/1) squash 合并至 [main `da9f34d`](https://github.com/AIPMAndy/muse-guide/commit/da9f34daa95b79436656f90a12a0b2cc36acfcff)，[PR CI #45012690322](https://github.com/AIPMAndy/muse-guide/actions/runs/45012690322) 与 [main CI/Pages/6 资源在线 SHA #45012742257](https://github.com/AIPMAndy/muse-guide/actions/runs/45012742257) 均 success | 来源直接读原 `data/library.json` 12 项，不篡改 2026-10-21 核验日；搜索、30 天复核提示、本机人工标记/TXT 导出，明确官方声明 ≠ 真实账号实测。补官网服务/公司入口、171 页 PDF CTA、独立 canonical/OG/WebApplication JSON-LD/sitemap、CI 和线上门禁；保留旧任务书、80 条提示词、12 SOP。真实 iOS/Android、VoiceOver/TalkBack、PDF 全页 200% 真人审核和 12 条动态资料逐条重新复核仍待签收 |
 | P2 | [infj-career-growth-guide](https://github.com/AIPMAndy/infj-career-growth-guide) | **原 34 页 PDF 未改，`pdf/edition.json` 历史 SHA `9ab43459…3ea943f255`；线上同字节已验证；人工高倍率逐页待验** | **Stage 5（2026-11-22）**：新增[晋升证据台账](https://aipmandy.github.io/infj-career-growth-guide/evidence.html)，[PR #1](https://github.com/AIPMAndy/infj-career-growth-guide/pull/1) 已合并 main `e1e19d8`；[main CI #44985186258](https://github.com/AIPMAndy/infj-career-growth-guide/actions/runs/44985186258) success；[Pages + 6/6 真线上 HTTP/SHA #44985186264](https://github.com/AIPMAndy/infj-career-growth-guide/actions/runs/44985186264) completed/success | 本地真实成果台账/重复阻止/HTTPS 来源/搜索/单项删除/100 条上限/安全 CSV；首页独立 canonical/JSON-LD/双官网/服务及 PDF CTA，原 41 作品/7+30 天功能保留；仍需真机 iOS/Android、VoiceOver/TalkBack、34 页 PDF 人工 200% 全页和真实用户交互体验验收，**不标 DONE** |
 | P2 | [intj-growth-guide](https://github.com/AIPMAndy/intj-growth-guide) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 成长工具与证据 |
 | P2 | [how-to-survive-unemployment](https://github.com/AIPMAndy/how-to-survive-unemployment) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 失业流程与政策来源 |
@@ -603,6 +603,57 @@
 </details>
 
 **本轮结论**：`33/33 PDF 存在性` 不是 `33/33 Stage 6 DONE`；尚无一站可证明完成全部人审/真机/辅助技术最终签收。继续既有升级循环，本轮**不调用 Automations.update 暂停**，避免未完工被误停。
+
+### 2026-11-22 · P2 Muse 来源工作台与 171 页 PDF 线上字节复验（Stage 5，非 DONE）
+
+**停止条件/实时 SHA**：先读取唯一主计划 v1.42，起始 blob `8867254768cef277003d1c102c3a6a47569356ad`，对 33 个重点仓库逐一实时获取 main SHA（33/33 成功）；未发现可被证明完成真实手机/辅助技术/PDF 人工签收的 33/33 Stage 6 记录，亦无用户同意排除的证据。P0 均有前轮功能与线上初验，但仍 Stage 5；本轮不重复建设 P0。Muse 起始 main `f091559e72970d9a1a4be751f39cc25bfeff17eb`、公开且有写权限；另外核查 Grok Bot，发现其 12 条关键主张的历史核验日期均为 2026-10-21，截至 11-22 已有 **10/12** 超过 CI 设定的 14/30 日时效窗口，继续修改将导致 `scripts/check_claims.py` 阻止部署。未擅自把历史核验日改成今天、未冒充官方资料已重新核实，优先转 Muse 执行。
+
+| 仓库/代码变更 | 可复现测试与 Pages 实测 URL | PDF 和剩余阻塞 |
+|---|---|---|
+| [Muse Atlas](https://github.com/AIPMAndy/muse-guide) · [PR #1](https://github.com/AIPMAndy/muse-guide/pull/1) 绿色后 squash 合并至 [main `da9f34daa95b79436656f90a12a0b2cc36acfcff`](https://github.com/AIPMAndy/muse-guide/commit/da9f34daa95b79436656f90a12a0b2cc36acfcff)。新增 [sources.html](https://aipmandy.github.io/muse-guide/sources.html)，从**原始** `data/library.json` 加载 12 条 Meta 官方能力记录：检索、历史核验超 30 日提示、本机人工已查标记、筛选、TXT 离线复核单（保留原始来源 URL/核查日期/待复核空栏），无上传/真实账号自动操作；不把 O 官方说明当 T 真机实测。补首页 171 页 PDF CTA、来源入口、星觉科技公司官网、咨询链接，源页 canonical、OG、WebApplication JSON-LD、sitemap；未修改原始来源 JSON、原有 28 章/80 套指令/12 SOP、旧任务书与 PDF。增加 Python 5 项回归、内联 JS 语法门禁和部署后 6 项公网 SHA 验证。 | [PR CI #45012690322](https://github.com/AIPMAndy/muse-guide/actions/runs/45012690322) **completed/success**；[main workflow #45012742257](https://github.com/AIPMAndy/muse-guide/actions/runs/45012742257) **test/deploy/verify-live 全 success**。已读取 verify-live job 真实日志，6/6 公开资源 HTTP 200、SHA-256 与正式 main **逐字节一致**：`index.html` `3df5a70c…924bc`、`sources.html` `2f5f9dc3…bdfea`、`data/library.json` `546aa2c0…baabf`、`robots.txt`、`sitemap.xml` 和 [171 页 PDF](https://aipmandy.github.io/muse-guide/pdf/muse-guide-guide.pdf) `f7e22886…12f4c`；实际网页地址 [首页](https://aipmandy.github.io/muse-guide/) / [来源台](https://aipmandy.github.io/muse-guide/sources.html)。**没有将 PR/CI 成功代替公网验收**。 | **Stage 5**：171 页 PDF 沿用 2026-11-13 原版，未编辑、未重新生成；`edition.json` 记录 1,102,841 字节、SHA-256 `f7e22886c84cfe85c69bb7b87d0f679729041efe98091673b6d168565fd12f4c`，本轮 CI 和公网一致，但缺 PDF 200% 真人逐页视觉签收/完整可复现历史出版环境。实际 iOS/Android、VoiceOver/TalkBack、新页面真实辅助技术操作和 12 项动态官方来源逐条重新核验仍待做；不提前标 DONE。 |
+
+**同期并行变化**：其他 32 仓库与前一版快照相比，只有 [AIPMAndy.github.io](https://github.com/AIPMAndy/AIPMAndy.github.io) 的 main SHA 被另一个并行任务更新为 `fa6fb3f7adf4a102e076d9d8b5432b2ded632c4e`；本轮只记录实时结果，不覆盖其代码。Grok Bot 后续先人工/官方逐条复核 10 条已超过有效窗口的主张，再根据真实新日期修正相关网页/台账与部署门禁。另一剩余 P2 优先 INTJ 成长/失业流程/跳槽加薪等，避免对现有 Stage5 堆砌功能。
+
+**停止规则**：33/33 PDF 仓库存在性不等于 33/33 Stage 6 DONE；真实手机、辅助技术与 PDF 高倍率人眼验收尚未完整签收。未符合自动停止前提，保持当前既有定时升级循环启用，不调用暂停。
+
+<details>
+<summary>本轮 33/33 仓库 main SHA 实时复核（2026-11-22；Muse 为本轮合并后，门户为同期其他任务最新版本）</summary>
+
+- AIPMAndy/how-to-get-offer — 09b35cd3b6e05c0594d7e07d6511bf1320c877b2
+- AIPMAndy/chinese-international-student-career-guide — 7b2fd5b6107d10351142427fdcffdd7cbf21396e
+- AIPMAndy/chinese-international-student-ai-jobs — 2efac0398b5a5600764108a633fd0a132957105f
+- AIPMAndy/chinese-international-student-product-jobs — e40a39f27fabcefb93223f15bd0b921c66d52f43
+- AIPMAndy/chinese-international-student-business-jobs — 77e2362f9a7c6fe9a928086e0efc654c96717203
+- AIPMAndy/local-business-ai-growth-handbook — cc931c34efaa44a27a0d0bde2ae926372946bc19
+- AIPMAndy/restaurant-ai-customer-acquisition-handbook — 9086a5084f47602f5fe535de047d372c4e1daee4
+- AIPMAndy/ai-china-content-commerce-handbook — 7e9954bda04363a9af3e4dc10a6bddb5259c0eff
+- AIPMAndy/ai-cross-border-ecommerce-playbook — d455679aaf6314532081baff7f8b8fce24f3b2ac
+- AIPMAndy/ai-knowledge-paid-acquisition-handbook — e740d7af9381f2383243139b2f25ecd6cd1a106f
+- AIPMAndy/100m-in-5-years-handbook — d610e7e472ad2f2ad8df230f4f23a7a5eed82f15
+- AIPMAndy/geo-handbook — e969144b7dd25e319aa6e16df50ffcb7629d339d
+- AIPMAndy/seo-handbook — fa9f19c91e43289e873158caef1c8ebb5f516267
+- AIPMAndy/xiaohongshu-income-handbook — 621bf63005d31e324a70f9984c72f500eff2bb1f
+- AIPMAndy/anthropic-claude-code-agent-handbook — 19a5dada7b4b8f26745ab88101dab443a4d60c84
+- AIPMAndy/HowToMakeMoneyOnYouTube — ae5f9561ce692d1fd365d54867392cf2f0ee2d03
+- AIPMAndy/github-income-handbook — 9c766db43331ec9e64ba816b32689480b48628d3
+- AIPMAndy/threads-income-handbook — 5a45046b57926d4fd5936bbfac761a01b5cf30ab
+- AIPMAndy/x-income-handbook — 85db321883a86015fc384568bfba72e1c95971cf
+- AIPMAndy/chatgpt-income-handbook — b8e738e0cf6fc3e2b28d9f9e4b33436de35823c5
+- AIPMAndy/one-person-ai-income-guide — c6d053ad47c00f91c8ed1965843fa9b948c66eec
+- AIPMAndy/how-to-earn-usd-from-china — a27b0b86e56945d67922789ff760357ee86b1ceb
+- AIPMAndy/HowToBeAnAICreator — 77955b9f65291baa1ac07a69cc9c0a5a2e3f03f7
+- AIPMAndy/ai-era-survival-guide — e0356c24f218c19456bad16a7eb48c5cd9f9f87b
+- AIPMAndy/grok-bot-handbook — e6bd320995c8bd1891800a5a124c768652bdf9aa
+- AIPMAndy/muse-guide — da9f34daa95b79436656f90a12a0b2cc36acfcff
+- AIPMAndy/infj-career-growth-guide — e1e19d8fe92270ef4a438d6b0d1f84add820763b
+- AIPMAndy/intj-growth-guide — d4f5d748a3274896a0100bb2b367d26b7a5c7df0
+- AIPMAndy/how-to-survive-unemployment — 8fd6d621be3a73e241bfef597c7621efe5223933
+- AIPMAndy/how-to-job-hop-and-raise-salary — c48df3de42c096d512127b7edd2e3ffd190fe39f
+- AIPMAndy/AI-Awareness-Club — 5646c5f757cb5a6b00bdb54bbf994aff0a42dd1d
+- AIPMAndy/AIPMAndy.github.io — fa6fb3f7adf4a102e076d9d8b5432b2ded632c4e
+- AIPMAndy/Gemini-Canvas-Video-Kit — af2aa71843c3c932fd6180749da3b731f3db3a79
+
+</details>
 
 ## 七、迭代管理原则
 
