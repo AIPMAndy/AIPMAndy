@@ -1,6 +1,6 @@
 # 星觉科技 · GitHub 知识网站升级作战计划
 
-> 版本 v1.44 · 2026-11-23（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
+> 版本 v1.45 · 2026-11-23（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
 
 ## 一、唯一目标
 
@@ -83,7 +83,7 @@
 | P2 | [muse-guide](https://github.com/AIPMAndy/muse-guide) | **171 页历史 PDF 保留原文件**；2026-11-13 版次 `f7e22886…12f4c`，部署后线上 HTTP 200/SHA-256 与 `edition.json` 完全一致；**未重新生成或完成真人 200% 逐页审阅** | **Stage 5（2026-11-22）**：新增 [12 条官方来源复核台](https://aipmandy.github.io/muse-guide/sources.html)；[PR #1](https://github.com/AIPMAndy/muse-guide/pull/1) squash 合并至 [main `da9f34d`](https://github.com/AIPMAndy/muse-guide/commit/da9f34daa95b79436656f90a12a0b2cc36acfcff)，[PR CI #45012690322](https://github.com/AIPMAndy/muse-guide/actions/runs/45012690322) 与 [main CI/Pages/6 资源在线 SHA #45012742257](https://github.com/AIPMAndy/muse-guide/actions/runs/45012742257) 均 success | 来源直接读原 `data/library.json` 12 项，不篡改 2026-10-21 核验日；搜索、30 天复核提示、本机人工标记/TXT 导出，明确官方声明 ≠ 真实账号实测。补官网服务/公司入口、171 页 PDF CTA、独立 canonical/OG/WebApplication JSON-LD/sitemap、CI 和线上门禁；保留旧任务书、80 条提示词、12 SOP。真实 iOS/Android、VoiceOver/TalkBack、PDF 全页 200% 真人审核和 12 条动态资料逐条重新复核仍待签收 |
 | P2 | [infj-career-growth-guide](https://github.com/AIPMAndy/infj-career-growth-guide) | **原 34 页 PDF 未改，`pdf/edition.json` 历史 SHA `9ab43459…3ea943f255`；线上同字节已验证；人工高倍率逐页待验** | **Stage 5（2026-11-22）**：新增[晋升证据台账](https://aipmandy.github.io/infj-career-growth-guide/evidence.html)，[PR #1](https://github.com/AIPMAndy/infj-career-growth-guide/pull/1) 已合并 main `e1e19d8`；[main CI #44985186258](https://github.com/AIPMAndy/infj-career-growth-guide/actions/runs/44985186258) success；[Pages + 6/6 真线上 HTTP/SHA #44985186264](https://github.com/AIPMAndy/infj-career-growth-guide/actions/runs/44985186264) completed/success | 本地真实成果台账/重复阻止/HTTPS 来源/搜索/单项删除/100 条上限/安全 CSV；首页独立 canonical/JSON-LD/双官网/服务及 PDF CTA，原 41 作品/7+30 天功能保留；仍需真机 iOS/Android、VoiceOver/TalkBack、34 页 PDF 人工 200% 全页和真实用户交互体验验收，**不标 DONE** |
 | P2 | [intj-growth-guide](https://github.com/AIPMAndy/intj-growth-guide) | **原 45 页 PDF 字节不变：历史 manifest SHA + Pages 实时 SHA 已验；人工 200% 逐页待签** | **Stage 5：2026-11-23 [PR #7](https://github.com/AIPMAndy/intj-growth-guide/pull/7) 已合并；[PR CI #45043953551](https://github.com/AIPMAndy/intj-growth-guide/actions/runs/45043953551)、[main CI #45044004216](https://github.com/AIPMAndy/intj-growth-guide/actions/runs/45044004216)、[Pages + 7 项独立线上 SHA #45044004228](https://github.com/AIPMAndy/intj-growth-guide/actions/runs/45044004228) 全部 success** | 新增[反证决策工作台](https://aipmandy.github.io/intj-growth-guide/decision.html)：双备选选项/五维权重、反证/最小实验、本机 30 条记录、带防 CSV 公式注入的离线导出、微信复制；从 `site/template.html` 重新生成首页并增加 PDF/公司官网入口，canonical/有效 JSON-LD/sitemap；原 41 部作品、7/30 天计划不回归。剩余真实 iOS/Android、VoiceOver/TalkBack、主观权重真实用户交互、PDF 全页人工 QA 和动态来源复核，不标 DONE |
-| P2 | [how-to-survive-unemployment](https://github.com/AIPMAndy/how-to-survive-unemployment) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 失业流程与政策来源 |
+| P2 | [how-to-survive-unemployment](https://github.com/AIPMAndy/how-to-survive-unemployment) | **116 页原版 PDF（977306 字节）未修改；manifest SHA-256 `593fad58…925082dc91a6`，本轮真实公网 SHA 一致；人工 200% 逐页未签** | **Stage 5（2026-11-23）**：[24 条政策来源复核台](https://aipmandy.github.io/how-to-survive-unemployment/source-audit.html) 上线；[PR #3](https://github.com/AIPMAndy/how-to-survive-unemployment/pull/3)、[PR #4](https://github.com/AIPMAndy/how-to-survive-unemployment/pull/4) 合并，最终 main [`7c8bb70`](https://github.com/AIPMAndy/how-to-survive-unemployment/commit/7c8bb70671b8288ba19d5b489ad735d110efc31f)；[Pages #45078006801](https://github.com/AIPMAndy/how-to-survive-unemployment/actions/runs/45078006801) success、[5/5 公网 SHA #45078006988](https://github.com/AIPMAndy/how-to-survive-unemployment/actions/runs/45078006988) success；新 Chromium 复核测试待最终签收 | 原 `data/guide.json` 的 24 条历史官方源（北京/上海/广东/全国）同源嵌入、地区与关键词搜索、超过 30 天复核、本人阅读状态、TXT 导出；首页源码和构建后 HTML 都补 PDF、双官网、咨询入口；保持旧 53 项任务/现金流工具不回归。修复 Playwright Ubuntu 26.04 不兼容并建立正式 Pages 5 文件哈希门禁。历史源核验日 2026-10-08/10-30 不冒充最新政策；真机 iOS/Android、VoiceOver/TalkBack、全 PDF 人工视觉、政策动态复核缺签，**非 DONE** |
 | P2 | [how-to-job-hop-and-raise-salary](https://github.com/AIPMAndy/how-to-job-hop-and-raise-salary) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 薪酬换岗验证与证据 |
 | P2 | [AI-Awareness-Club](https://github.com/AIPMAndy/AI-Awareness-Club) | **新增 23 页正式 PDF，9 条公开指南 + 12 FAQ；40 书签、35 外/内链、10,510 可提取字符；23 页全渲染、布局/文本/链接 QA 零错误，仓库归档及线上 SHA 一致** | **[Pages #43971080444](https://github.com/AIPMAndy/AI-Awareness-Club/actions/runs/43971080444) success，独立在线首页/章节/llms/sitemap/PDF HTTP 及 SHA 校验成功；[视觉 QA #43971080406](https://github.com/AIPMAndy/AI-Awareness-Club/actions/runs/43971080406) success** | 已补源驱动 PDF、全站 PDF/公司官网/服务链接、完整出版质量门禁并修复 Playwright runner；仍 Stage 5：真人逐页高清、真实 iOS/Android、可访问性与动态会员政策复核未最终签收 |
 | P2 | [AIPMAndy.github.io](https://github.com/AIPMAndy/AIPMAndy.github.io) | **新增 5 页正式导航 PDF，44 个 ItemList 项目条目、48 个可点击 URL 注释、3098 可提取字符、5/5 页自动渲染，已归档 main/Pages；人工高倍率待签** | **首页可搜索、分类、TXT 导出；[Pages #44127940175](https://github.com/AIPMAndy/AIPMAndy.github.io/actions/runs/44127940175) success、[独立 6 文件线上 SHA #44127944447](https://github.com/AIPMAndy/AIPMAndy.github.io/actions/runs/44127944447) success；仍 Stage 5** | 目录 PDF 同源自 index.html JSON-LD，不编造客户/收益；3 视口 Chromium 成功，canonical/robots/sitemap/DigitalDocument JSON-LD/llms.txt 已补；真实 Safari/Android、屏幕阅读器与人工逐页签收待做 |
@@ -703,6 +703,58 @@
 </details>
 
 **循环决策**：33/33 PDF 存在性不等于 33/33 网站 Stage 6 DONE；尚无 33 个站点全部经实体设备、辅助技术及高倍率 PDF 人工审核的逐站签收证据，也无明确排除授权。**继续保持现有任务启用，不触发 Automations.update 关闭。**
+
+
+### 2026-11-23 · 本轮增量：失业自救指南政策证据工作台 + 浏览器 CI 解阻（Stage 5，未 DONE）
+
+本轮先读回主计划 v1.44 blob `7f1dbb2984aad0df473b8484732d465563e326bc`，分别实时获取 33 个重点仓库的 main commit SHA；已避开之前完成实质升级的站点。优先确认 P0 已上线的成果及仍需真机、辅助技术和 PDF 人工验收的共同阻塞；随后选择此前仅做目录初审的 **P2 失业自救指南**，实际处理一个可消除的 CI 故障和新的用户复核功能。33 项中没有任何一个提供完整 Stage 6 DONE 逐站签字/授权排除证据，**不得停止循环**。
+
+| 本轮验收对象 | 实际修改/源码/合并 | 可复现 CI 与网站公网验收 | PDF、边界与下一步 |
+|---|---|---|---|
+| [how-to-survive-unemployment](https://github.com/AIPMAndy/how-to-survive-unemployment)，基线 `8fd6d62` → 最终 `7c8bb70` | [功能 PR #3](https://github.com/AIPMAndy/how-to-survive-unemployment/pull/3) squash 合并至 [`b6de10b`](https://github.com/AIPMAndy/how-to-survive-unemployment/commit/b6de10b61196edc266972371b16c79f976109ea5)：新建 [24 条官方来源复核台](https://aipmandy.github.io/how-to-survive-unemployment/source-audit.html)，原 `data/guide.json` 24 条记录准确嵌入，搜索、北京/上海/广东/全国分类、原核验超过 30 天提示、**本机阅读标记不是官方核验**、TXT 安全导出。同步改权威 `build.py`、生成 `index.html`、README、sitemap、回归测试；首页补 116 页 PDF/微信 AIPMAndy/个人官网 metaver.vip/公司官网 a6no1.cn/服务入口，53 任务、N/2N、13 周现金流原功能保留。[浏览器 PR #4](https://github.com/AIPMAndy/how-to-survive-unemployment/pull/4) squash 合并至最终 [`7c8bb70`](https://github.com/AIPMAndy/how-to-survive-unemployment/commit/7c8bb70671b8288ba19d5b489ad735d110efc31f)，补新工具的三视口真实交互自动验收 | [PR 验证 #45077985482](https://github.com/AIPMAndy/how-to-survive-unemployment/actions/runs/45077985482) success；[main 验证 #45078006989](https://github.com/AIPMAndy/how-to-survive-unemployment/actions/runs/45078006989) success。原 Playwright 失败由 Ubuntu 26.04 不支持引起（原 run #43383772814），锁定 Ubuntu 24.04 后 [Chromium #45078007028](https://github.com/AIPMAndy/how-to-survive-unemployment/actions/runs/45078007028) success，**原工具回归通过**；[正式 Pages #45078006801](https://github.com/AIPMAndy/how-to-survive-unemployment/actions/runs/45078006801) success，[独立线上 SHA #45078006988](https://github.com/AIPMAndy/how-to-survive-unemployment/actions/runs/45078006988) success，实际从 GitHub Pages 抓取首页/新工作台/robots/sitemap/PDF **5/5 项 HTTP 200 + SHA-256 与同版 main 完全一致**。追加的工作台真实交互 [Chromium #45078107245](https://github.com/AIPMAndy/how-to-survive-unemployment/actions/runs/45078107245) 需要独立最终结果签收，不可预称 success。 | 历史 PDF 为 **116 页 / 977306 字节**，`pdf/edition.json` 的 SHA-256 `593fad589061cfc0dfaaa05d111f98c7a2f75337ddad87086349225082dc91a6`；未重生成或改动，不冒充源文档→重出版的人工 QA。动态政策只展示 **2026-10-08/10-30** 的真实历史核验日；后续要补官方原文逐条复核与城市政策、真机 iOS/Android 触屏、VoiceOver/TalkBack、PDF 200% 人工逐页签收。故仅 Stage 5。 |
+
+**P1 独立阻塞继续保留**：`100m-in-5-years-handbook` 的 Pages 尚无启用证据，既有 configure-pages 404 仍未解除；需要管理员从 [Settings → Pages](https://github.com/AIPMAndy/100m-in-5-years-handbook/settings/pages) 启用 GitHub Actions，然后再进行公网哈希签收。不能误报已部署，也不能因阻塞停止其他站点。下一可执行目标优先 `how-to-job-hop-and-raise-salary` 或 `grok-bot-handbook` 的实质升级，避免重复优化已经交付的页面。
+
+<details>
+<summary>2026-11-23 本轮重新读取 33/33 仓库 main SHA（失业指南为本轮合并后最终 SHA）</summary>
+
+- AIPMAndy/how-to-get-offer — 09b35cd3b6e05c0594d7e07d6511bf1320c877b2
+- AIPMAndy/chinese-international-student-career-guide — 7b2fd5b6107d10351142427fdcffdd7cbf21396e
+- AIPMAndy/chinese-international-student-ai-jobs — 2efac0398b5a5600764108a633fd0a132957105f
+- AIPMAndy/chinese-international-student-product-jobs — e40a39f27fabcefb93223f15bd0b921c66d52f43
+- AIPMAndy/chinese-international-student-business-jobs — 77e2362f9a7c6fe9a928086e0efc654c96717203
+- AIPMAndy/local-business-ai-growth-handbook — cc931c34efaa44a27a0d0bde2ae926372946bc19
+- AIPMAndy/restaurant-ai-customer-acquisition-handbook — 9086a5084f47602f5fe535de047d372c4e1daee4
+- AIPMAndy/ai-china-content-commerce-handbook — 7e9954bda04363a9af3e4dc10a6bddb5259c0eff
+- AIPMAndy/ai-cross-border-ecommerce-playbook — d455679aaf6314532081baff7f8b8fce24f3b2ac
+- AIPMAndy/ai-knowledge-paid-acquisition-handbook — e740d7af9381f2383243139b2f25ecd6cd1a106f
+- AIPMAndy/100m-in-5-years-handbook — d610e7e472ad2f2ad8df230f4f23a7a5eed82f15
+- AIPMAndy/geo-handbook — e969144b7dd25e319aa6e16df50ffcb7629d339d
+- AIPMAndy/seo-handbook — fa9f19c91e43289e873158caef1c8ebb5f516267
+- AIPMAndy/xiaohongshu-income-handbook — 621bf63005d31e324a70f9984c72f500eff2bb1f
+- AIPMAndy/anthropic-claude-code-agent-handbook — 19a5dada7b4b8f26745ab88101dab443a4d60c84
+- AIPMAndy/HowToMakeMoneyOnYouTube — ae5f9561ce692d1fd365d54867392cf2f0ee2d03
+- AIPMAndy/github-income-handbook — 9c766db43331ec9e64ba816b32689480b48628d3
+- AIPMAndy/threads-income-handbook — 5a45046b57926d4fd5936bbfac761a01b5cf30ab
+- AIPMAndy/x-income-handbook — 85db321883a86015fc384568bfba72e1c95971cf
+- AIPMAndy/chatgpt-income-handbook — b8e738e0cf6fc3e2b28d9f9e4b33436de35823c5
+- AIPMAndy/one-person-ai-income-guide — c6d053ad47c00f91c8ed1965843fa9b948c66eec
+- AIPMAndy/how-to-earn-usd-from-china — a27b0b86e56945d67922789ff760357ee86b1ceb
+- AIPMAndy/HowToBeAnAICreator — 77955b9f65291baa1ac07a69cc9c0a5a2e3f03f7
+- AIPMAndy/ai-era-survival-guide — e0356c24f218c19456bad16a7eb48c5cd9f9f87b
+- AIPMAndy/grok-bot-handbook — e6bd320995c8bd1891800a5a124c768652bdf9aa
+- AIPMAndy/muse-guide — da9f34daa95b79436656f90a12a0b2cc36acfcff
+- AIPMAndy/infj-career-growth-guide — e1e19d8fe92270ef4a438d6b0d1f84add820763b
+- AIPMAndy/intj-growth-guide — 518236ca55759f4270d2e3a1c8a44b9c0feee6f4
+- AIPMAndy/how-to-survive-unemployment — 7c8bb70671b8288ba19d5b489ad735d110efc31f
+- AIPMAndy/how-to-job-hop-and-raise-salary — c48df3de42c096d512127b7edd2e3ffd190fe39f
+- AIPMAndy/AI-Awareness-Club — 5646c5f757cb5a6b00bdb54bbf994aff0a42dd1d
+- AIPMAndy/AIPMAndy.github.io — fa6fb3f7adf4a102e076d9d8b5432b2ded632c4e
+- AIPMAndy/Gemini-Canvas-Video-Kit — af2aa71843c3c932fd6180749da3b731f3db3a79
+
+</details>
+
+**循环判定：未取得 33/33 Stage 6 DONE 或 Andy 明确同意排除的逐站证据；不会调用 Automations.update 停止任务。**
 
 ## 七、迭代管理原则
 
