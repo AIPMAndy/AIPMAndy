@@ -1,6 +1,6 @@
 # 星觉科技 · GitHub 知识网站升级作战计划
 
-> 版本 v1.48 · 2026-11-24（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
+> 版本 v1.49 · 2026-11-24（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
 
 ## 一、唯一目标
 
@@ -870,6 +870,60 @@
 </details>
 
 **循环硬条件核验**：33/33 PDF 存在性不等于 33/33 Stage 6 DONE；没有 33 个站点具备逐站全量签收或 Andy 明确排除同意的证据。**本轮保留定时任务启用，不调用 Automations.update 暂停**。
+
+
+### 2026-11-24 · P0 餐饮单单贡献计算器：修复未知成本被默认记零（PR 待 CI/部署）
+
+从唯一主计划 v1.48（blob `c27856f49daf55a33c8c42c6386142e600080560`）出发，独立逐仓重新读取 33/33 个实时 main SHA，与上轮最终快照全部一致。优先选择 P0 餐饮站而不是重复构建既有漏斗：真实源码 `site/tools.html` 六项金额预填 0，导致仅输入实收就能输出及导出虚高贡献；`site/assets/app.js` 对小于一分钱的输入静默四舍五入，负贡献且固定成本为 0 时提示无需额外订单覆盖，容易误导经营判断。
+
+| 实际改动 / PR | CI 与线上状态 | PDF / 阻塞 / 下一步 |
+| --- | --- | --- |
+| [PR #4](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/pull/4)，基线 main `9086a5084f47602f5fe535de047d372c4e1daee4`，分支 head [`37acd63`](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/commit/37acd63dd2bf912327de159e6abff438c9c544c2)。四个实际文件：`site/assets/app.js`、`site/tools.html`、`tests/browser_smoke.mjs`、`site/sitemap.xml`。六项必须明确输入、未知留空/无成本填0，缺项时禁止 CSV；金额严格按整数分计算、拒绝超过两位小数，固定成本选填，负贡献即使固定成本为0也提示扩大亏损。保留原漏斗、打卡、微信复制与服务入口；修改页 canonical 不变，JSON-LD 与 sitemap 的实际修改日同步 2026-11-24。 | [PR Chromium #45279618078](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/actions/runs/45279618078) 已触发，截止记录时仍 in_progress；新增 360/390/1280px 未知成本、精确分值、负贡献、清空与固定成本边界回归，旧漏斗/打卡/导出测试保留。**新版本未合并、未部署、未线上验收**；目标 [计算器 URL](https://aipmandy.github.io/restaurant-ai-customer-acquisition-handbook/tools.html) 当前直接抓取工具未能访问，不将其当作 HTTP 404 或新版本成功。 | 原 47 页 PDF `pdf/edition.json`（2026-11-13，791601 字节，SHA-256 `2437c28a6133ba72dc17fb6ae903cd2cbf5a44e8e19ae0656422d0166a3a1f26`）及发布镜像未修改；不冒充重新生成或人眼 QA。下一步先确认 PR CI success 和基线无冲突，再合并并用原 Pages 流水线实测18项公网 SHA；实体 iOS/Android、VoiceOver/TalkBack、PDF 200% 人工逐页和动态政策复核仍未签收。原正式版本 Stage 5，本轮修复分支处于 Stage 3。 |
+
+**独立 P1 阻塞复核**：`100m-in-5-years-handbook` 当前 main 仍为 `d610e7e472ad2f2ad8df230f4f23a7a5eed82f15`，[最近正式工作流 #43648782276](https://github.com/AIPMAndy/100m-in-5-years-handbook/actions/runs/43648782276) 的 verify 成功、deploy 的 configure-pages 失败（[实际失败日志](https://github.com/AIPMAndy/100m-in-5-years-handbook/actions/runs/43648782276/job/132612451249)：Get Pages site failed / Not Found），部署及公网验收均 skipped。当前连接没有可用的 Pages 管理启用操作，未擅改配置或重跑不解决根因的任务；仍需管理员 [Settings → Pages](https://github.com/AIPMAndy/100m-in-5-years-handbook/settings/pages) 启用 GitHub Actions 发布源。
+
+<details>
+<summary>2026-11-24 · 真实独立复核 33/33 仓库 main SHA（尚未合并餐饮 PR）</summary>
+
+- AIPMAndy/how-to-get-offer — 09b35cd3b6e05c0594d7e07d6511bf1320c877b2
+- AIPMAndy/chinese-international-student-career-guide — 7b2fd5b6107d10351142427fdcffdd7cbf21396e
+- AIPMAndy/chinese-international-student-ai-jobs — 2efac0398b5a5600764108a633fd0a132957105f
+- AIPMAndy/chinese-international-student-product-jobs — e40a39f27fabcefb93223f15bd0b921c66d52f43
+- AIPMAndy/chinese-international-student-business-jobs — 77e2362f9a7c6fe9a928086e0efc654c96717203
+- AIPMAndy/local-business-ai-growth-handbook — cc931c34efaa44a27a0d0bde2ae926372946bc19
+- AIPMAndy/restaurant-ai-customer-acquisition-handbook — 9086a5084f47602f5fe535de047d372c4e1daee4
+- AIPMAndy/ai-china-content-commerce-handbook — 7e9954bda04363a9af3e4dc10a6bddb5259c0eff
+- AIPMAndy/ai-cross-border-ecommerce-playbook — d455679aaf6314532081baff7f8b8fce24f3b2ac
+- AIPMAndy/ai-knowledge-paid-acquisition-handbook — e740d7af9381f2383243139b2f25ecd6cd1a106f
+- AIPMAndy/100m-in-5-years-handbook — d610e7e472ad2f2ad8df230f4f23a7a5eed82f15
+- AIPMAndy/geo-handbook — e969144b7dd25e319aa6e16df50ffcb7629d339d
+- AIPMAndy/seo-handbook — fa9f19c91e43289e873158caef1c8ebb5f516267
+- AIPMAndy/xiaohongshu-income-handbook — 621bf63005d31e324a70f9984c72f500eff2bb1f
+- AIPMAndy/anthropic-claude-code-agent-handbook — 19a5dada7b4b8f26745ab88101dab443a4d60c84
+- AIPMAndy/HowToMakeMoneyOnYouTube — ae5f9561ce692d1fd365d54867392cf2f0ee2d03
+- AIPMAndy/github-income-handbook — 9c766db43331ec9e64ba816b32689480b48628d3
+- AIPMAndy/threads-income-handbook — 5a45046b57926d4fd5936bbfac761a01b5cf30ab
+- AIPMAndy/x-income-handbook — 85db321883a86015fc384568bfba72e1c95971cf
+- AIPMAndy/chatgpt-income-handbook — b8e738e0cf6fc3e2b28d9f9e4b33436de35823c5
+- AIPMAndy/one-person-ai-income-guide — e6b362dd4d297d406d58c9fa72432f5d3a7fe546
+- AIPMAndy/how-to-earn-usd-from-china — a27b0b86e56945d67922789ff760357ee86b1ceb
+- AIPMAndy/HowToBeAnAICreator — 77955b9f65291baa1ac07a69cc9c0a5a2e3f03f7
+- AIPMAndy/ai-era-survival-guide — e0356c24f218c19456bad16a7eb48c5cd9f9f87b
+- AIPMAndy/grok-bot-handbook — 1e6bb18a7312812a7a589d658ce01b615bf2ff23
+- AIPMAndy/muse-guide — da9f34daa95b79436656f90a12a0b2cc36acfcff
+- AIPMAndy/infj-career-growth-guide — e1e19d8fe92270ef4a438d6b0d1f84add820763b
+- AIPMAndy/intj-growth-guide — 518236ca55759f4270d2e3a1c8a44b9c0feee6f4
+- AIPMAndy/how-to-survive-unemployment — 7c8bb70671b8288ba19d5b489ad735d110efc31f
+- AIPMAndy/how-to-job-hop-and-raise-salary — 6b2d8c50e9baaf9eb031c36203000084af41ca82
+- AIPMAndy/AI-Awareness-Club — 5646c5f757cb5a6b00bdb54bbf994aff0a42dd1d
+- AIPMAndy/AIPMAndy.github.io — bae491b23ea0606e3afd524e83299c2c49d36ec8
+- AIPMAndy/Gemini-Canvas-Video-Kit — 4461c2190be80963b363b63d736f5a7ae2c14673
+
+
+</details>
+
+**停止条件**：主计划及当前仓库证据仍未具备 33/33 Stage 6 DONE 或用户明确排除记录，保持持续升级任务启用，不执行自动暂停。
+
 
 ## 七、迭代管理原则
 
