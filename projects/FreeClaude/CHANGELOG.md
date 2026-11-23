@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.2.0 — Claude Code workspaces · 2026-11-23
+
+- New `/workspaces/` dashboard: original responsive layout, local browser signals, sanitized CLI report comparison, copyable setup commands and CCBaga attribution.
+- New `workspace create/list/inspect/doctor/run` CLI on the official `CLAUDE_CONFIG_DIR` configuration path; no reading or moving credentials.
+- Guarded workspace names, managed-directory marker, symlink checks, explicit creation and fail-closed inspect/launch.
+- Extended tests, README, docs and homepage navigation. No native identity migration, fingerprint spoofing or anti-ban claims.
+
 ## 1.0.0 — 2026-11-17
 
 - 首发：静态交互式官网、故障诊断向导、免费套餐与 Code/API 边界说明

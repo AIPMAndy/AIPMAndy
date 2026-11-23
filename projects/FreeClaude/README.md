@@ -2,11 +2,11 @@
 
 # FreeClaude
 
-**Claude 免费入门 · IP/网络环境检测 · 登录故障自查 · 账号安全避坑**
+**Claude 免费入门 · 网络环境检测 · Claude Code 多工作区 · 安全排查**
 
 **开源免费 · 不收集账号信息 · 不依赖第三方浏览器 · 不承诺绕过限制**
 
-[🚀 打开交互式指南](site/index.html) · [🧪 Claude 网络体检](site/check/index.html) · [📚 保姆级文档](docs/00-start-here.md) · [🛠️ 故障排查](docs/02-troubleshooting.md) · [🛡️ 安全](docs/03-security.md) · [🌐 English](README.en.md)
+[🚀 打开交互式指南](site/index.html) · [🧪 Claude 网络体检](site/check/index.html) · [🗂️ Claude 工作区](site/workspaces/index.html) · [📚 保姆级文档](docs/00-start-here.md) · [🛠️ 故障排查](docs/02-troubleshooting.md) · [🛡️ 安全](docs/03-security.md) · [🌐 English](README.en.md)
 
 </div>
 
@@ -29,6 +29,7 @@
 | 🧭 交互导航 | 5 分钟使用路径：检查资格 → 登录 → 体验功能 | ✅ |
 | 🧯 诊断向导 | 邮件未收到、Google 授权、短信验证、封号、额度、Claude Code | ✅ |
 | 🌐 Claude IP 网络体检 | 三路 HTTP IP 源、第三方 VPN/Tor 情报、ASN、WebRTC、设备环境、历史与报告；未知即未知 | ✅（主动检测） |
+| 🗂️ Claude Workspaces | 独立 Claude Code 配置目录、受管工作区只读检查、本地/浏览器环境核对 | ✅（需主动运行 CLI） |
 | 🧪 Network Doctor | 对官方域名做 DNS/HTTPS 基础连通性检测，无账号操作 | ✅ |
 | 🧱 免费能力地图 | Free 与付费功能的边界，动态跳转官方价格页核对 | ✅ |
 | 🧰 场景提示词 | 写作、研究、简历、代码解释、内容选题 | ✅ |
@@ -42,7 +43,8 @@
 ```bash
 node src/serve.mjs
 # 主页 http://127.0.0.1:4173/
-# 新增 Claude 检测页 http://127.0.0.1:4173/check/
+# Claude 网络检测页 http://127.0.0.1:4173/check/
+# Claude 工作区页 http://127.0.0.1:4173/workspaces/
 ```
 
 **看终端：** 需要 Node.js 20 或更新版本（依赖为 0）。
@@ -51,6 +53,9 @@ node src/serve.mjs
 node bin/freeclaude.mjs checklist
 node bin/freeclaude.mjs doctor
 node bin/freeclaude.mjs links
+node bin/freeclaude.mjs workspace doctor --json
+node bin/freeclaude.mjs workspace create my-work
+node bin/freeclaude.mjs workspace run my-work
 node bin/freeclaude.mjs help
 ```
 
@@ -78,6 +83,28 @@ npm test
 **检测隐私说明：** 启动检测即表示你同意浏览器直接联系 `api.ipify.org` / `api64.ipify.org`、`ipwho.is`、`speed.cloudflare.com`、`ipsnapshot.com`、`claude.ai` 和 `anthropic.com`；这些服务会接触到连接它们时使用的 IP，FreeClaude 自身不设置服务端日志或分析 SDK。手动点 WebRTC 深度检测才会访问 Google 公共 STUN。请自行核对这些服务的使用条款及限额；`ipwho.is` 免费接口有配额/用途限制，生产化或商业部署建议使用经许可的数据源。IPSnapshot 的 Geo/ASN 内容标注来源 DB-IP Lite，遵守其 CC BY 4.0 署名要求。
 
 **关键边界：** 静态网页无法证明 Claude **实际看到的出口 IP**，无法独立获取系统 DNS 解析器，也无法给出官方“安全分”。网络分流不同出口可能完全正常，不能直接解释为账号异常。有关技术限制和本项目实现详见 [检测技术说明](docs/08-network-check.md)。
+
+## 新增：Claude Code 工作区管理（v1.2.0）
+
+**入口：** [Claude Workspaces](site/workspaces/index.html)。运行 `npm start` 后进入 `/workspaces/`。
+
+参考 [CCBaga](https://github.com/liseami/CCBaga) 的**产品思路**，我们新增独立原创、零第三方依赖的工作区启动器。它不是 CCBaga 原生桌面 App，也没有复制其浏览器运行时。采用 Anthropic 官方文档支持的 [`CLAUDE_CONFIG_DIR`](https://code.claude.com/docs/en/settings) 配置方式：
+
+```bash
+node bin/freeclaude.mjs workspace doctor --json # 只读本机元信息，报告不含用户名路径、API Key 或凭据内容
+node bin/freeclaude.mjs workspace create my-work # 在 ~/.freeclaude/workspaces/ 新建空配置目录
+node bin/freeclaude.mjs workspace list # 列出自己创建的工作区
+node bin/freeclaude.mjs workspace inspect my-work # 仅报告部分文件是否存在
+node bin/freeclaude.mjs workspace run my-work # 设置 CLAUDE_CONFIG_DIR 并启动本地官方 claude 命令
+```
+
+- `create` **不会复制、移动、清空或删除**已有的 `~/.claude/`、`~/.claude.json` 或 Claude Desktop 数据；不自动安装、修改系统环境、浏览器或网络。
+- `run` 只给子进程设置 `CLAUDE_CONFIG_DIR`，Claude 本身仍会按官方登录要求运行。你必须已自行安装官方 Claude Code CLI；工作区只是本地数据分离，不表示可以突破服务条款。
+- 工作区不是安全容器：**系统 Keychain/凭据管理器、外部环境变量、编辑器插件和其他程序的数据仍可能共享**；适用于本地整理而非强制安全隔离。
+- 工作区目录带专用标识；拒绝遍历路径、非托管目录与符号链接，避免误操作其他文件夹。v1.2.0 不包含身份归档/还原、浏览器指纹修改、批量账号或防封承诺。
+- Web 端只读取浏览器公开环境属性。用户可以手工粘贴脱敏 `doctor --json` 输出对照时区与语言；数据只在当前浏览器中处理，不会发往 FreeClaude 服务器。`/check/` 仍提供可选的网络出口检测。
+
+详细实现、风险边界和 CCBaga 对照见 [工作区设计与安全说明](docs/09-workspaces.md)。
 
 ## Claude Free 可以做什么？
 
@@ -110,9 +137,10 @@ FreeClaude **不会**提供：批量注册、验证码代收、身份冒用、�
 ```text
 FreeClaude/
 ├── site/                 # 静态网站：引导+问题向导+提示词
-│   └── check/           # Claude 网络环境检测仪表盘（独立原创实现）
+│   ├── check/           # Claude 网络环境检测仪表盘（独立原创实现）
+│   └── workspaces/      # Claude Code 工作区管理网页与环境核对
 ├── bin/freeclaude.mjs    # 终端入口
-├── src/                  # 无依赖的网络诊断和静态服务器
+├── src/                  # 无依赖的网络诊断、工作区管理和静态服务器
 ├── test/                 # Node 内置测试
 ├── docs/                 # 原创保姆级教程
 ├── .github/workflows/    # CI

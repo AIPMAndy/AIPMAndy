@@ -8,7 +8,7 @@ const run = (...args) => execFileSync(process.execPath, ['./bin/freeclaude.mjs',
 
 test('help is discoverable and neutral', () => {
   const text = run('help');
-  assert.match(text, /FreeClaude 1.0/);
+  assert.match(text, /FreeClaude 1.2/);
   assert.match(text, /doctor/);
 });
 test('checklist contains eligibility and privacy guidance', () => {

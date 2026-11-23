@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0c0d10" />
+  <meta name="description" content="FreeClaude Workspaces：Claude Code 多工作区启动、只读环境体检、系统与浏览器参数对照。无需上传账号信息，开源且零第三方依赖。" />
+  <title>Claude 工作区与环境体检 · FreeClaude</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="app.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="topbar"><div class="wrap nav">
+    <a class="wordmark" href="../"><span class="brand-square">F<span>✦</span></span> FreeClaude<span class="dot">.</span></a>
+    <nav aria-label="主导航"><a href="../">使用指南</a><a href="../check/">网络体检</a><a class="active" href="./" aria-current="page">工作区体检</a></nav>
+    <a class="github" href="https://github.com/AIPMAndy/AIPMAndy/tree/main/projects/FreeClaude" target="_blank" rel="noopener noreferrer">源代码 <span aria-hidden="true">↗</span></a>
+  </div></header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="eyebrow"><span class="live-dot"></span> FREECLAUDE WORKSPACES <span class="slash">/</span> v1.2.0</div>
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <h1 id="hero-title">工作区清楚，<br /><em>Claude 才好用。</em></h1>
+          <p class="intro">借鉴 CCBaga 的核心思路，把“查看本地环境”和“切换本地配置”分开。<strong>浏览器负责可视化，命令行负责本机操作。</strong> 不碰你原来的 Claude 登录资料。</p>
+          <div class="hero-actions"><a class="button primary" href="#create">创建独立工作区 <span>↗</span></a><a class="button secondary" href="#audit">先体检环境 <span>↓</span></a></div>
+          <p class="micro">适用于 Windows / macOS / Linux · Node.js 20+ · Claude Code 官方 CLI</p>
+        </div>
+        <div class="hero-graphic" aria-label="三个互相独立的 Claude 工作区示意图">
+          <div class="graphic-top"><span>LOCAL WORKSPACE MANAGER</span><span class="light-status">READ-ONLY FIRST</span></div>
+          <div class="layers">
+            <div class="layer"><span class="layer-symbol">⌘</span><span class="layer-info"><strong>默认工作区</strong><small>原本的 ~/.claude/ · 保持不动</small></span><span class="layer-status unchanged">UNCHANGED</span></div>
+            <div class="connector-line" aria-hidden="true">↓  独立配置目录  ↓</div>
+            <div class="layer active-layer"><span class="layer-symbol">01</span><span class="layer-info"><strong>my-work</strong><small>由 FreeClaude 管理的新目录</small></span><span class="layer-status">ISOLATED</span></div>
+            <div class="layer"><span class="layer-symbol">02</span><span class="layer-info"><strong>client-demo</strong><small>独立的设置、插件和会话目录</small></span><span class="layer-status">ISOLATED</span></div>
+          </div>
+          <div class="graphic-bottom"><span>NO AUTO DELETE</span><span>NO TOKEN EXPORT</span><span>LOCAL ONLY</span></div>
+        </div>
+      </div>
+      <div class="hero-foot"><span>01 / 创建工作区</span><span>02 / 本地与浏览器核对</span><span>03 / 了解能力边界</span></div>
+    </section>
+
+    <section class="paper section" id="create" aria-labelledby="create-title"><div class="wrap">
+      <div class="section-head"><div><span class="section-overline">01 / WORKSPACE LAUNCHER</span><h2 id="create-title">一个名字，<br />一个独立的 Claude Code 目录。</h2></div><p>只在你亲自执行命令时创建空目录。原有 Claude Code、Claude Desktop、系统时区、浏览器和网络设置均不修改。</p></div>
+      <div class="setup-grid">
+        <div class="setup-card">
+          <label for="workspace-name">新工作区名称 <span>（英文小写）</span></label>
+          <div class="name-field"><span class="prompt-sign">›</span><input id="workspace-name" value="my-work" maxlength="32" autocomplete="off" spellcheck="false" aria-describedby="name-help"/><span class="valid-indicator" id="name-state">可创建</span></div>
+          <p id="name-help" class="help-text">字母开头，允许 a–z、0–9、连字符和下划线，最多 32 位。</p>
+          <div class="setup-info"><strong>创建后的本地结构</strong><div class="tree"><span>~/.freeclaude/</span><span>└── workspaces/</span><span id="tree-name">&nbsp;&nbsp;└── my-work/</span><span>&nbsp;&nbsp;&nbsp;&nbsp;└── .freeclaude-workspace.json</span></div></div>
+          <div class="safe-note"><strong>不会自动执行。</strong> 页面仅生成命令，不上传工作区名或读取本机文件。系统配置目录可能仍共享 OS 级凭据或环境变量，请勿当作高强度安全沙箱。</div>
+        </div>
+        <div class="command-card">
+          <div class="command-top"><div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div><span>QUICK START / TERMINAL</span><span class="terminal-tag">NODE 20+</span></div>
+          <div class="command-body">
+            <div class="command-step"><div class="command-label"><span>STEP 01</span><strong>下载开源项目</strong><button type="button" data-copy="install">复制</button></div><pre><code id="cmd-install">git clone https://github.com/AIPMAndy/AIPMAndy.git
+cd AIPMAndy/projects/FreeClaude</code></pre></div>
+            <div class="command-step"><div class="command-label"><span>STEP 02</span><strong>创建新的配置目录</strong><button type="button" data-copy="create">复制</button></div><pre><code id="cmd-create">node bin/freeclaude.mjs workspace create my-work</code></pre></div>
+            <div class="command-step"><div class="command-label"><span>STEP 03</span><strong>在这个工作区启动 Claude Code</strong><button type="button" data-copy="run">复制</button></div><pre><code id="cmd-run">node bin/freeclaude.mjs workspace run my-work</code></pre></div>
+          </div>
+          <div class="command-bottom">首次进入新工作区可能需要重新登录自己的官方账号。没有安装 Claude CLI 时，将得到明确错误提示。</div>
+        </div>
+      </div>
+      <div class="quick-row"><div><strong>管理已创建的工作区</strong><p>只显示自己创建的工作区，不扫描其他 Claude 目录。</p></div><code>node bin/freeclaude.mjs workspace list</code><button type="button" data-copy="list">复制命令</button></div>
+    </div></section>
+
+    <section class="ink section" id="audit" aria-labelledby="audit-title"><div class="wrap">
+      <div class="section-head reverse"><div><span class="section-overline">02 / LOCAL ENVIRONMENT AUDIT</span><h2 id="audit-title">不要猜环境。<br />直接看读数。</h2></div><p>浏览器会显示当前页面实际能读取的信号。本地命令行报告来自你自己的电脑，二者只有在同一设备上才有可比性。</p></div>
+      <div class="audit-grid">
+        <article class="audit-card"><div class="card-head"><h3>浏览器实时读数</h3><span class="state-pill positive">仅本地读取</span></div><dl class="signal-list"><div><dt>时区</dt><dd id="browser-timezone">读取中…</dd></div><div><dt>语言</dt><dd id="browser-locale">读取中…</dd></div><div><dt>操作系统提示</dt><dd id="browser-platform">读取中…</dd></div><div><dt>逻辑 CPU 核心</dt><dd id="browser-cores">读取中…</dd></div><div><dt>浏览器在线状态</dt><dd id="browser-online">读取中…</dd></div></dl><p class="card-footnote">这些数据属于浏览器可见属性，不代表服务器看到的设备或网络指纹。</p></article>
+        <article class="audit-card"><div class="card-head"><h3>Claude Code 本地体检</h3><span class="state-pill muted">需执行本机命令</span></div><p class="body-text">在<strong>你需要检查的电脑</strong>上打开终端，运行以下只读命令，再将 JSON 粘贴到下方。页面不会上传内容。</p><div class="inline-command"><code id="cmd-doctor">node bin/freeclaude.mjs workspace doctor --json</code><button type="button" data-copy="doctor">复制</button></div><label class="paste-label" for="report-json">粘贴本机诊断 JSON</label><textarea id="report-json" rows="5" placeholder='{"tool":"FreeClaude","command":"workspace doctor",...}' spellcheck="false" aria-describedby="paste-security"></textarea><div class="report-buttons"><button id="parse-report" type="button" class="button compact primary">本地核对</button><button id="clear-report" type="button" class="button compact transparent">清空</button></div><p id="paste-security" class="card-footnote">仅接受 FreeClaude doctor 格式；不要粘贴原始账号配置、Token、密码、Cookie 或 SSH 密钥。</p></article>
+        <article class="audit-card compare-card"><div class="card-head"><h3>核对结果</h3><span id="compare-state" class="state-pill muted">等待报告</span></div><div class="metric-row"><div><span>本地 Claude CLI</span><strong id="metric-cli">待输入</strong></div><div><span>受管工作区数</span><strong id="metric-count">—</strong></div><div><span>默认配置存在</span><strong id="metric-default">—</strong></div></div><div id="compare-details" class="result-box" aria-live="polite">执行并粘贴本地报告后，这里会核对浏览器与本机时区、语言是否一致；检测结果不构成账号安全评价。</div><a class="network-link" href="../check/">继续检查公开网络出口 <span aria-hidden="true">↗</span></a></article>
+      </div>
+    </div></section>
+
+    <section class="paper section" id="boundaries"><div class="wrap">
+      <div class="section-head"><div><span class="section-overline">03 / WHAT THIS TOOL REALLY DOES</span><h2>能做的做实。<br />做不到的说清楚。</h2></div><p>这不是 CCBaga 的换皮产品，不复制它的浏览器引擎或身份归档机制。我们优先解决普通用户真正需要的工作区隔离与故障自查。</p></div>
+      <div class="boundary-grid">
+        <article><span class="boundary-index">01</span><h3>FreeClaude 网页</h3><p>浏览器时区、语言、平台等实时读数；本机报告对照；命令生成器；IP 检测入口。</p><span class="boundary-status">已提供</span></article>
+        <article><span class="boundary-index">02</span><h3>FreeClaude 命令行</h3><p>创建独立配置目录、列出/检查托管目录、只读系统信息、通过环境变量启动官方 Claude Code。</p><span class="boundary-status">已提供</span></article>
+        <article><span class="boundary-index">03</span><h3>原生身份迁移与加密备份</h3><p>需要更高权限的桌面端、安全评审、加密存储与恢复事务，不能用纯网页替代。</p><span class="boundary-status planned">本版本不提供</span></article>
+      </div>
+      <div class="reference-block"><div><h3>参考开源项目：CCBaga</h3><p>感谢 liseami/CCBaga 提供的产品思路。原项目 MIT 许可，具有更完整的本地身份管理、配套浏览器与环境核对能力。我们没有打包、重分发或修改它的安装文件。</p></div><a href="https://github.com/liseami/CCBaga" target="_blank" rel="noopener noreferrer">查看 CCBaga 源码 ↗</a></div>
+      <p class="disclaimer">声明：FreeClaude 为独立开源项目，与 Anthropic、CCBaga 作者及 Monk 均无隶属关系。创建独立本地目录不改变 Claude 官方支持地区、服务条款、账号资格，也不能解封账号。</p>
+    </div></section>
+  </main>
+  <footer><div class="wrap footer"><div><strong>FreeClaude<span class="dot">.</span></strong><p>自由工具 · 开源源码 · 不存登录凭据</p></div><div><a href="https://metaver.vip/" target="_blank" rel="noopener noreferrer">AI 酋长 Andy 官网 ↗</a><a href="https://github.com/AIPMAndy/AIPMAndy/tree/main/projects/FreeClaude" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="../check/">网络环境检测 ↗</a></div><small>© FreeClaude · 独立工具箱</small></div></footer>
+  <div id="toast" role="status" aria-live="polite" class="toast" hidden></div>
+</body>
+</html>
