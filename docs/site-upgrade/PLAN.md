@@ -1,6 +1,6 @@
 # 星觉科技 · GitHub 知识网站升级作战计划
 
-> 版本 v1.46 · 2026-11-23（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
+> 版本 v1.47 · 2026-11-23（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
 
 ## 一、唯一目标
 
@@ -87,7 +87,7 @@
 | P2 | [how-to-job-hop-and-raise-salary](https://github.com/AIPMAndy/how-to-job-hop-and-raise-salary) | **原版 124 页 PDF 已在仓库及 Pages 公网发布；SHA-256 `9ce5626b…9d6e21` 字节同版，真人 200% 逐页待签** | **Stage 5：2026-11-23 新跳槽现金回本对比器上线；[PR #1](https://github.com/AIPMAndy/how-to-job-hop-and-raise-salary/pull/1) 已合并；[CI](https://github.com/AIPMAndy/how-to-job-hop-and-raise-salary/actions/runs/45111961370) / [Pages](https://github.com/AIPMAndy/how-to-job-hop-and-raise-salary/actions/runs/45111960637) / [6 文件公网 SHA 校验](https://github.com/AIPMAndy/how-to-job-hop-and-raise-salary/actions/runs/45111961450) success；真机/读屏/人工 PDF 待验** | [现金回本工作台](https://aipmandy.github.io/how-to-job-hop-and-raise-salary/compare.html)：不编造 Offer，支持空窗、保底薪酬和成本对比、本机 TXT；保留原 50 任务、年薪拆分、旧 PDF。完善 canonical/OG/JSON-LD/双官网/微信及服务入口和来源日期 |
 | P2 | [AI-Awareness-Club](https://github.com/AIPMAndy/AI-Awareness-Club) | **新增 23 页正式 PDF，9 条公开指南 + 12 FAQ；40 书签、35 外/内链、10,510 可提取字符；23 页全渲染、布局/文本/链接 QA 零错误，仓库归档及线上 SHA 一致** | **[Pages #43971080444](https://github.com/AIPMAndy/AI-Awareness-Club/actions/runs/43971080444) success，独立在线首页/章节/llms/sitemap/PDF HTTP 及 SHA 校验成功；[视觉 QA #43971080406](https://github.com/AIPMAndy/AI-Awareness-Club/actions/runs/43971080406) success** | 已补源驱动 PDF、全站 PDF/公司官网/服务链接、完整出版质量门禁并修复 Playwright runner；仍 Stage 5：真人逐页高清、真实 iOS/Android、可访问性与动态会员政策复核未最终签收 |
 | P2 | [AIPMAndy.github.io](https://github.com/AIPMAndy/AIPMAndy.github.io) | **新增 5 页正式导航 PDF，44 个 ItemList 项目条目、48 个可点击 URL 注释、3098 可提取字符、5/5 页自动渲染，已归档 main/Pages；人工高倍率待签** | **首页可搜索、分类、TXT 导出；[Pages #44127940175](https://github.com/AIPMAndy/AIPMAndy.github.io/actions/runs/44127940175) success、[独立 6 文件线上 SHA #44127944447](https://github.com/AIPMAndy/AIPMAndy.github.io/actions/runs/44127944447) success；仍 Stage 5** | 目录 PDF 同源自 index.html JSON-LD，不编造客户/收益；3 视口 Chromium 成功，canonical/robots/sitemap/DigitalDocument JSON-LD/llms.txt 已补；真实 Safari/Android、屏幕阅读器与人工逐页签收待做 |
-| P2 | [Gemini-Canvas-Video-Kit](https://github.com/AIPMAndy/Gemini-Canvas-Video-Kit) | 仓库内有 PDF | 目录已审；线上与视觉待验 | 视频制作可复现示例 |
+| P2 | [Gemini-Canvas-Video-Kit](https://github.com/AIPMAndy/Gemini-Canvas-Video-Kit) | **24 页原版 PDF (2026-11-13) 已部署并通过公网 SHA-256 一致性验证；真人 200% 全页视觉待签** | **Stage 5 (2026-11-23)**：[PR #2](https://github.com/AIPMAndy/Gemini-Canvas-Video-Kit/pull/2) 合并至 [main 4461c219](https://github.com/AIPMAndy/Gemini-Canvas-Video-Kit/commit/4461c2190be80963b363b63d736f5a7ae2c14673)，[正式 CI/部署/在线 SHA #45158691504](https://github.com/AIPMAndy/Gemini-Canvas-Video-Kit/actions/runs/45158691504) 三作业 success，**5/5 公网文件 HTTP 200/字节一致** | 新增 [12 项成片验收与返工工作台](https://aipmandy.github.io/Gemini-Canvas-Video-Kit/review.html)、精确五镜头时间轴、模拟/真实来源提示、本机记录与 TXT 导出、首页 PDF/服务入口、robots/sitemap/独立 canonical/有效 JSON-LD、CI 与真实公网哈希门禁；原 Prompt 生成器与 2 个示例保留。真机/辅助技术/人工视频质检/PDF 高倍率待验，**非 DONE** |
 
 ## 六、进度记录
 
@@ -767,6 +767,55 @@
 
 **截至本轮提交后的 SHA 增量**：本轮早段实时读回 33/33 个 `main` SHA 与 v1.45 账本快照完全一致；完成合并后，目标仓库从 `c48df3de42c096d512127b7edd2e3ffd190fe39f` 更新为 `6b2d8c50e9baaf9eb031c36203000084af41ca82`，其余 32 项以上述完整快照为准；本轮未在其他站点进行写入。尚未取得 33/33 Stage 6 DONE 或经用户同意排除的证据，维持原循环启用，不执行 Automations.update。
 
+
+### 2026-11-23 · Gemini Canvas Video Kit 真实上线新工具/PDF（Stage 5）
+
+**本轮对象与避让**：实时读回 PLAN.md v1.46，核对全部 33 个重点仓库 main SHA。多数 P0/P1 已完成有证据的工程改造，不重复建设；选择此前仅目录初审的 P2 Gemini Canvas Video Kit。发现 one-person-ai-income-guide（c6d053a → e6b362d）及 AIPMAndy.github.io（fa6fb3f → bae491b）有并行提交，未覆盖。
+
+| 实际修改 | 工程与线上验证 | PDF、未完成与后续 |
+| --- | --- | --- |
+| [PR #2](https://github.com/AIPMAndy/Gemini-Canvas-Video-Kit/pull/2) 通过验证后 squash 合并至 [main 4461c219](https://github.com/AIPMAndy/Gemini-Canvas-Video-Kit/commit/4461c2190be80963b363b63d736f5a7ae2c14673)。新增 [review.html](https://aipmandy.github.io/Gemini-Canvas-Video-Kit/review.html)：12 项人工成片检查，10–300 秒五镜头整数时轴、模拟与真实素材证据边界、本机保存、确认清空、复制返工 Prompt、TXT 导出。首页新工具及 PDF/服务 CTA，原有 Prompt 生成器与两份演示完整保留。新增 robots、sitemap、工作台独立 canonical/OG/有效 WebApplication JSON-LD、作者与星觉科技/微信 AIPMAndy/双官网和服务链接。新增链接/SEO/PDF 哈希/JS 语法测试及上线后公网字节门禁。 | 首轮 [PR CI #45158572634](https://github.com/AIPMAndy/Gemini-Canvas-Video-Kit/actions/runs/45158572634) 识别新页目录链接 ./ 未通过旧版相对文件链接检测，已更正为 index.html；最终 [PR CI #45158638490](https://github.com/AIPMAndy/Gemini-Canvas-Video-Kit/actions/runs/45158638490) completed/success。[正式 main 流水线 #45158691504](https://github.com/AIPMAndy/Gemini-Canvas-Video-Kit/actions/runs/45158691504) 的 verify、deploy、verify-live 三作业全部 completed/success。独立 verify-live 实际公开 HTTP 200 并对比同版 main 源文件，**5/5 SHA-256 完全一致**：index.html 8b4b12de…71799f、review.html 7053fa3f…d87ef0、robots.txt c44abf1a…d3d0、sitemap.xml 058bba20…018e6、[原版 PDF](https://aipmandy.github.io/Gemini-Canvas-Video-Kit/pdf/Gemini-Canvas-Video-Kit-guide.pdf) b84cecff…805fa。 | 原 pdf/edition.json 记录 2026-11-13 的正式 PDF **24 页，657,317 字节，SHA-256 b84cecff5bfa999e5558acd89e8b1eef9a17fe167e8da2125f7eda23ead805fa**，此次**PDF 未改动、未重新生成**，首次打包进该站 Pages，原版 SHA 从 manifest 经 CI 到公网一致；没有声称源文档同日重出版/完成人工 200% 逐页视觉审核。仍待真实 iOS/Android、VoiceOver/TalkBack、人工视频实际播放、下载/复制交互、24 页 PDF 高倍率逐页签收与 Gemini 地区/版本功能核对。本站仅 Stage 5 非 DONE；P1 100m-in-5-years-handbook 的仓库 Pages 管理员初次启用阻塞保留；P2 grok-bot-handbook 12 条关键声明超期，需逐项核对官方原文，不能机械刷新日期。 |
+
+<details>
+<summary>2026-11-23 · 本轮实际读取 33/33 仓库 main SHA（目标仓库为合并后的最终 SHA）</summary>
+
+- AIPMAndy/how-to-get-offer — 09b35cd3b6e05c0594d7e07d6511bf1320c877b2
+- AIPMAndy/chinese-international-student-career-guide — 7b2fd5b6107d10351142427fdcffdd7cbf21396e
+- AIPMAndy/chinese-international-student-ai-jobs — 2efac0398b5a5600764108a633fd0a132957105f
+- AIPMAndy/chinese-international-student-product-jobs — e40a39f27fabcefb93223f15bd0b921c66d52f43
+- AIPMAndy/chinese-international-student-business-jobs — 77e2362f9a7c6fe9a928086e0efc654c96717203
+- AIPMAndy/local-business-ai-growth-handbook — cc931c34efaa44a27a0d0bde2ae926372946bc19
+- AIPMAndy/restaurant-ai-customer-acquisition-handbook — 9086a5084f47602f5fe535de047d372c4e1daee4
+- AIPMAndy/ai-china-content-commerce-handbook — 7e9954bda04363a9af3e4dc10a6bddb5259c0eff
+- AIPMAndy/ai-cross-border-ecommerce-playbook — d455679aaf6314532081baff7f8b8fce24f3b2ac
+- AIPMAndy/ai-knowledge-paid-acquisition-handbook — e740d7af9381f2383243139b2f25ecd6cd1a106f
+- AIPMAndy/100m-in-5-years-handbook — d610e7e472ad2f2ad8df230f4f23a7a5eed82f15
+- AIPMAndy/geo-handbook — e969144b7dd25e319aa6e16df50ffcb7629d339d
+- AIPMAndy/seo-handbook — fa9f19c91e43289e873158caef1c8ebb5f516267
+- AIPMAndy/xiaohongshu-income-handbook — 621bf63005d31e324a70f9984c72f500eff2bb1f
+- AIPMAndy/anthropic-claude-code-agent-handbook — 19a5dada7b4b8f26745ab88101dab443a4d60c84
+- AIPMAndy/HowToMakeMoneyOnYouTube — ae5f9561ce692d1fd365d54867392cf2f0ee2d03
+- AIPMAndy/github-income-handbook — 9c766db43331ec9e64ba816b32689480b48628d3
+- AIPMAndy/threads-income-handbook — 5a45046b57926d4fd5936bbfac761a01b5cf30ab
+- AIPMAndy/x-income-handbook — 85db321883a86015fc384568bfba72e1c95971cf
+- AIPMAndy/chatgpt-income-handbook — b8e738e0cf6fc3e2b28d9f9e4b33436de35823c5
+- AIPMAndy/one-person-ai-income-guide — e6b362dd4d297d406d58c9fa72432f5d3a7fe546
+- AIPMAndy/how-to-earn-usd-from-china — a27b0b86e56945d67922789ff760357ee86b1ceb
+- AIPMAndy/HowToBeAnAICreator — 77955b9f65291baa1ac07a69cc9c0a5a2e3f03f7
+- AIPMAndy/ai-era-survival-guide — e0356c24f218c19456bad16a7eb48c5cd9f9f87b
+- AIPMAndy/grok-bot-handbook — e6bd320995c8bd1891800a5a124c768652bdf9aa
+- AIPMAndy/muse-guide — da9f34daa95b79436656f90a12a0b2cc36acfcff
+- AIPMAndy/infj-career-growth-guide — e1e19d8fe92270ef4a438d6b0d1f84add820763b
+- AIPMAndy/intj-growth-guide — 518236ca55759f4270d2e3a1c8a44b9c0feee6f4
+- AIPMAndy/how-to-survive-unemployment — 7c8bb70671b8288ba19d5b489ad735d110efc31f
+- AIPMAndy/how-to-job-hop-and-raise-salary — 6b2d8c50e9baaf9eb031c36203000084af41ca82
+- AIPMAndy/AI-Awareness-Club — 5646c5f757cb5a6b00bdb54bbf994aff0a42dd1d
+- AIPMAndy/AIPMAndy.github.io — bae491b23ea0606e3afd524e83299c2c49d36ec8
+- AIPMAndy/Gemini-Canvas-Video-Kit — 4461c2190be80963b363b63d736f5a7ae2c14673
+
+</details>
+
+**循环停止检查**：仅 PDF 存在性 33/33，尚无 33 个站点 Stage 6 DONE 的逐站实体设备、真实辅助技术和 PDF 200% 人工验收；也无 Andy 明确同意排除的证据。因此本轮保留定期升级任务启用，不执行 Automations.update 停止。
 
 ## 七、迭代管理原则
 
