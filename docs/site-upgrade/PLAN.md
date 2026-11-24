@@ -1,6 +1,6 @@
 # 星觉科技 · GitHub 知识网站升级作战计划
 
-> 版本 v1.53 · 2026-11-24（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
+> 版本 v1.54 · 2026-11-24（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
 
 ## 一、唯一目标
 
@@ -984,6 +984,20 @@
 - [FreePublish PR #5](https://github.com/AIPMAndy/FreePublish/pull/5)：品牌联系、canonical、OG、CSP 校验 JSON-LD，已合并；[FreePublish PR #6](https://github.com/AIPMAndy/FreePublish/pull/6)：修复复核表单勾选重绘导致的焦点/未提交输入丢失、统一动效、支持 reduced motion 和系统深色，已合并，源码 CI 通过。**门户镜像是否正式上线以 PR #8 的最终 CI 和 Pages 实际线上结果为准。**
 - [Google AI 手册 PR #1](https://github.com/AIPMAndy/google-ai-income-handbook/pull/1) 和 [PR #2](https://github.com/AIPMAndy/google-ai-income-handbook/pull/2)：新增 sitemap/robots/llms 与 8 项真实公网 SHA-256 验收门禁，均已合并，最终 [上线验证工作流](https://github.com/AIPMAndy/google-ai-income-handbook/actions/runs/45339639784) success。进一步的 UX 动效审查仍待执行。
 - 仅实现源码扫描与 UI 安全改动的站点继续处于 Stage 5，真实 iOS/Android、VoiceOver/TalkBack、PDF 人工高倍逐页审核及动态来源核验不被省略。Gemini 独立顾问在当前连接下不可调用，不宣称已经完成 Gemini 外部评审。
+
+
+### 2026-11-24 · 143 仓库 UX 实际装修：三站真发布 + 39 站分诊（Stage 5）
+
+**审计范围**：GitHub 搜索 owner AIPMAndy 的仓库查询两页合计 100+43=143 个仓库，不是 143 个全量人工视觉验收。[源码 UX Audit 工作流](https://github.com/AIPMAndy/AIPMAndy/actions/runs/45340469822) 对唯一计划的 33 个重点站点和 6 个新独立产品做源码级风险分诊（39 个，1 个抓取异常），有 JSON/Markdown 原始产物。找不到标准首页路径或 reduced-motion 关键字仅是待复核线索，不能据此断言用户体验失败；local-business-ai-growth-handbook 和 seo-handbook 生成站的“首页未识别”须查看权威构建链。**Gemini 无可用直连**，本轮没有冒充 Gemini 独立审查；GPT 根据源码、CI 和真实浏览器测试做了功能、安全与交互复核，仍保留设备和视觉 QA 待办。
+
+| 站点与状态 | 实际修改和 Git SHA | 已核实的测试、Pages 和 URL | 遗留验收 |
+|---|---|---|---|
+| FreePublish 源站+根门户 | [源 PR #5](https://github.com/AIPMAndy/FreePublish/pull/5) 补微信、公司与个人官网、服务、规范 JSON-LD；[源 PR #6](https://github.com/AIPMAndy/FreePublish/pull/6) 修勾选重绘丢焦点和回填链接、统一可中断过渡、深色及 reduced motion；源 main [5b40a8f](https://github.com/AIPMAndy/FreePublish/commit/5b40a8f7a6d4cc731cdc0c92498cfd27464438d9)。[门户 PR #8](https://github.com/AIPMAndy/AIPMAndy.github.io/pull/8) 合并门户 main [bd2c674](https://github.com/AIPMAndy/AIPMAndy.github.io/commit/bd2c6747159d6801d5e11173696a8de19da74c49)。 | [Chrome 三视口真实交互 #45341187919](https://github.com/AIPMAndy/AIPMAndy.github.io/actions/runs/45341187919) success（审核/输入保留/深色/reduced）；[Pages #45341186793](https://github.com/AIPMAndy/AIPMAndy.github.io/actions/runs/45341186793) success；[公网逐文件对比 #45341187726](https://github.com/AIPMAndy/AIPMAndy.github.io/actions/runs/45341187726) success。[线上站](https://aipmandy.github.io/FreePublish/)。 | Safari/Android/VoiceOver/TalkBack 实机未签，CLS/INP/FPS 未测，不能说“苹果级稳定满帧”，不代发。 |
+| Google AI 赚钱攻略 | [SEO PR #1](https://github.com/AIPMAndy/google-ai-income-handbook/pull/1) 和 [上线门禁 PR #2](https://github.com/AIPMAndy/google-ai-income-handbook/pull/2) 添加 sitemap/robots/llms/8 项公网 SHA；[UX PR #3](https://github.com/AIPMAndy/google-ai-income-handbook/pull/3) 修未知成本被默认为 0、分以下精度、教学示例标记、用户金额清空确认与撤销；main [6851db2](https://github.com/AIPMAndy/google-ai-income-handbook/commit/6851db291906833b845fca4a326cbcd8225a1206)。 | 较早 PR 测试发现 JS 数组/正则/状态变量缺陷后均已修；只以最终成功为准：[main 浏览器与内容 #45342065413](https://github.com/AIPMAndy/google-ai-income-handbook/actions/runs/45342065413)、[Pages #45342064427](https://github.com/AIPMAndy/google-ai-income-handbook/actions/runs/45342064427)、[8 项公网 SHA #45342065390](https://github.com/AIPMAndy/google-ai-income-handbook/actions/runs/45342065390) 均 success。[线上站](https://aipmandy.github.io/google-ai-income-handbook/)。 | 未修改原正式 PDF；教学模拟非客户收入。缺实机、全 PDF 视觉与动态 Google 官方规则复核。 |
+| FreeWatermark | [网站 PR #2](https://github.com/AIPMAndy/FreeWatermark/pull/2) 补公司/服务链接、作者/公司 JSON-LD、sitemap/robots；原生水印引擎和 reduced-motion 样式不动。[Pages 修复 PR #3](https://github.com/AIPMAndy/FreeWatermark/pull/3) 解决 artifact 上传后立刻查询部署文件导致空结果的传播竞态；main [055094c](https://github.com/AIPMAndy/FreeWatermark/commit/055094ca6fa8eae6cbcdb961a0f44c2624d747a7)。 | 初版 [#45341588031](https://github.com/AIPMAndy/FreeWatermark/actions/runs/45341588031) 部署 **失败**；修改部署等待和上传版本后 [#45342035288](https://github.com/AIPMAndy/FreeWatermark/actions/runs/45342035288) success：浏览器图片/ZIP 回归、Pages、4 项公网资源 HTTP 200 且字节相同。[线上站](https://aipmandy.github.io/FreeWatermark/)。 | 新增内容不是整站视觉再设计；真机与辅助技术尚需核验。 |
+
+**下一步按边际收益推进**：100m-in-5-years-handbook 的 Pages 首启权限阻塞；Antigravity/Gemini/经营工具的状态反馈、键盘、深浅色与 reduced-motion 真正浏览器审核。不要把静态源码警告当结论，不重复改已交付功能。33 站 PDF 仅存在性覆盖，**33/33 Stage 6 仍不满足**，保留定时任务启用。
+
 
 ## 七、迭代管理原则
 
