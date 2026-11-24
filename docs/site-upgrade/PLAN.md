@@ -1,6 +1,6 @@
 # 星觉科技 · GitHub 知识网站升级作战计划
 
-> 版本 v1.54 · 2026-11-24（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
+> 版本 v1.55 · 2026-11-24（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
 
 ## 一、唯一目标
 
@@ -998,6 +998,17 @@
 
 **下一步按边际收益推进**：100m-in-5-years-handbook 的 Pages 首启权限阻塞；Antigravity/Gemini/经营工具的状态反馈、键盘、深浅色与 reduced-motion 真正浏览器审核。不要把静态源码警告当结论，不重复改已交付功能。33 站 PDF 仅存在性覆盖，**33/33 Stage 6 仍不满足**，保留定时任务启用。
 
+
+### 2026-11-24 · 教程 UX 状态保护：Antigravity / Gemini 两站候选 PR（未部署）
+
+基于主计划 v1.54（blob `93bd24b99f08164eef769cc0762175d211b28fe3`）选择两个新教程站，按真实用户任务而非装饰动效审查。目标：避免误复制过期任务书、学习进度丢失、筛选时丢阅读状态和键盘焦点。未修改课程数据、历史来源日期或既有 PDF；未冒充 Gemini 独立外审。GPT 已复核实际源码和改动逻辑。
+
+| 项目 | 真实源码改动 / 候选 commit | 当前验证状态 | 下轮动作 |
+|---|---|---|---|
+| [Antigravity](https://github.com/AIPMAndy/antigravity-guide) | 基线 main `d4b138526d054bc7a332ca7ce20c263bc9b30770`。[PR #1](https://github.com/AIPMAndy/antigravity-guide/pull/1)，最终候选 [33af77f](https://github.com/AIPMAndy/antigravity-guide/commit/33af77f1957055aa2116fa63ca8b15911cd6d798)。模板及发布 HTML 同步；进度导入覆盖前确认、清空后撤销、无效备份拒绝、ARIA 进度、搜索计数/重置、修改任务书输入后清除旧输出、手机菜单 Escape/焦点恢复、统一微交互与 reduced-motion、公司官网入口。新增源码生成一致性与真实 HTTP Chromium 回归，以及独立公网 6 项资源 SHA-256 脚本。 | [PR CI #45344217391](https://github.com/AIPMAndy/antigravity-guide/actions/runs/45344217391) 在最后核查时 in_progress，不能记为通过；未合并、未发布候选。原已发布地址 [12 章版](https://aipmandy.github.io/antigravity-guide/) 不代表本 PR 生效。 | 先等候并核实 PR 最终 CI；如失败按真实日志修正；成功后确认无并发冲突、合并，再核验 Pages 与 6 项公网文件 SHA。根站 /antigravity/ 是另一份 15 章教程，非同一源码，禁止直接覆盖。 |
+| [Gemini](https://github.com/AIPMAndy/gemini-handbook) | 基线 main `042e52087d22479409ad5c7e88de0b9792850db5`。[PR #1](https://github.com/AIPMAndy/gemini-handbook/pull/1)，候选 [1a78b04](https://github.com/AIPMAndy/gemini-handbook/commit/1a78b04f8ec8a4843f906e7bc675e54285a1c252)。搜索/筛选复用 DOM 保留已展开章节，进度只更新必要控件不重绘，过滤非法/重复记录，储存失败反馈，清空确认及撤销，ARIA 进度，合成层 transform 进度动画、可见焦点与 reduced motion；新增 PR 实际 Chromium 测试。 | [PR Chromium #45344505968](https://github.com/AIPMAndy/gemini-handbook/actions/runs/45344505968) 静态 JS 检查已成功，浏览器安装/测试仍在执行；未合并、未发布候选。[网站](https://aipmandy.github.io/gemini-handbook/) 仍需新版本部署核验。 | 优先接续现有 PR，不重复建设；CI 成功后合并并核对原 publish 流程和实际公开文件。 |
+
+**验收边界**：两站尚无新版本线上验收证据。未声称实际 iOS/Android、VoiceOver/TalkBack、人工 PDF 视觉、深浅色完整主题或真实帧率/INP/CLS 已完成。33 站 Stage 6 终止条件未满足；保持原任务运行。
 
 ## 七、迭代管理原则
 
