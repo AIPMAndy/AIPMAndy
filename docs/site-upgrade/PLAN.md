@@ -1,6 +1,6 @@
 # 星觉科技 · GitHub 知识网站升级作战计划
 
-> 版本 v1.52 · 2026-11-24（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
+> 版本 v1.53 · 2026-11-24（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
 
 ## 一、唯一目标
 
@@ -976,6 +976,14 @@
 
 **停止条件**：尚无 33/33 Stage 6 DONE 或明确排除的逐站证据；保留持续升级任务启用，不执行暂停。
 
+
+### 2026-11-24 · 新增跨站 UX 与动效质量门禁（先小范围完成、再扩展）
+
+已将用户确认的八条低认知负担原则和“按状态变化”审查动效的门禁整理到 [UX 与动效质量门禁](./UX-MOTION-QUALITY-GATE.md)，并创建源级扫描器及 GitHub Actions。扫描器覆盖本计划 33 个站点和新增产品站，输出有可复核源码证据的待优化排序；它**不是**网页/性能/真机验收，也不能据其结果把项目直接标成 DONE。
+
+- [FreePublish PR #5](https://github.com/AIPMAndy/FreePublish/pull/5)：品牌联系、canonical、OG、CSP 校验 JSON-LD，已合并；[FreePublish PR #6](https://github.com/AIPMAndy/FreePublish/pull/6)：修复复核表单勾选重绘导致的焦点/未提交输入丢失、统一动效、支持 reduced motion 和系统深色，已合并，源码 CI 通过。**门户镜像是否正式上线以 PR #8 的最终 CI 和 Pages 实际线上结果为准。**
+- [Google AI 手册 PR #1](https://github.com/AIPMAndy/google-ai-income-handbook/pull/1) 和 [PR #2](https://github.com/AIPMAndy/google-ai-income-handbook/pull/2)：新增 sitemap/robots/llms 与 8 项真实公网 SHA-256 验收门禁，均已合并，最终 [上线验证工作流](https://github.com/AIPMAndy/google-ai-income-handbook/actions/runs/45339639784) success。进一步的 UX 动效审查仍待执行。
+- 仅实现源码扫描与 UI 安全改动的站点继续处于 Stage 5，真实 iOS/Android、VoiceOver/TalkBack、PDF 人工高倍逐页审核及动态来源核验不被省略。Gemini 独立顾问在当前连接下不可调用，不宣称已经完成 Gemini 外部评审。
 
 ## 七、迭代管理原则
 
