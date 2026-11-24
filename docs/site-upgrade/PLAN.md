@@ -1,6 +1,6 @@
 # 星觉科技 · GitHub 知识网站升级作战计划
 
-> 版本 v1.51 · 2026-11-24（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
+> 版本 v1.52 · 2026-11-24（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
 
 ## 一、唯一目标
 
@@ -60,7 +60,7 @@
 | P0 | [chinese-international-student-ai-jobs](https://github.com/AIPMAndy/chinese-international-student-ai-jobs) | **109 页既有正式 PDF 未修改；2026-11-18 Pages 在线 961066 字节，SHA-256 `f4717501…2e5323f81` 与发布源同版；真人高倍率逐页待签** | **2026-11-18 [PR #2](https://github.com/AIPMAndy/chinese-international-student-ai-jobs/pull/2) squash 合并至 [`2efac03`](https://github.com/AIPMAndy/chinese-international-student-ai-jobs/commit/2efac0398b5a5600764108a633fd0a132957105f)；[Chromium main #44285761364](https://github.com/AIPMAndy/chinese-international-student-ai-jobs/actions/runs/44285761364)、[Pages + 10 文件线上 SHA #44285761389](https://github.com/AIPMAndy/chinese-international-student-ai-jobs/actions/runs/44285761389) 均成功；仍 Stage 5** | 18 条历史 JD 由 `research/employer-jds.json` 同源生成，新增筛选后 TXT 离线核验清单，保留来源 URL、原始核验日、资格核对提醒；浏览器按北京时间给**已经过去的资料标注截止日期**提示，不擅断岗位关闭；保留原资格自查/技术案例/109 页 PDF、52 页 canonical/JSON-LD/robots/sitemap。真机 iOS/Android、VoiceOver/TalkBack、真人 PDF、高动态岗位招聘状态复核待验 |
 | P0 | [chinese-international-student-product-jobs](https://github.com/AIPMAndy/chinese-international-student-product-jobs) | **128 页既有 PDF v1.0.0 保持不变**；2026-11-19 线上 SHA-256 `b508703f…888e550f7`，真人 200% 全页签收仍待完成 | **Stage 5**：2026-11-19 [PR #2](https://github.com/AIPMAndy/chinese-international-student-product-jobs/pull/2) 与 [PR #3](https://github.com/AIPMAndy/chinese-international-student-product-jobs/pull/3) 已合并；[Chromium PR #44348796144](https://github.com/AIPMAndy/chinese-international-student-product-jobs/actions/runs/44348796144) success；[Pages+12 文件真实线上 SHA #44349215313](https://github.com/AIPMAndy/chinese-international-student-product-jobs/actions/runs/44349215313) success | 从 `research/jobs-sources.json` 生成 14 条历史证据复核工作台：7 条 JD 样本、3 条项目/岗位族、3 条面试与 1 条技术参考；可搜索/分类型/重置/导出本地 TXT，保留原官方 URL、2026-11-13 历史核验日及限制，不声称职位仍开放。新增 [来源页](https://aipmandy.github.io/chinese-international-student-product-jobs/sources-workbench.html) 的 canonical、OG、14 条 JSON-LD citation、2026-11-19 网页修改日期、sitemap；主页与服务/微信联通；原求职路径/搜索/PDF/ZIP 继续通过门禁。真实 iOS/Android、VoiceOver/TalkBack、PDF 人工全页、新一轮雇主逐条实时核验仍未完成，不标 DONE |
 | P0 | [chinese-international-student-business-jobs](https://github.com/AIPMAndy/chinese-international-student-business-jobs) | **180 页 PDF 版本未改，历史完整视觉 QA 已记录；本轮线上 SHA 再验成功** | **新源码与浏览器回归、Pages 真正上线均通过**：[浏览器 #43769273996](https://github.com/AIPMAndy/chinese-international-student-business-jobs/actions/runs/43769273996)、[Pages #43769153502](https://github.com/AIPMAndy/chinese-international-student-business-jobs/actions/runs/43769153502) | 2026-11-16 站内搜索清空、正确显示总命中数、联系卡对比度与独立 Chromium 360/390/1280px 回归；iOS/Android 真机、真实辅助技术、动态岗位与政策原文复核仍待验，不标 DONE **2026-11-19 更新：101 条历史官方证据/98 个去重 URL 的来源核验工作台、离线 TXT、类型/优先复核筛选，原核对日 2026-11-13 不变；[PR #2](https://github.com/AIPMAndy/chinese-international-student-business-jobs/pull/2) 已合并到 [`77e2362`](https://github.com/AIPMAndy/chinese-international-student-business-jobs/commit/77e2362f9a7c6fe9a928086e0efc654c96717203)，[PR Chromium](https://github.com/AIPMAndy/chinese-international-student-business-jobs/actions/runs/44412316304)、[main Chromium](https://github.com/AIPMAndy/chinese-international-student-business-jobs/actions/runs/44412547968)、[Pages+15 文件实测 SHA](https://github.com/AIPMAndy/chinese-international-student-business-jobs/actions/runs/44412548333) 均成功；仍为 Stage 5，真实设备/辅助技术/180 页 PDF 人工审核待签。** |
-| P0 | [local-business-ai-growth-handbook](https://github.com/AIPMAndy/local-business-ai-growth-handbook) | **71 页原正式 PDF 未改，源版 SHA `9abef4e8…50456b`，Pages 与仓库 SHA 再验一致；机器渲染预览已归档，真人高倍率待签** | **2026-11-18 [Pages #44190914706](https://github.com/AIPMAndy/local-business-ai-growth-handbook/actions/runs/44190914706) 完整 success：源码/SEO/PDF CI 与实际发布后 13 文件线上 SHA-256 一致；[PR 浏览器 #44190732233](https://github.com/AIPMAndy/local-business-ai-growth-handbook/actions/runs/44190732233) success；仍 Stage 5，真机未验** | [PR #1](https://github.com/AIPMAndy/local-business-ai-growth-handbook/pull/1) 合并至 [cc931c3](https://github.com/AIPMAndy/local-business-ai-growth-handbook/commit/cc931c34efaa44a27a0d0bde2ae926372946bc19)：修复 robots/llms 输出真实换行；10 项门店体检新增本机 TXT 导出、确认后重置、触控/焦点回归；34 页 WebPage JSON-LD 自指 URL/作者/内容日期与来源页 7 条可追溯 citation；历史来源日期仍为 2026-11-10，未冒充当日核验；13 项资源线上哈希门禁。保留原计算器、30 天计划、71 页 PDF 和既有品牌入口 |
+| P0 | [local-business-ai-growth-handbook](https://github.com/AIPMAndy/local-business-ai-growth-handbook) | **71 页原正式 PDF 未改，源版 SHA `9abef4e8…50456b`，Pages 与仓库 SHA 再验一致；机器渲染预览已归档，真人高倍率待签** | **2026-11-18 [Pages #44190914706](https://github.com/AIPMAndy/local-business-ai-growth-handbook/actions/runs/44190914706) 完整 success：源码/SEO/PDF CI 与实际发布后 13 文件线上 SHA-256 一致；[PR 浏览器 #44190732233](https://github.com/AIPMAndy/local-business-ai-growth-handbook/actions/runs/44190732233) success；仍 Stage 5，真机未验** | [PR #1](https://github.com/AIPMAndy/local-business-ai-growth-handbook/pull/1) 合并至 [cc931c3](https://github.com/AIPMAndy/local-business-ai-growth-handbook/commit/cc931c34efaa44a27a0d0bde2ae926372946bc19)：修复 robots/llms 输出真实换行；10 项门店体检新增本机 TXT 导出、确认后重置、触控/焦点回归；34 页 WebPage JSON-LD 自指 URL/作者/内容日期与来源页 7 条可追溯 citation；历史来源日期仍为 2026-11-10，未冒充当日核验；13 项资源线上哈希门禁。保留原计算器、30 天计划、71 页 PDF 和既有品牌入口  **2026-11-24 [PR #2](https://github.com/AIPMAndy/local-business-ai-growth-handbook/pull/2) 合并至 [85fba1e](https://github.com/AIPMAndy/local-business-ai-growth-handbook/commit/85fba1e05ae09fac03a05bc38df5a23b3bb7928b)**：修复无效输入导出旧结果，清空真实录入、缺失值/溢出门禁及回归；[PR CI](https://github.com/AIPMAndy/local-business-ai-growth-handbook/actions/runs/45325988207)、[Pages 13/13 公网 SHA](https://github.com/AIPMAndy/local-business-ai-growth-handbook/actions/runs/45326113475) success；[main Chromium](https://github.com/AIPMAndy/local-business-ai-growth-handbook/actions/runs/45326113752) in_progress；原 PDF 与品牌不改，仍 Stage 5。 |
 | P0 | [restaurant-ai-customer-acquisition-handbook](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook) | **原47页 PDF 不改，自动预览 QA、源版与公网 SHA 一致；人工200%逐页待签** | **Stage 5（2026-11-24）**：[PR #4](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/pull/4) 合并至 [`415bb62`](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/commit/415bb62ca226704b9c412bef73747b1500870d22)，[PR Chromium 三视口](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/actions/runs/45279618078) success，[Pages 18/18 公网 SHA](https://github.com/AIPMAndy/restaurant-ai-customer-acquisition-handbook/actions/runs/45279913840) success | 修复单单贡献六项默认零、分以下静默舍入、负贡献且零固定成本的误导提示；原到店核销漏斗、30天打卡、品牌 CTA 均保留。真实设备、读屏、PDF 人工与动态政策审核待签 |
 | P0 | [ai-china-content-commerce-handbook](https://github.com/AIPMAndy/ai-china-content-commerce-handbook) | **40 页原 PDF 保持字节不变**，主分支 QA 全页自动检测成功，线上 PDF SHA-256 `42f50cfe334b1e6c07f00fc6dd1cdc28309503f79334c48ecdae378e6bc586d9`；真人 200% 逐页仍待验 | **Stage 5（2026-11-20）**：经济账禁止缺失值/小数单数、离线可审计 CSV/来源历史日；修复生成 robots 未同步导致部署后哈希失败，合并 PR #2，Chromium/CI/Pages/线上 8 文件 + PDF 哈希均通过 | [PR #1（功能）](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/pull/1)；[PR #2（发布修复）](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/pull/2)；[main `7e9954b`](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/commit/7e9954bda04363a9af3e4dc10a6bddb5259c0eff)；[完整 CI+Pages+线上验收 #44628627476](https://github.com/AIPMAndy/ai-china-content-commerce-handbook/actions/runs/44628627476)；真机/读屏/PDF 人眼/法规逐项复核待签 |
 | P1 | [ai-cross-border-ecommerce-playbook](https://github.com/AIPMAndy/ai-cross-border-ecommerce-playbook) | **原 152 页 PDF 未修改**；历史版次 2026-11-13，线上与仓库 SHA-256 `76b82977…c1cef2` 一致，人工高倍率未签收 | **Stage 5（2026-11-20）**：[来源核验工作台](https://aipmandy.github.io/ai-cross-border-ecommerce-playbook/sources.html) 上线；[PR #1](https://github.com/AIPMAndy/ai-cross-border-ecommerce-playbook/pull/1) 合并为 [`d455679`](https://github.com/AIPMAndy/ai-cross-border-ecommerce-playbook/commit/d455679aaf6314532081baff7f8b8fce24f3b2ac)；[main Chromium CI #44721013838](https://github.com/AIPMAndy/ai-cross-border-ecommerce-playbook/actions/runs/44721013838) success、[Pages 7 项线上 HTTP/SHA #44721013650](https://github.com/AIPMAndy/ai-cross-border-ecommerce-playbook/actions/runs/44721013650) success | 从原 CSV 读 29 条来源（4 官方/25 第三方案例），支持检索、类型、30 天复核优先级、本机 TXT；原 2026-11-05 核验日不冒充新核验。首页 canonical/JSON-LD/robots/sitemap/PDF CTA、双官网及服务；原资格工具、利润工具和 152 页 PDF 未回归。实体 iOS/Android、读屏、PDF 人工 200% 逐页、动态政策复核及 PDF 可复现出版环境仍待办，非 DONE |
@@ -923,6 +923,58 @@
 </details>
 
 **停止条件**：主计划及当前仓库证据仍未具备 33/33 Stage 6 DONE 或用户明确排除记录，保持持续升级任务启用，不执行自动暂停。
+
+
+### 2026-11-24 · P0 本地生意 AI 获客：修复无效输入仍导出旧结果（Stage 5）
+
+从主计划 v1.51（blob `488ba4448243ab9270ed92fcb1ff925b30910cbf`）出发，重新读取 33/33 仓库 main SHA，全部与前一轮快照一致。优先处理真实缺陷而非重复新增工具：`assets/app.js` 在非法输入时清空显示值但未清除 `window.__localBusinessCalc`，导出仍会拿到上一次有效结果，可能导致经营决策依据错误。
+
+| 实际改动 / PR | CI 与线上状态 | PDF / 阻塞 / 下一步 |
+| --- | --- | --- |
+| [PR #2](https://github.com/AIPMAndy/local-business-ai-growth-handbook/pull/2) squash 合并，基线 `cc931c34efaa44a27a0d0bde2ae926372946bc19`，PR head `49b1e6617eaf102f36ea19f35c34d22f0079b136`，最终 main [85fba1e](https://github.com/AIPMAndy/local-business-ai-growth-handbook/commit/85fba1e05ae09fac03a05bc38df5a23b3bb7928b)。四个源文件：`assets/app.js`、`scripts/build.py`、`tests/test_calc.js`、`tests/browser_smoke.mjs`。无效输入立即清除缓存并禁用导出，点击导出再次校验；新增「清空，录入真实数据」与明确未知留空、无成本填 0 的说明，保留教学示例恢复按钮；拒绝缺失值、非安全整数计数与计算溢出。保留原 26 章、30 天计划、10 项体检、原业务公式、品牌入口、历史来源日期。 | [PR Chromium #45325988207](https://github.com/AIPMAndy/local-business-ai-growth-handbook/actions/runs/45325988207) completed/success，实际日志 8 项 Python 测试、Node 计算测试、360/390/1280px PASS，教学算例 500 元与 PDF 864026 字节回归通过；新增无效状态、禁止导出、清空及恢复的断言。[正式 Pages #45326113475](https://github.com/AIPMAndy/local-business-ai-growth-handbook/actions/runs/45326113475) completed/success，verify 与 deploy 均成功；[独立公网校验 job](https://github.com/AIPMAndy/local-business-ai-growth-handbook/actions/runs/45326113475/job/138216081019) 实际日志：PASS: 13 actual Pages resources match SHA-256; PDF matches reviewed edition。实测 [工具页](https://aipmandy.github.io/local-business-ai-growth-handbook/tools.html) 的发布字节已由该流水线核对；[main Chromium #45326113752](https://github.com/AIPMAndy/local-business-ai-growth-handbook/actions/runs/45326113752) 写回时为 in_progress。 | 原 71 页 PDF（2026-11-13，864026 字节，SHA-256 `9abef4e852d7f2ddc1c56a98d1a00c32e42c6a061e1af1a3a9214f54f250456b`）与出版源、生成产物未修改；Pages 自动 PDF 检查与原版公网哈希通过，非重新生成或人工高倍率验收。真机 iOS/Android、VoiceOver/TalkBack、人工 200% PDF 逐页检查、动态政策重新核对仍未签收；Stage 5 非 DONE。 |
+
+其他仓库未改；P1 100m-in-5-years-handbook 的 Pages 首次启用阻塞沿用上一轮已核验的 configure-pages 404 记录，当前无管理员启用证据；本轮未重复重跑。下一轮优先处理实际未解除的 P0/P1 功能或网页/PDF版本一致性缺陷，不重复改造本轮已交付工具。
+
+<details>
+<summary>2026-11-24 · 33/33 个重点仓库实时 main SHA（本地生意站为本轮合并后）</summary>
+
+- AIPMAndy/how-to-get-offer — 09b35cd3b6e05c0594d7e07d6511bf1320c877b2
+- AIPMAndy/chinese-international-student-career-guide — 7b2fd5b6107d10351142427fdcffdd7cbf21396e
+- AIPMAndy/chinese-international-student-ai-jobs — 2efac0398b5a5600764108a633fd0a132957105f
+- AIPMAndy/chinese-international-student-product-jobs — e40a39f27fabcefb93223f15bd0b921c66d52f43
+- AIPMAndy/chinese-international-student-business-jobs — 77e2362f9a7c6fe9a928086e0efc654c96717203
+- AIPMAndy/local-business-ai-growth-handbook — **85fba1e05ae09fac03a05bc38df5a23b3bb7928b（本轮合并后）**
+- AIPMAndy/restaurant-ai-customer-acquisition-handbook — 415bb62ca226704b9c412bef73747b1500870d22
+- AIPMAndy/ai-china-content-commerce-handbook — 7e9954bda04363a9af3e4dc10a6bddb5259c0eff
+- AIPMAndy/ai-cross-border-ecommerce-playbook — d455679aaf6314532081baff7f8b8fce24f3b2ac
+- AIPMAndy/ai-knowledge-paid-acquisition-handbook — e740d7af9381f2383243139b2f25ecd6cd1a106f
+- AIPMAndy/100m-in-5-years-handbook — d610e7e472ad2f2ad8df230f4f23a7a5eed82f15
+- AIPMAndy/geo-handbook — e969144b7dd25e319aa6e16df50ffcb7629d339d
+- AIPMAndy/seo-handbook — fa9f19c91e43289e873158caef1c8ebb5f516267
+- AIPMAndy/xiaohongshu-income-handbook — 621bf63005d31e324a70f9984c72f500eff2bb1f
+- AIPMAndy/anthropic-claude-code-agent-handbook — 19a5dada7b4b8f26745ab88101dab443a4d60c84
+- AIPMAndy/HowToMakeMoneyOnYouTube — ae5f9561ce692d1fd365d54867392cf2f0ee2d03
+- AIPMAndy/github-income-handbook — 9c766db43331ec9e64ba816b32689480b48628d3
+- AIPMAndy/threads-income-handbook — 5a45046b57926d4fd5936bbfac761a01b5cf30ab
+- AIPMAndy/x-income-handbook — 85db321883a86015fc384568bfba72e1c95971cf
+- AIPMAndy/chatgpt-income-handbook — b8e738e0cf6fc3e2b28d9f9e4b33436de35823c5
+- AIPMAndy/one-person-ai-income-guide — e6b362dd4d297d406d58c9fa72432f5d3a7fe546
+- AIPMAndy/how-to-earn-usd-from-china — a27b0b86e56945d67922789ff760357ee86b1ceb
+- AIPMAndy/HowToBeAnAICreator — 77955b9f65291baa1ac07a69cc9c0a5a2e3f03f7
+- AIPMAndy/ai-era-survival-guide — e0356c24f218c19456bad16a7eb48c5cd9f9f87b
+- AIPMAndy/grok-bot-handbook — 1e6bb18a7312812a7a589d658ce01b615bf2ff23
+- AIPMAndy/muse-guide — da9f34daa95b79436656f90a12a0b2cc36acfcff
+- AIPMAndy/infj-career-growth-guide — e1e19d8fe92270ef4a438d6b0d1f84add820763b
+- AIPMAndy/intj-growth-guide — 518236ca55759f4270d2e3a1c8a44b9c0feee6f4
+- AIPMAndy/how-to-survive-unemployment — 7c8bb70671b8288ba19d5b489ad735d110efc31f
+- AIPMAndy/how-to-job-hop-and-raise-salary — 6b2d8c50e9baaf9eb031c36203000084af41ca82
+- AIPMAndy/AI-Awareness-Club — 5646c5f757cb5a6b00bdb54bbf994aff0a42dd1d
+- AIPMAndy/AIPMAndy.github.io — bae491b23ea0606e3afd524e83299c2c49d36ec8
+- AIPMAndy/Gemini-Canvas-Video-Kit — 4461c2190be80963b363b63d736f5a7ae2c14673
+
+</details>
+
+**停止条件**：尚无 33/33 Stage 6 DONE 或明确排除的逐站证据；保留持续升级任务启用，不执行暂停。
 
 
 ## 七、迭代管理原则
