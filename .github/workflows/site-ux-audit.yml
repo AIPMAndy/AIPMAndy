@@ -1,6 +1,12 @@
 name: Public site UX motion source triage
 on:
   workflow_dispatch:
+  pull_request:
+    paths:
+      - 'scripts/site_ux_audit.py'
+      - 'tests/test_site_ux_audit.py'
+      - '.github/workflows/site-ux-audit.yml'
+      - 'docs/site-upgrade/UX-MOTION-QUALITY-GATE.md'
   push:
     branches: [main]
     paths:
