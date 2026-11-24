@@ -1,6 +1,6 @@
 # 星觉科技 · GitHub 知识网站升级作战计划
 
-> 版本 v1.55 · 2026-11-24（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
+> 版本 v1.56 · 2026-11-24（Asia/Shanghai）· 负责人：AI 酋长 Andy · 本计划即执行进度账本。
 
 ## 一、唯一目标
 
@@ -1009,6 +1009,58 @@
 | [Gemini](https://github.com/AIPMAndy/gemini-handbook) | 基线 main `042e52087d22479409ad5c7e88de0b9792850db5`。[PR #1](https://github.com/AIPMAndy/gemini-handbook/pull/1)，候选 [1a78b04](https://github.com/AIPMAndy/gemini-handbook/commit/1a78b04f8ec8a4843f906e7bc675e54285a1c252)。搜索/筛选复用 DOM 保留已展开章节，进度只更新必要控件不重绘，过滤非法/重复记录，储存失败反馈，清空确认及撤销，ARIA 进度，合成层 transform 进度动画、可见焦点与 reduced motion；新增 PR 实际 Chromium 测试。 | [PR Chromium #45344505968](https://github.com/AIPMAndy/gemini-handbook/actions/runs/45344505968) 静态 JS 检查已成功，浏览器安装/测试仍在执行；未合并、未发布候选。[网站](https://aipmandy.github.io/gemini-handbook/) 仍需新版本部署核验。 | 优先接续现有 PR，不重复建设；CI 成功后合并并核对原 publish 流程和实际公开文件。 |
 
 **验收边界**：两站尚无新版本线上验收证据。未声称实际 iOS/Android、VoiceOver/TalkBack、人工 PDF 视觉、深浅色完整主题或真实帧率/INP/CLS 已完成。33 站 Stage 6 终止条件未满足；保持原任务运行。
+
+### 2026-11-24 · 全公开 Pages 运行分诊与三站深度 UX（1 站已上线、2 站候选）
+
+从 v1.55（blob `dc1f5e9b8c1608452d83ce73da8b8b4c0197351b`）独立读取全部 33 个重点仓库实时 main SHA，先继续两份已有 PR 再选择 P0 求职站真实错误。此轮不重复造新工具，不伪造人工/设备验收。Gemini 独立顾问仍未找到可用连接，GPT 依真实代码、CI 日志做二次复核。
+
+| 对象 | 实际改动、commit 和 PR | 验收与阻塞 |
+|---|---|---|
+| Gemini 教程 | [PR #1](https://github.com/AIPMAndy/gemini-handbook/pull/1) 已 squash 合并，main [13097cf](https://github.com/AIPMAndy/gemini-handbook/commit/13097cf5b2aa0a6b046e5e4ce8ef27aae0634f6e)。课程与 Prompt 筛选复用 DOM、保留展开章节与焦点；进度有效范围与持久化反馈、清空撤销、ARIA 与 transform 动效。 | [PR Chromium](https://github.com/AIPMAndy/gemini-handbook/actions/runs/45344505968) success；[正式发布 #45345523209](https://github.com/AIPMAndy/gemini-handbook/actions/runs/45345523209) 的 build/deploy/live **均 completed/success**，实际 build 日志 114 项浏览器检查、34 页 PDF、76 个链接、349341 字节、19238 可提取文本字符，生成 PDF 与原提交完全一致，未另建 PDF 版本。[公网首页](https://aipmandy.github.io/gemini-handbook/) 和 [PDF](https://aipmandy.github.io/gemini-handbook/downloads/gemini-practical-handbook.pdf) 独立 HTTPS 验证通过。未声称人工逐页视觉、实体手机、辅助技术、FPS/INP/CLS 已完成。 |
+| P0 how-to-get-offer | [PR #2](https://github.com/AIPMAndy/how-to-get-offer/pull/2)，基线 main `09b35cd3b6e05c0594d7e07d6511bf1320c877b2`，候选 [b34fac7](https://github.com/AIPMAndy/how-to-get-offer/commit/b34fac705725b7e0a52e1babdbdbd13f1ab3660c)。修复直接新增已结束岗位误判曾获 Offer、空白/负值薪酬当 0、未确认固定数据不参与计算；真实录入默认空，教学样例显式选取，清空确认与撤销；保留展开任务、复选框和岗位状态焦点；重复任务 ID 归一化，拒绝重复岗位 ID 的无效备份；二审修复损坏本机 JSON 自动被覆盖，提供原始记录下载、明确确认替换。历史有效最高阶段保留，不凭推测降级。 | 初版 [CI #45345124086](https://github.com/AIPMAndy/how-to-get-offer/actions/runs/45345124086) 与 [Chromium #45345123953](https://github.com/AIPMAndy/how-to-get-offer/actions/runs/45345123953) success；二审最终候选 [CI #45345342078](https://github.com/AIPMAndy/how-to-get-offer/actions/runs/45345342078) success，[最终 Chromium #45345342039](https://github.com/AIPMAndy/how-to-get-offer/actions/runs/45345342039) 截至本次读取 in_progress；暂未合并上线，需最终候选通过后才进入 Pages 验收。 |
+| Antigravity 教程 | [PR #1](https://github.com/AIPMAndy/antigravity-guide/pull/1) 原测试真实失败：[浏览器日志](https://github.com/AIPMAndy/antigravity-guide/actions/runs/45344217391/job/138274769058) 确认无效键 day-2 被正确拒绝；真实课程键为 day-02。修正测试 fixture 并保留无效键拒绝用例，将两个结果计数移动到结果列表前方；最终候选 [14fadb7](https://github.com/AIPMAndy/antigravity-guide/commit/14fadb71ad9ad033380e61c80764fdb1226fbbfb)。 | [最终候选 CI #45345278663](https://github.com/AIPMAndy/antigravity-guide/actions/runs/45345278663) in_progress；未合并，不把旧线上站当新版本。保留12章站与根门户15章不同内容。 |
+| 全公开 Pages 分诊 | [中央 PR #3](https://github.com/AIPMAndy/AIPMAndy/pull/3) 合并为 [f0b3074](https://github.com/AIPMAndy/AIPMAndy/commit/f0b30744a08c290e9ff437408c1f9b531222190b)。新增 [全公开网站分诊说明](./PORTFOLIO-LIVE-AUDIT.md) 和 `scripts/portfolio_live_audit.py`、作用域和 URL 测试、Actions。通过 GitHub 实时公开且未归档仓库、真实 Pages 元数据和根 sitemap 推导目标；实际首页 HTTP、PDF 下载文件头、优先最多12站三视口 Chromium、页面 JS 异常和溢出、证据截图，按故障优先排序。不访问私有站点、不扩大权限、不提交表单、第三方网络请求阻断。 | [PR 测试 #45345635195](https://github.com/AIPMAndy/AIPMAndy/actions/runs/45345635195) success；[main 全量检查 #45345693265](https://github.com/AIPMAndy/AIPMAndy/actions/runs/45345693265) 尚在运行。检查结果用于下一轮选择真实失败点，不是 143 个仓库都需建站或已验收，不等同33站 Stage6。 |
+
+<details>
+<summary>2026-11-24 · 33/33 重点仓库实时 main SHA（本轮读取快照，未合并候选不记为 main）</summary>
+
+- AIPMAndy/how-to-get-offer — 09b35cd3b6e05c0594d7e07d6511bf1320c877b2
+- AIPMAndy/chinese-international-student-career-guide — 7b2fd5b6107d10351142427fdcffdd7cbf21396e
+- AIPMAndy/chinese-international-student-ai-jobs — 2efac0398b5a5600764108a633fd0a132957105f
+- AIPMAndy/chinese-international-student-product-jobs — e40a39f27fabcefb93223f15bd0b921c66d52f43
+- AIPMAndy/chinese-international-student-business-jobs — 77e2362f9a7c6fe9a928086e0efc654c96717203
+- AIPMAndy/local-business-ai-growth-handbook — 85fba1e05ae09fac03a05bc38df5a23b3bb7928b
+- AIPMAndy/restaurant-ai-customer-acquisition-handbook — 415bb62ca226704b9c412bef73747b1500870d22
+- AIPMAndy/ai-china-content-commerce-handbook — 7e9954bda04363a9af3e4dc10a6bddb5259c0eff
+- AIPMAndy/ai-cross-border-ecommerce-playbook — d455679aaf6314532081baff7f8b8fce24f3b2ac
+- AIPMAndy/ai-knowledge-paid-acquisition-handbook — e740d7af9381f2383243139b2f25ecd6cd1a106f
+- AIPMAndy/100m-in-5-years-handbook — d610e7e472ad2f2ad8df230f4f23a7a5eed82f15
+- AIPMAndy/geo-handbook — e969144b7dd25e319aa6e16df50ffcb7629d339d
+- AIPMAndy/seo-handbook — fa9f19c91e43289e873158caef1c8ebb5f516267
+- AIPMAndy/xiaohongshu-income-handbook — 621bf63005d31e324a70f9984c72f500eff2bb1f
+- AIPMAndy/anthropic-claude-code-agent-handbook — 19a5dada7b4b8f26745ab88101dab443a4d60c84
+- AIPMAndy/HowToMakeMoneyOnYouTube — ae5f9561ce692d1fd365d54867392cf2f0ee2d03
+- AIPMAndy/github-income-handbook — 9c766db43331ec9e64ba816b32689480b48628d3
+- AIPMAndy/threads-income-handbook — 5a45046b57926d4fd5936bbfac761a01b5cf30ab
+- AIPMAndy/x-income-handbook — 85db321883a86015fc384568bfba72e1c95971cf
+- AIPMAndy/chatgpt-income-handbook — b8e738e0cf6fc3e2b28d9f9e4b33436de35823c5
+- AIPMAndy/one-person-ai-income-guide — e6b362dd4d297d406d58c9fa72432f5d3a7fe546
+- AIPMAndy/how-to-earn-usd-from-china — a27b0b86e56945d67922789ff760357ee86b1ceb
+- AIPMAndy/HowToBeAnAICreator — 77955b9f65291baa1ac07a69cc9c0a5a2e3f03f7
+- AIPMAndy/ai-era-survival-guide — e0356c24f218c19456bad16a7eb48c5cd9f9f87b
+- AIPMAndy/grok-bot-handbook — 1e6bb18a7312812a7a589d658ce01b615bf2ff23
+- AIPMAndy/muse-guide — da9f34daa95b79436656f90a12a0b2cc36acfcff
+- AIPMAndy/infj-career-growth-guide — e1e19d8fe92270ef4a438d6b0d1f84add820763b
+- AIPMAndy/intj-growth-guide — 518236ca55759f4270d2e3a1c8a44b9c0feee6f4
+- AIPMAndy/how-to-survive-unemployment — 7c8bb70671b8288ba19d5b489ad735d110efc31f
+- AIPMAndy/how-to-job-hop-and-raise-salary — 6b2d8c50e9baaf9eb031c36203000084af41ca82
+- AIPMAndy/AI-Awareness-Club — 5646c5f757cb5a6b00bdb54bbf994aff0a42dd1d
+- AIPMAndy/AIPMAndy.github.io — bd2c6747159d6801d5e11173696a8de19da74c49
+- AIPMAndy/Gemini-Canvas-Video-Kit — 4461c2190be80963b363b63d736f5a7ae2c14673
+
+</details>
+
+**停止条件仍未满足**：真实设备、辅助技术、PDF 高倍人工签收未全部完成，P1 私有100m站原 Pages 首启阻塞未解除。保持原循环，不自动暂停；优先复核两份待合并 PR 和中央公网运行分诊，再修复实测严重问题。全公开网站的额外分诊不擅改原33站的终止门槛。
 
 ## 七、迭代管理原则
 
