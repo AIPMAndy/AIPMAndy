@@ -1,0 +1,40 @@
+name: Public site UX motion source triage
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'scripts/site_ux_audit.py'
+      - 'tests/test_site_ux_audit.py'
+      - '.github/workflows/site-ux-audit.yml'
+      - 'docs/site-upgrade/UX-MOTION-QUALITY-GATE.md'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/site_ux_audit.py'
+      - 'tests/test_site_ux_audit.py'
+      - '.github/workflows/site-ux-audit.yml'
+      - 'docs/site-upgrade/UX-MOTION-QUALITY-GATE.md'
+permissions:
+  contents: read
+jobs:
+  scan:
+    runs-on: ubuntu-24.04
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test source-level triage
+        run: python -m unittest discover -s tests -p 'test_site_ux_audit.py' -v
+      - name: Inspect sites from unique plan and recent products
+        run: python scripts/site_ux_audit.py
+      - name: Upload inspectable findings (not completion certificates)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ux-motion-source-triage
+          path: ux-audit-artifacts/
+          if-no-files-found: ignore
+          retention-days: 30
