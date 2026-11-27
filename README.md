@@ -58,6 +58,7 @@ AI酋长Andy（Andy Liu，GitHub / X：@AIPMAndy），流量 AI 联合创始人�
 **职场**
 
 - [跳槽涨薪指南](https://github.com/AIPMAndy/how-to-job-hop-and-raise-salary) · [社招拿 Offer](https://github.com/AIPMAndy/how-to-get-offer) · [普通人成为高管](https://github.com/AIPMAndy/how-to-become-an-executive) · [AI 时代不被淘汰](https://github.com/AIPMAndy/ai-era-survival-guide)
+- AI 岗位实战：[具身智能产品经理攻略](https://aipmandy.github.io/embodied-ai-product-manager-guide/) · [FDE 前线部署工程师攻略](https://aipmandy.github.io/fde-handbook/)
 - MBTI 系列：[INTJ 高薪](https://aipmandy.github.io/intj-high-salary-guide/) · [INFJ 高薪](https://aipmandy.github.io/infj-high-salary-guide/) · [INFJ 书影音](https://aipmandy.github.io/infj-career-growth-guide/) · [INTJ 书影音](https://aipmandy.github.io/intj-growth-guide/)
 
 **AI Agent 工具**
@@ -68,12 +69,16 @@ AI酋长Andy（Andy Liu，GitHub / X：@AIPMAndy），流量 AI 联合创始人�
 - [SafeSkill](https://github.com/AIPMAndy/safeskill)：安装 Skill 前做安全扫描
 - [awesome-openclaw-skills-CN](https://github.com/AIPMAndy/awesome-openclaw-skills-CN)：OpenClaw Skills 中文精选
 - [LivePPT](https://github.com/AIPMAndy/LivePPT) · [MDskill-Web](https://github.com/AIPMAndy/MDskill-Web) · [KnowMe](https://github.com/AIPMAndy/KnowMe) · [CEOskill](https://github.com/AIPMAndy/CEOskill)
-- 中文攻略（非官方）：[Grok Bot](https://aipmandy.github.io/grok-bot-handbook/) · [Meta Muse](https://aipmandy.github.io/muse-guide/) · [REA 逆向工程](https://aipmandy.github.io/rea-guide-cn/)
+- [FreeGEO](https://github.com/AIPMAndy/FreeGEO) · [在线用](https://aipmandy.github.io/FreeGEO/)：开源 AI 搜索增长工作台，页面体检、引用采样与固定面板复测
+- [FreeMacOn](https://github.com/AIPMAndy/FreeMacOn) · [官网](https://aipmandy.github.io/FreeMacOn/)：让 AI 在合盖后继续工作的 macOS 原生工具
+- [FreeBody](https://github.com/AIPMAndy/FreeBody) · [在线看](https://aipmandy.github.io/FreeBody/)：向人体生理系统学做更可靠的 AI Agent（图谱 + 稳态调度实验）
+- 中文攻略（非官方）：[Google Antigravity](https://aipmandy.github.io/antigravity-guide/) · [Gemini](https://aipmandy.github.io/gemini-handbook/) · [豆包工作](https://aipmandy.github.io/doubao-work-handbook/) · [WorkBuddy](https://aipmandy.github.io/workbuddy-handbook/) · [Grok Bot](https://aipmandy.github.io/grok-bot-handbook/) · [Meta Muse](https://aipmandy.github.io/muse-guide/) · [REA 逆向工程](https://aipmandy.github.io/rea-guide-cn/)
 
 **副业与增收**
 
 - [一个人靠 AI 赚钱](https://aipmandy.github.io/one-person-ai-income-guide/) · [中国人赚美金](https://aipmandy.github.io/how-to-earn-usd-from-china/) · [人人都能成为 AI 博主](https://aipmandy.github.io/HowToBeAnAICreator/)
-- [GitHub 赚钱](https://aipmandy.github.io/github-income-handbook/) · [X 赚钱](https://aipmandy.github.io/x-income-handbook/) · [Threads 赚钱](https://aipmandy.github.io/threads-income-handbook/) · [小红书赚钱](https://aipmandy.github.io/xiaohongshu-income-handbook/) · [ChatGPT 赚钱](https://aipmandy.github.io/chatgpt-income-handbook/)
+- [Google AI 赚钱](https://aipmandy.github.io/google-ai-income-handbook/) · [微信公众号从 0 到 1](https://aipmandy.github.io/wechat-account-launch-handbook/) · [GitHub 赚钱](https://aipmandy.github.io/github-income-handbook/) · [X 赚钱](https://aipmandy.github.io/x-income-handbook/) · [Threads 赚钱](https://aipmandy.github.io/threads-income-handbook/) · [小红书赚钱](https://aipmandy.github.io/xiaohongshu-income-handbook/) · [ChatGPT 赚钱](https://aipmandy.github.io/chatgpt-income-handbook/)
+- 财富与政策：[FreeGrant 中国创业者政策红利](https://aipmandy.github.io/FreeGrant/) · [FreeWealth 科学驱动个人财富研究](https://aipmandy.github.io/FreeWealth/)
 - [中文 X 千万级商业化研究库](https://github.com/AIPMAndy/chinese-x-creators) · [在线看](https://aipmandy.github.io/chinese-x-creators/)：29 位中文 X 创作者的收入证据与商业模式拆解
 
 **免费在线工具**（无需注册 · 浏览器本地处理）
@@ -81,10 +86,14 @@ AI酋长Andy（Andy Liu，GitHub / X：@AIPMAndy），流量 AI 联合创始人�
 - [FreeCover](https://github.com/AIPMAndy/FreeCover) · [在线用](https://aipmandy.github.io/FreeCover/)：小红书 / X / YouTube / 公众号封面制作，无水印
 - [FreePhoto](https://github.com/AIPMAndy/FreePhoto) · [在线用](https://aipmandy.github.io/FreePhoto/)：图片压缩、调尺寸、格式转换、去 EXIF
 - [FreeRedact](https://github.com/AIPMAndy/FreeRedact) · [在线用](https://aipmandy.github.io/FreeRedact/)：截图隐私遮挡，实心像素打码
+- [FreeLife](https://github.com/AIPMAndy/FreeLife) · [在线用](https://aipmandy.github.io/FreeLife/)：中国家庭消费省钱保姆级攻略与离线消费权益目录
+- [FreeCat](https://github.com/AIPMAndy/FreeCat) · [在线用](https://aipmandy.github.io/FreeCat/)：全球猫咪乐园，WebGL 触感撸猫、真实呼噜声与 20 品种图鉴
+- [OSWebsite](https://github.com/AIPMAndy/OSWebsite) · [在线用](https://aipmandy.github.io/OSWebsite/) · [FreeGroup](https://github.com/AIPMAndy/FreeGroup) · [在线用](https://aipmandy.github.io/FreeGroup/) · [FreePassword](https://github.com/AIPMAndy/FreePassword)
 
 **内容创作**
 
 - [Andy Writing Skill](https://github.com/AIPMAndy/Andy-Writing-Skill)：一个入口智能调度 AI 写作技能（Threads / X / 公众号 / 小红书 / 口播）
+- [NolanVideo](https://github.com/AIPMAndy/NolanVideo) · [在线用](https://aipmandy.github.io/NolanVideo/)：诺兰电影级视频创作攻略与离线导演工作台 · [FreePublish](https://github.com/AIPMAndy/FreePublish)：多平台视频发布安全做法
 - [andy-ip-skill](https://github.com/AIPMAndy/andy-ip-skill)：IP 内容创作工具箱 · [Andy 题词](https://github.com/AIPMAndy/andytici)：macOS 中文提词器 · [FreeDesign](https://github.com/AIPMAndy/FreeDesign)：设计资源大全
 
 </details>
