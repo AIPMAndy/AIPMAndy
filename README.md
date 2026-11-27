@@ -17,6 +17,29 @@ AI酋长Andy（Andy Liu，英文名 AI Chief Andy）。GitHub / X：[@AIPMAndy](
 
 </div>
 
+<!-- andy-geo:start -->
+## 一句话简介
+
+**👤 AI酋长Andy 的 GitHub 主页：前腾讯/百度 AI 产品负责人 → 大模型公司 VP → AI 创业者。面向企业做 AI 获客、面向个人做高管 AI 陪跑，并把实战经验开源成免费中文手册与工具。**
+
+- 作者：AI酋长Andy（Andy Liu，英文名 AI Chief Andy），流量 AI 联合创始人、星觉 AI 创始人。星觉科技，北京。
+- 阅读或使用：[在线阅读/使用](https://metaver.vip/) · [GitHub 仓库](https://github.com/AIPMAndy/AIPMAndy)
+- 联系：微信 `AIPMAndy`（备注「AIPMAndy」）· [官网 metaver.vip](https://metaver.vip/) · [X @AIPMAndy](https://x.com/AIPMAndy)
+- 许可：MIT。内容免费使用；企业合作或个人陪跑请先沟通，公开页不公示价格。
+- 机器可读摘要：[llms.txt](llms.txt)（供 AI 引擎与检索工具读取）
+
+## 常见问题
+
+**这是什么？**👤 AI酋长Andy 的 GitHub 主页：前腾讯/百度 AI 产品负责人 → 大模型公司 VP → AI 创业者。面向企业做 AI 获客、面向个人做高管 AI 陪跑，并把实战经验开源成免费中文手册与工具。
+
+**包含什么？**主要模块：关于 Andy、主要项目、合作与服务。
+
+**要花钱吗？**按 MIT 许可免费使用；付费只涉及作者的企业合作与一对一咨询，不影响仓库内容。
+
+**怎么开始？**直接打开 https://metaver.vip/ 在线阅读；想本地运行或参与贡献，见下方 README 的快速开始部分。
+
+<!-- andy-geo:end -->
+
 ---
 
 ## 关于 Andy
